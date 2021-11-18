@@ -10,9 +10,27 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Header */}
+
+      {/* Content 
+        Home
+          LEFT: title, subtitle, & short paragraph description
+          RIGHT: image of el
+
+        About
+
+        Projects
+
+        Experience
+
+        Contact Form (bubble section)
+      */}
       <main>
         <h1>Home Page</h1>
       </main>
+
+      {/* Footer */}
+
     </div>
   )
 }

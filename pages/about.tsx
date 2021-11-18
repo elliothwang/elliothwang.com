@@ -8,7 +8,8 @@ export default function AboutPage() {
       </Head>
 
       <main>
-        <h1>About Page</h1>
+        <h1>Who am I, really?</h1>
+        {/*  */}
       </main>
     </div>
   )
