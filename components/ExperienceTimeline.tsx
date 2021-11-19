@@ -9,6 +9,6 @@ const ExperienceTimeline = () => {
         {/* for example, coding bootcamp has different icon than adminstrative assistant */}
     </>
   )
-};
+}
 
-export default ExperienceTimeline;
+export default ExperienceTimeline

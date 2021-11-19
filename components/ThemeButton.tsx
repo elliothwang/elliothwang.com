@@ -8,6 +8,6 @@ const ThemeButton = () => {
       {/* circular button that changes icon/color with theme change */}
     </>
   )
-};
+}
 
-export default ThemeButton;
+export default ThemeButton

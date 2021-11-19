@@ -49,6 +49,6 @@ const Header = () => {
         {/* RIGHT: dark/light mode button */}
     </>
   )
-};
+}
 
-export default Header;
+export default Header

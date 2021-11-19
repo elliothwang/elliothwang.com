@@ -14,6 +14,6 @@ const Footer = () => {
         {/* RIGHT: Social Links */}
     </>
   )
-};
+}
 
-export default Footer;
+export default Footer

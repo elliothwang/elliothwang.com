@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import About from '../components/sections/About'
 
-export default function AboutPage() {
+const AboutPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>About el</title>
       </Head>
@@ -13,6 +13,8 @@ export default function AboutPage() {
           <About />
         </main>
       </Layout>
-    </div>
+    </>
   )
 }
+
+export default AboutPage

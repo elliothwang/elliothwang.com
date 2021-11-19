@@ -6,7 +6,7 @@ import Projects from '../components/sections/Projects'
 import Experience from '../components/sections/Experience'
 import Contact from '../components/sections/Contact'
 
-export default function Home() {
+const HomePage = () => {
   return (
     <>
       <Head>
@@ -27,3 +27,5 @@ export default function Home() {
     </>
   )
 }
+
+export default HomePage

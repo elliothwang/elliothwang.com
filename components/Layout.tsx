@@ -1,5 +1,5 @@
-import Footer from "./Footer"
 import Header from "./Header"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   return (
@@ -9,6 +9,6 @@ const Layout = ({ children }) => {
       <Footer />
     </>
   )
-};
+}
 
-export default Layout;
+export default Layout

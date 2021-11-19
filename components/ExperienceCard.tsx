@@ -10,6 +10,6 @@ const ExperienceCard = () => {
       {/* MIDDLE/BOTTOM: description of roles (bullet points) */}
     </>
   )
-};
+}
 
-export default ExperienceCard;
+export default ExperienceCard

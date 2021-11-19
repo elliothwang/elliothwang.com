@@ -7,6 +7,6 @@ const About = () => {
       <p>Hi, there! My name is Elliot Hwang.</p>
     </>
   )
-};
+}
 
-export default About;
+export default About

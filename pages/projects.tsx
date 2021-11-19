@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import Projects from '../components/sections/Projects'
 
-export default function ProjectsPage() {
+const ProjectsPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>el's Projects</title>
       </Head>
@@ -13,6 +13,8 @@ export default function ProjectsPage() {
           <Projects />
         </main>
       </Layout>
-    </div>
+    </>
   )
 }
+
+export default ProjectsPage

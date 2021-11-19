@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import Contact from '../components/sections/Contact'
 
-export default function Home() {
+const ContactPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Contact el</title>
       </Head>
@@ -13,6 +13,8 @@ export default function Home() {
           <Contact />
         </main>
       </Layout>
-    </div>
+    </>
   )
 }
+
+export default ContactPage

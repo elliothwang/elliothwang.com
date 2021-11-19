@@ -24,6 +24,6 @@ const Contact = () => {
           {/* submit button */}
     </>
   )
-};
+}
 
-export default Contact;
+export default Contact

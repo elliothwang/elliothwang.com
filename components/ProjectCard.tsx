@@ -12,7 +12,6 @@ const ProjectCard = () => {
       {/* MIDDLE BOTTOM: list of technology used */}
     </>
   )
-};
+}
 
 export default ProjectCard
-;
