@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import ExperienceCard from '../components/ExperienceCard'
-import ExperienceTimeline from '../components/ExperienceTimeline'
+import Layout from '../components/Layout'
+import Experience from '../components/sections/Experience'
 
 export default function ExperiencePage() {
   return (
@@ -8,20 +8,11 @@ export default function ExperiencePage() {
       <Head>
         <title>el's Experience</title>
       </Head>
-
-      <main>
-        <h1>Experience (and Education) Page</h1>
-        <ExperienceTimeline />
-        <ExperienceCard />
-        {/* mobile */}
-          {/* LEFT: timeline with corresponding marker */}
-          {/* MIDDLE/RIGHT: 3 experience cards */}
-
-        {/* pc */}
-          {/* LEFT: experience card (middle) */}
-          {/* MIDDLE: timeline with corresponding markers */}
-          {/* RIGHT: 2 experience cards (top & bottom) */}
-      </main>
+      <Layout>
+        <main>
+          <Experience />
+        </main>
+      </Layout>
     </div>
   )
 }

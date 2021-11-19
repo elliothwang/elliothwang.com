@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
+import Contact from '../components/sections/Contact'
 
 export default function Home() {
   return (
@@ -6,28 +8,11 @@ export default function Home() {
       <Head>
         <title>Contact el</title>
       </Head>
-
-      <main>
-      {/* mobile (completely vertical form) with little images/colors scattered around */}
-        {/* first name input */}
-        {/* last name input */}
-        {/* email input */}
-        {/* message input */}
-        {/* submit button */}
-
-      {/* pc (image/animation + partially horizontal/vertical form) */}
-        {/* LEFT: image/animation */}
-        {/* RIGHT: */}
-          {/* top row:
-            LEFT: first name input
-            RIGHT: last name input
-          */}
-          {/* email input */}
-          {/* message input */}
-          {/* submit button */}
-
-        
-      </main>
+      <Layout>
+        <main>
+          <Contact />
+        </main>
+      </Layout>
     </div>
   )
 }

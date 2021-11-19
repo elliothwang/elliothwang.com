@@ -1,9 +1,10 @@
-
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
+    <>
+      <div>Footer</div>
+      
       {/* mobile/tablet */}
         {/* TOP: Social Links*/}
         {/* BOTTOM: Copyright */}
@@ -11,8 +12,8 @@ const Footer = () => {
       {/* pc */}
         {/* LEFT: Copyright */}
         {/* RIGHT: Social Links */}
-    </div>
+    </>
   )
-}
+};
 
-export default Footer
+export default Footer;

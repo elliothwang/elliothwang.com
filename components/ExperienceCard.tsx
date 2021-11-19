@@ -2,13 +2,14 @@
 
 const ExperienceCard = () => {
   return (
-    <div>
-      Exp Card
+    <>
+      <div>Exp Card</div>
+
       {/* TOP: Position Title */}
         {/* DIRECTLY UNDER: Dates  */}
       {/* MIDDLE/BOTTOM: description of roles (bullet points) */}
-    </div>
+    </>
   )
-}
+};
 
-export default ExperienceCard
+export default ExperienceCard;

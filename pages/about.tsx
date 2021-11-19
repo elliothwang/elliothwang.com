@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Layout from '../components/Layout'
+import About from '../components/sections/About'
 
 export default function AboutPage() {
   return (
@@ -6,11 +8,11 @@ export default function AboutPage() {
       <Head>
         <title>About el</title>
       </Head>
-
-      <main>
-        <h1>Who am I, really?</h1>
-        {/*  */}
-      </main>
+      <Layout>
+        <main>
+          <About />
+        </main>
+      </Layout>
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import ProjectCard from '../components/ProjectCard'
+import Layout from '../components/Layout'
+import Projects from '../components/sections/Projects'
 
 export default function ProjectsPage() {
   return (
@@ -7,12 +8,11 @@ export default function ProjectsPage() {
       <Head>
         <title>el's Projects</title>
       </Head>
-
-      <main>
-        <h1>Projects</h1>
-        <ProjectCard />
-        {/* grid mapping with ProjectCards component */}
-      </main>
+      <Layout>
+        <main>
+          <Projects />
+        </main>
+      </Layout>
     </div>
   )
 }
