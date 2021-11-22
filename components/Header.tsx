@@ -44,6 +44,7 @@ const Header = () => {
           <ul className={styles.list}>
             <li>
               <Link href="/">
+                {/* move icon to left */}
                 <a className={styles.logo}>
                   {/* <Image src="/public/images/imagetest.png" layout="fill" ></Image> */}
                   L
