@@ -2,10 +2,10 @@
 @import 'mixins';
 
 .theme {
-  background-color: $light-purple;
+  color: $extra-light-purple;
   cursor: pointer;
 }
 
 .theme:hover {
-  color: white;
+  color: $purple;
 }

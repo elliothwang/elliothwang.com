@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import ThemeButton from './ThemeButton';
+import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Header.module.scss';
 
 const Header = () => {
@@ -19,8 +19,7 @@ const Header = () => {
 
   useEffect(function mount() {
     function onScroll() {
-      var scrollYDistance = window.scrollY;
-      scrollYDistance >= 200 ? setScrolled(true) : setScrolled(false);
+      window.scrollY >= 200 ? setScrolled(true) : setScrolled(false);
     }
 
     window.addEventListener('scroll', onScroll);
@@ -84,7 +83,7 @@ const Header = () => {
                 className={sidebar ? styles.activeButton : styles.button}
                 onClick={handleThemeChange}
               >
-                <ThemeButton />
+                <ThemeToggle theme={dark} />
               </div>
             </li>
           </ul>

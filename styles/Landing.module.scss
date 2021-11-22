@@ -2,7 +2,32 @@
 @import 'mixins';
 
 .landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 100vh;
   width: 100vw;
-  background-color: lightgray;
+  left: 10vw;
+  background-color: $dark-blue;
+}
+
+.greeting {
+  color: $light-purple;
+  font-size: 7.5vmin;
+}
+
+.title {
+  color: $extra-light-purple;
+  font-size: 12.5vmin;
+}
+
+.subTitle {
+  color: $light-purple;
+  font-size: 10vmin;
+}
+
+.summary {
+  color: $light-purple;
+  font-size: 5vmin;
 }

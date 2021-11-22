@@ -1,4 +1,4 @@
-import ThemeButton from '../ThemeButton';
+import ThemeButton from '../ThemeToggle';
 
 const Contact = () => {
   return (
