@@ -1,18 +1,198 @@
 @import 'globals';
 @import 'mixins';
 
-.header {
-  position: fixed;
-  width: 100vw;
-  overflow: hidden;
-  background-color: lightblue;
-  z-index: 2;
+.sidebarBttn {
+  display: inline-block;
+  position: absolute;
+  right: 5vw;
+  z-index: 3;
+  cursor: pointer;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+
+  @include laptop-above {
+    display: none;
+  }
 }
 
-.link {
+.topBar,
+.topBarActive,
+.midBar,
+.midBarActive,
+.botBar,
+.botBarActive {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: $light-purple;
+  margin: 10px auto;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+.topBarActive {
+  -webkit-transform: translateY(15px) rotateZ(45deg);
+  -moz-transform: translateY(15px) rotateZ(45deg);
+  -ms-transform: translateY(15px) rotateZ(45deg);
+  -o-transform: translateY(15px) rotateZ(45deg);
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+.midBarActive {
+  width: 0;
+}
+
+.botBarActive {
+  -webkit-transform: translateY(-15px) rotateZ(-45deg);
+  -moz-transform: translateY(-15px) rotateZ(-45deg);
+  -ms-transform: translateY(-15px) rotateZ(-45deg);
+  -o-transform: translateY(-15px) rotateZ(-45deg);
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: $extra-dark-purple;
+  z-index: 2;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+
+  @include laptop-above {
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+  }
+}
+
+// .nav {
+//   right: 5vw;
+// }
+
+.list {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @include laptop-above {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logo {
+  color: $extra-light-purple;
+  // margin: 0 2vmin;
   text-decoration: none;
-  font-size: 1.8em;
   text-transform: uppercase;
-  position: relative;
-  padding-bottom: 7px;
+}
+
+.link1,
+.link2,
+.link3,
+.link4,
+.activeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  margin: 5vmin auto;
+  font-size: 10vmin;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $light-purple;
+  -webkit-transform: translate(0px);
+  -moz-transform: translate(0px);
+  -ms-transform: translate(0px);
+  -o-transform: translate(0px);
+  transform: translate(0px);
+
+  &:hover {
+    color: $extra-light-purple;
+  }
+
+  @include laptop-above {
+    flex-direction: row;
+    width: auto;
+    margin: 0 2vmin;
+    font-size: 2vmin;
+  }
+}
+
+.link1 {
+  -webkit-transition: all 0.7s 0.1s ease-in-out;
+  -moz-transition: all 0.7s 0.1s ease-in-out;
+  -ms-transition: all 0.7s 0.1s ease-in-out;
+  -o-transition: all 0.7s 0.1s ease-in-out;
+  transition: all 0.7s 0.1s ease-in-out;
+}
+
+.link2 {
+  -webkit-transition: all 0.7s 0.2s ease-in-out;
+  -moz-transition: all 0.7s 0.2s ease-in-out;
+  -ms-transition: all 0.7s 0.2s ease-in-out;
+  -o-transition: all 0.7s 0.2s ease-in-out;
+  transition: all 0.7s 0.2s ease-in-out;
+}
+
+.link3 {
+  -webkit-transition: all 0.7s 0.3s ease-in-out;
+  -moz-transition: all 0.7s 0.3s ease-in-out;
+  -ms-transition: all 0.7s 0.3s ease-in-out;
+  -o-transition: all 0.7s 0.3s ease-in-out;
+  transition: all 0.7s 0.3s ease-in-out;
+}
+
+.link4 {
+  -webkit-transition: all 0.7s 0.4s ease-in-out;
+  -moz-transition: all 0.7s 0.4s ease-in-out;
+  -ms-transition: all 0.7s 0.4s ease-in-out;
+  -o-transition: all 0.7s 0.4s ease-in-out;
+  transition: all 0.7s 0.4s ease-in-out;
+}
+
+.activeLink {
+  -webkit-transform: translate(200px);
+  -moz-transform: translate(200px);
+  -ms-transform: translate(200px);
+  -o-transform: translate(200px);
+  transform: translate(200px);
+}
+
+.button,
+.activeButton {
+  font-size: 5vmin;
+
+  @include laptop-above {
+    font-size: 2vmin;
+  }
+}
+
+.button {
+  -webkit-transition: all 0.7s 0.5s ease-in-out;
+  -moz-transition: all 0.7s 0.5s ease-in-out;
+  -ms-transition: all 0.7s 0.5s ease-in-out;
+  -o-transition: all 0.7s 0.5s ease-in-out;
+  transition: all 0.7s 0.5s ease-in-out;
+}
+
+.activeButton {
+  -webkit-transform: translate(200px);
+  -moz-transform: translate(200px);
+  -ms-transform: translate(200px);
+  -o-transform: translate(200px);
+  transform: translate(200px);
 }
