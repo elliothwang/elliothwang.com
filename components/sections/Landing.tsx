@@ -3,13 +3,20 @@ import styles from '../../styles/Landing.module.scss';
 const Landing = () => {
   return (
     <div className={styles.landing}>
-      <div className={styles.greeting}>Hi, there! I'm</div>
-      <div className={styles.title}>Elliot Hwang</div>
-      <div className={styles.subTitle}>Software Engineer</div>
-      <div className={styles.summary}></div>
-
-      {/* LEFT: title, subtitle, & short paragraph description */}
-      {/* RIGHT: image of el */}
+      <h5 className={styles.greeting}>Hi, there! I'm</h5>
+      <h1 className={styles.title}>Elliot Hwang.</h1>
+      <h3 className={styles.subTitle}>Web Developer.</h3>
+      <p className={styles.summary}>
+        I am a full stack developer with a desire to help others through my
+        work. As a previous pre-medical student, my passion for <br /> helping
+        others has shifted from working in medicine to contributing to code that
+        will{' '}
+        <em className={styles.summaryBold}>
+          provide solutions and assistance for others
+        </em>
+        . <br /> I’d like to look back at my code and know that I’ve made a{' '}
+        <em className={styles.summaryBold}>positive impact on other people</em>.
+      </p>
     </div>
   );
 };
