@@ -2,6 +2,15 @@
 @import 'mixins';
 
 .footer {
-  background-color: $light-purple;
-  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-blue;
+  height: 25vh;
+  bottom: 0;
+  border-top: 0.1vmin solid $extra-light-purple;
+}
+
+.copyright {
+  color: $purple;
 }

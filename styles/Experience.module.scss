@@ -2,7 +2,16 @@
 @import 'mixins';
 
 .exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 50vh;
   width: 100vw;
-  background-color: darkgray;
+  background-color: $dark-blue;
+}
+
+.exp > * {
+  margin-left: 10vw;
+  margin-right: 10vw;
 }

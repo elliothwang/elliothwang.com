@@ -1,9 +1,9 @@
-import ThemeButton from '../ThemeToggle';
+import styles from '../styles/ContactForm.module.scss';
 
-const Contact = () => {
+const Form = () => {
   return (
     <>
-      <h1>Get in touch!</h1>
+      <div className={styles.form}>Form</div>
 
       {/* mobile (completely vertical form) with little images/colors scattered around */}
       {/* first name input */}
@@ -26,4 +26,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Form;

@@ -2,7 +2,16 @@
 @import 'mixins';
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   height: 50vh;
   width: 100vw;
-  background-color: slategray;
+  background-color: $dark-blue;
+}
+
+.about > * {
+  margin-left: 20vw;
+  margin-right: 20vw;
 }

@@ -1,7 +1,7 @@
 @import 'globals';
 @import 'mixins';
 
-.projects {
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@
   background-color: $dark-blue;
 }
 
-.projects > * {
-  margin-left: 10vw;
-  margin-right: 10vw;
+.contact > * {
+  margin-left: 20vw;
+  margin-right: 20vw;
 }

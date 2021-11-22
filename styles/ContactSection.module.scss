@@ -1,0 +1,36 @@
+@import 'globals';
+@import 'mixins';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  background-color: $extra-light-purple;
+  border-radius: 3vmin;
+  z-index: 2;
+
+  @include laptop-above {
+    width: 60vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact > * {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.msg {
+  color: $purple;
+}
+
+.button {
+  color: $purple;
+}
