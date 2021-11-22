@@ -1,26 +1,18 @@
-html,
-body {
+.body {
+  height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
 
-* {
-  box-sizing: border-box;
-}
+// Global variables
+// Dark Theme:
+$black: #050404;
+$light-purple: #adaabf;
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
+// Light Theme:
 
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
+// TODO: add elements that need global styling (i.e. button, input field, etc.)

@@ -1,0 +1,9 @@
+@import 'globals';
+@import 'mixins';
+
+.theme {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: $light-purple;
+}

@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import Contact from '../components/sections/Contact'
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import Contact from '../components/sections/Contact';
 
 const ContactPage = () => {
   return (
@@ -14,7 +14,7 @@ const ContactPage = () => {
         </main>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

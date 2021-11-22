@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import Experience from '../components/sections/Experience'
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import Experience from '../components/sections/Experience';
 
 const ExperiencePage = () => {
   return (
@@ -14,7 +14,7 @@ const ExperiencePage = () => {
         </main>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default ExperiencePage
+export default ExperiencePage;

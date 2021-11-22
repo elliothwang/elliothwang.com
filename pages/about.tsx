@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import About from '../components/sections/About'
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import About from '../components/sections/About';
 
 const AboutPage = () => {
   return (
@@ -14,7 +14,7 @@ const AboutPage = () => {
         </main>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

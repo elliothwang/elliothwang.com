@@ -1,4 +1,5 @@
-import ProjectCard from "../ProjectCard";
+import ProjectCard from '../ProjectCard';
+import styles from '../../styles/Projects.module.scss';
 
 const Projects = () => {
   return (
@@ -8,7 +9,7 @@ const Projects = () => {
       {/* grid mapping with ProjectCards component */}
       <ProjectCard />
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

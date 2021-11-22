@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import Projects from '../components/sections/Projects'
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import Projects from '../components/sections/Projects';
 
 const ProjectsPage = () => {
   return (
@@ -10,11 +10,11 @@ const ProjectsPage = () => {
       </Head>
       <Layout>
         <main>
-          <Projects />
+          <Projects page />
         </main>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default ProjectsPage
+export default ProjectsPage;

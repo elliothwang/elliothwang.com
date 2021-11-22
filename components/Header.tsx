@@ -1,54 +1,57 @@
-import Link from "next/link";
-import ThemeButton from "./ThemeButton"
+import Link from 'next/link';
+import ThemeButton from './ThemeButton';
+import styles from '../styles/Header.module.scss';
 
 const Header = () => {
   return (
     <>
-      <header>
+    {/* mobile/tablet */}
+    {/* LEFT: dark/light mode button */}
+    {/* CENTER: logo  */}
+    {/* RIGHT: sidenav hamburger icon */}
+    {/* sidenav links */}
+
+    {/* pc */}
+    {/* LEFT: logo */}
+    {/* CENTER: links (About, Projects, Experience, Contact) */}
+    {/* RIGHT: dark/light mode button */}
+
+      <header className={styles.header}>
         <ThemeButton />
+        
         <nav>
           <ul>
             <li>
               <Link href="/">
-                <a>LOGO</a>
+                <a className={styles.link}>LOGO</a>
               </Link>
             </li>
             <li>
               <Link href="/about">
-                <a>About</a>
+                <a className={styles.link}>About</a>
               </Link>
             </li>
             <li>
               <Link href="/projects">
-                <a>Projects</a>
+                <a className={styles.link}>Projects</a>
               </Link>
             </li>
             <li>
               <Link href="/experience">
-                <a>Experience</a>
+                <a className={styles.link}>Experience</a>
               </Link>
             </li>
             <li>
               <Link href="/contact">
-                <a>Contact</a>
+                <a className={styles.link}>Contact</a>
               </Link>
             </li>
           </ul>
         </nav>
       </header>
 
-      {/* mobile/tablet */}
-        {/* LEFT: dark/light mode button */}
-        {/* CENTER: logo  */}
-        {/* RIGHT: sidenav hamburger icon */}
-          {/* sidenav links */}
-
-      {/* pc */}
-        {/* LEFT: logo */}
-        {/* CENTER: links (About, Projects, Experience, Contact) */}
-        {/* RIGHT: dark/light mode button */}
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

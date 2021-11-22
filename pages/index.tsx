@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Layout from '../components/Layout'
-import Landing from '../components/sections/Landing'
-import About from '../components/sections/About'
-import Projects from '../components/sections/Projects'
-import Experience from '../components/sections/Experience'
-import Contact from '../components/sections/Contact'
+import Head from 'next/head';
+import Layout from '../components/Layout';
+import Landing from '../components/sections/Landing';
+import About from '../components/sections/About';
+import Projects from '../components/sections/Projects';
+import Experience from '../components/sections/Experience';
+import Contact from '../components/sections/Contact';
 
 const HomePage = () => {
   return (
@@ -25,7 +25,7 @@ const HomePage = () => {
         </main>
       </Layout>
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

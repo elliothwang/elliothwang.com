@@ -1,0 +1,18 @@
+@import 'globals';
+@import 'mixins';
+
+.header {
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  background-color: lightblue;
+  z-index: 2;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
+}
