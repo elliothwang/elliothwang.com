@@ -46,27 +46,30 @@ const Header = () => {
               <Link href="/">
                 {/* move icon to left */}
                 <a className={styles.logo}>
-                  {/* <Image src="/public/images/imagetest.png" layout="fill" ></Image> */}
-                  L
+                  {/* <Image
+                    src="/public/images/imagetest.png"
+                    layout="fill"
+                  ></Image> */}
+                  el
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/about">
+              <Link href="/#about">
                 <a className={sidebar ? styles.activeLink : styles.link1}>
                   About
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/projects">
+              <Link href="/#projects">
                 <a className={sidebar ? styles.activeLink : styles.link2}>
                   Projects
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/experience">
+              <Link href="/#experience">
                 <a className={sidebar ? styles.activeLink : styles.link3}>
                   Experience
                 </a>

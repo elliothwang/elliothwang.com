@@ -1,8 +1,8 @@
-import styles from '../../styles/Landing.module.scss';
+import styles from '../../styles/Hero.module.scss';
 
-const Landing = () => {
+const Hero = () => {
   return (
-    <div className={styles.landing}>
+    <div className={styles.hero}>
       <h5 className={styles.greeting}>Hi, there! I'm</h5>
       <h1 className={styles.title}>Elliot Hwang.</h1>
       <h3 className={styles.subTitle}>Web Developer.</h3>
@@ -21,4 +21,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Hero;

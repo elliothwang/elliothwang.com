@@ -27,7 +27,7 @@
   display: block;
   height: 5px;
   width: 50px;
-  background-color: $light-purple;
+  background-color: $main-text-color;
   margin: 10px auto;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
@@ -64,7 +64,7 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color: $dark-blue;
+  background-color: $background-color;
   z-index: 2;
   -webkit-transition-duration: 0.75s;
   transition-duration: 0.75s;
@@ -94,10 +94,15 @@
 }
 
 .logo {
-  color: $extra-light-purple;
-  // margin: 0 2vmin;
+  position: absolute;
+  top: 1.5vmin;
+  left: 5vw;
+  padding: 1.5vmin 2vmin;
+  color: $white;
+  font-size: 2.25vmin;
+  border: 0.5vmin solid $main-text-color;
+  border-radius: 5vmin;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .link1,
@@ -113,7 +118,7 @@
   font-size: 10vmin;
   text-decoration: none;
   text-transform: uppercase;
-  color: $light-purple;
+  color: $main-text-color;
   -webkit-transform: translate(0px);
   -moz-transform: translate(0px);
   -ms-transform: translate(0px);
@@ -121,7 +126,7 @@
   transform: translate(0px);
 
   &:hover {
-    color: $extra-light-purple;
+    color: $white;
   }
 
   @include laptop-above {
