@@ -1,51 +1,24 @@
-import styled from '@emotion/styled';
 import styles from '../styles/ThemeToggle.module.scss';
+import { useEffect } from 'react';
 
-const ThemeToggle = ({ theme }) => {
-  const ToggleButton = styled.button`
-    --toggle-width: 80px;
-    --toggle-height: 38px;
-    --toggle-padding: 4px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.5rem;
-    line-height: 1;
-    width: var(--toggle-width);
-    height: var(--toggle-height);
-    padding: var(--toggle-padding);
-    border: 0;
-    border-radius: calc(var(--toggle-width) / 2);
-    cursor: pointer;
-    background: var(--color-bg-toggle);
-    transition: background 0.25s ease-in-out;
-  `;
+const ThemeToggle = ({ theme, setTheme }) => {
+  const changeTheme = () => {
+    setTheme(!theme);
+  };
 
-  const ToggleThumb = styled.span`
-    position: absolute;
-    top: var(--toggle-padding);
-    left: var(--toggle-padding);
-    width: calc(var(--toggle-height) - (var(--toggle-padding) * 2));
-    height: calc(var(--toggle-height) - (var(--toggle-padding) * 2));
-    border-radius: 50%;
-    background: white;
-    transition: transform 0.25s ease-in-out;
-    transform: 
-      theme === 'dark'
-        ? 'translate3d(calc(var(--toggle-width) - var(--toggle-height)), 0, 0)'
-        : 'none'};
-  `;
+  useEffect(() => {
+    console.log(theme);
+  }, [theme]);
 
   return (
-    <ToggleButton type="button" className={styles.theme}>
-      <ToggleThumb />
-      <span>
+    <div className={styles.button} onClick={changeTheme}>
+      <div id="thumb" className={theme ? styles.dark : styles.light}></div>
+      <span className="moon">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="2vmin"
           height="2vmin"
-          fill="currentColor"
+          fill="#171738"
           className="bi bi-moon-stars"
           viewBox="0 0 16 16"
         >
@@ -53,19 +26,19 @@ const ThemeToggle = ({ theme }) => {
           <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
         </svg>
       </span>
-      <span>
+      <span className="sun">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="2vmin"
           height="2vmin"
-          fill="currentColor"
+          fill="#0c585a"
           className="bi bi-sun"
           viewBox="0 0 16 16"
         >
           <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
         </svg>
       </span>
-    </ToggleButton>
+    </div>
   );
 };
 

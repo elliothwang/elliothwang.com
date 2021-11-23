@@ -8,10 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.6.0",
-    "@emotion/styled": "^11.6.0",
-    "@material-ui/core": "^4.12.3",
-    "@mui/material": "^5.1.1",
+    "jquery": "^3.6.0",
     "next": "12.0.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.0.0",

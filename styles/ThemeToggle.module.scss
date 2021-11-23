@@ -1,11 +1,48 @@
 @import 'globals';
 @import 'mixins';
 
-.theme {
-  color: $white;
+$toggle-width: 8vmin;
+$toggle-height: 4vmin;
+$toggle-padding: 0.5vmin;
+$thumb-dimensions: calc(($toggle-height - $toggle-padding) * 1.2);
+
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5vmin;
+  line-height: 1;
+  width: $toggle-width;
+  height: $toggle-height;
+  padding: $toggle-padding;
+  border: 0;
+  border-radius: calc($toggle-width / 2);
   cursor: pointer;
+  background-color: $white;
+  transition: background 0.25s ease-in-out;
 }
 
-.theme:hover {
-  color: $secondary-text-color;
+.dark {
+  position: absolute;
+  height: $thumb-dimensions;
+  width: $thumb-dimensions;
+  top: $toggle-padding;
+  left: $toggle-padding;
+  background-color: $secondary-text-color;
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out;
+  transform: translate3d(-calc($toggle-width - $toggle-height), 0, 0);
+}
+
+.light {
+  position: absolute;
+  height: $thumb-dimensions;
+  width: $thumb-dimensions;
+  top: $toggle-padding;
+  left: $toggle-padding;
+  background-color: $accent-3;
+  border-radius: 50%;
+  transition: transform 0.25s ease-in-out;
+  transform: translate3d(calc($toggle-width - $toggle-height), 0, 0);
 }

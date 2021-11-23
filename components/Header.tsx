@@ -87,7 +87,7 @@ const Header = () => {
                 className={sidebar ? styles.activeButton : styles.button}
                 onClick={handleThemeChange}
               >
-                <ThemeToggle theme={dark} />
+                <ThemeToggle theme={dark} setTheme={setDark} />
               </div>
             </li>
           </ul>
