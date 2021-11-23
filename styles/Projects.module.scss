@@ -8,10 +8,15 @@
   align-items: flex-start;
   height: 50vh;
   width: 100vw;
-  background-color: $background-color;
+  background-color: $background-dark;
 }
 
 .projects > * {
   margin-left: 10vw;
   margin-right: 10vw;
+}
+
+.title {
+  color: $title-color-dark;
+  font-size: 5vmin;
 }

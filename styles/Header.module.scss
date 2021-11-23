@@ -27,7 +27,7 @@
   display: block;
   height: 5px;
   width: 50px;
-  background-color: $main-text-color;
+  background-color: $title-color-dark;
   margin: 10px auto;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
@@ -64,7 +64,7 @@
   top: 0;
   height: 100vh;
   width: 100vw;
-  background-color: $background-color;
+  background-color: $background-dark;
   z-index: 2;
   -webkit-transition-duration: 0.75s;
   transition-duration: 0.75s;
@@ -98,9 +98,9 @@
   top: 1.5vmin;
   left: 5vw;
   padding: 1.5vmin 2vmin;
-  color: $white;
+  color: $text-color-dark;
   font-size: 2.25vmin;
-  border: 0.5vmin solid $main-text-color;
+  border: 0.5vmin solid $title-color-dark;
   border-radius: 5vmin;
   text-decoration: none;
 }
@@ -118,7 +118,7 @@
   font-size: 10vmin;
   text-decoration: none;
   text-transform: uppercase;
-  color: $main-text-color;
+  color: $title-color-dark;
   -webkit-transform: translate(0px);
   -moz-transform: translate(0px);
   -ms-transform: translate(0px);
@@ -126,7 +126,7 @@
   transform: translate(0px);
 
   &:hover {
-    color: $white;
+    color: $text-color-dark;
   }
 
   @include laptop-above {

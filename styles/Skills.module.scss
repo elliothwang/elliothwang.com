@@ -8,10 +8,15 @@
   align-items: flex-start;
   height: 50vh;
   width: 100vw;
-  background-color: $background-color;
+  background-color: $background-dark;
 }
 
 .skills > * {
   margin-left: 20vw;
   margin-right: 20vw;
+}
+
+.title {
+  color: $title-color-dark;
+  font-size: 5vmin;
 }

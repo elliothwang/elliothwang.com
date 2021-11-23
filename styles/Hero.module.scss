@@ -8,7 +8,7 @@
   align-items: flex-start;
   height: 100vh;
   width: 100vw;
-  background-color: $background-color;
+  background-color: $background-dark;
 }
 
 .hero > h1,
@@ -20,7 +20,7 @@
 }
 
 .greeting {
-  color: $main-text-color;
+  color: $title-color-dark;
   font-size: 5vmin;
   font-weight: 400;
   margin: 0;
@@ -28,25 +28,25 @@
 }
 
 .title {
-  color: $white;
+  color: $text-color-dark;
   font-size: 12.5vmin;
   font-weight: 600;
   margin: 0;
 }
 
 .subTitle {
-  color: $secondary-text-color;
+  color: $accent-1-dark;
   font-size: 10vmin;
   font-weight: 400;
   margin: 0;
 }
 
 .summary {
-  color: $white;
+  color: $text-color-dark;
   font-size: 2.5vmin;
 }
 
 .summaryBold {
-  color: $main-text-color;
+  color: $title-color-dark;
   font-style: normal;
 }

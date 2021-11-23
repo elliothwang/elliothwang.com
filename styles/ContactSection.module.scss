@@ -8,7 +8,7 @@
   align-items: center;
   height: 20vh;
   width: 100vw;
-  background-color: $white;
+  background-color: $text-color-dark;
   border-radius: 3vmin;
   z-index: 2;
 
@@ -28,9 +28,9 @@
 }
 
 .msg {
-  color: $secondary-text-color;
+  color: $accent-1-dark;
 }
 
 .button {
-  color: $secondary-text-color;
+  color: $accent-1-dark;
 }

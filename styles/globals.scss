@@ -11,47 +11,21 @@
   font-family: 'Lora', serif;
 }
 
-$themes: (
-  light: (
-    backgroundColor: white,
-    textColor: #408bbd,
-    sectionTitleText: white,
-    buttonTextColor: #408bbd,
-    buttonTextTransform: none,
-    buttonTextHoverColor: #61b0e7,
-    buttonColor: #fff,
-    buttonBorder: 2px solid #408bbd,
-  ),
-  dark: (
-    backgroundColor: #011627,
-    mainTextColor: #c8b8db,
-    secondaryTextColor: #70587c,
-    buttonTextColor: #70587c,
-    buttonTextTransform: uppercase,
-    buttonTextHoverColor: #c8b8db,
-    buttonColor: #011627,
-    buttonBorder: 0.1vmin solid #011627,
-  ),
-);
-
 // Dark Theme:
-$black: #050404;
-$white: #f9f4f5;
-$background-color: #011627;
-$main-text-color: #c8b8db;
-$secondary-text-color: #70587c;
-$tertiary-text-color: #171738;
+$background-dark: #011627;
+$text-color-dark: #f9f4f5;
+$title-color-dark: #c8b8db;
+$accent-1-dark: #70587c;
+$button-background-dark: #171738;
 
 // Light Theme:
-$cream: #f1f7ed;
-$main-text-color-light: #a3a09c;
-$secondary-text-color-light: #54494b;
-$accent-1: #0d5c63;
-$accent-2: #0b5351;
-$accent-3: #0c585a;
+$background-light: #f1f7ed;
+$text-color-light: #050404;
+$title-color-light: #54494b;
+$accent-1-light: #a3a09c;
+// $button-background-dark: ;
 
-// TODO: add elements that need global styling (i.e. button, input field, etc.)
 .sectionTitle {
-  color: $main-text-color;
+  color: $accent-1-dark;
   font-size: 5vmin;
 }

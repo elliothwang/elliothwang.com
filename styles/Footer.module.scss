@@ -5,12 +5,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $background-color;
+  background-color: $background-dark;
   height: 25vh;
   bottom: 0;
-  border-top: 0.1vmin solid $white;
+  border-top: 0.1vmin solid $text-color-dark;
 }
 
 .copyright {
-  color: $secondary-text-color;
+  color: $accent-1-dark;
 }

@@ -5,7 +5,7 @@ import styles from '../../styles/Experience.module.scss';
 const Experience = () => {
   return (
     <div className={styles.exp}>
-      <h1 className={styles.sectionTitle}>What have I done?</h1>
+      <h1 className={styles.title}>What have I done?</h1>
       <ExperienceTimeline />
       <ExperienceCard />
 

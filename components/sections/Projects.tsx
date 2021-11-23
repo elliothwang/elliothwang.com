@@ -4,7 +4,7 @@ import styles from '../../styles/Projects.module.scss';
 const Projects = () => {
   return (
     <div className={styles.projects}>
-      <h1 className={styles.sectionTitle}>What have I made?</h1>
+      <h1 className={styles.title}>What have I made?</h1>
 
       {/* grid mapping with ProjectCards component */}
       <ProjectCard />
