@@ -5,6 +5,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
+      {/* TODO: create social media links modal */}
       {children}
       <Footer />
     </>
