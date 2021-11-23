@@ -1,22 +1,37 @@
 @import 'globals';
 @import 'mixins';
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
+}
+
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   height: 50vh;
-  width: 100vw;
-  background-color: $background-dark;
-}
-
-.about > * {
+  width: 40vw;
   margin-left: 20vw;
-  margin-right: 20vw;
 }
 
 .title {
   color: $title-color-dark;
   font-size: 5vmin;
+}
+
+.p {
+  font-size: 2vmin;
+  color: $text-color-dark;
+}
+
+.highlight {
+  color: $title-color-dark;
+}
+
+.skills {
+  margin-right: 20vw;
 }

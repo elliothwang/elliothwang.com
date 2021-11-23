@@ -5,18 +5,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 50vh;
-  width: 100vw;
-  background-color: $background-dark;
-}
-
-.skills > * {
-  margin-left: 20vw;
-  margin-right: 20vw;
+  width: 20vw;
 }
 
 .title {
   color: $title-color-dark;
-  font-size: 5vmin;
+  font-size: 2.25vmin;
+}
+
+.ul {
+  display: inline-block;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+.ul > * {
+  color: $text-color-dark;
+  margin: 0 1vmin;
 }

@@ -11,11 +11,14 @@ const Hero = () => {
         work. As a previous pre-medical student, my passion for <br /> helping
         others has shifted from working in medicine to contributing to code that
         will{' '}
-        <em className={styles.summaryBold}>
+        <span className={styles.highlight}>
           provide solutions and assistance for others
-        </em>
+        </span>
         . <br /> I’d like to look back at my code and know that I’ve made a{' '}
-        <em className={styles.summaryBold}>positive impact on other people</em>.
+        <span className={styles.highlight}>
+          positive impact on other people
+        </span>
+        .
       </p>
     </div>
   );
