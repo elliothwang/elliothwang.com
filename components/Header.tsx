@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Header.module.scss';
@@ -44,14 +43,7 @@ const Header = () => {
           <ul className={styles.list}>
             <li>
               <Link href="/">
-                {/* move icon to left */}
-                <a className={styles.logo}>
-                  {/* <Image
-                    src="/public/images/imagetest.png"
-                    layout="fill"
-                  ></Image> */}
-                  el
-                </a>
+                <a className={styles.logo}>el</a>
               </Link>
             </li>
             <li>

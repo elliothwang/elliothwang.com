@@ -50,7 +50,7 @@ let timelineElements = [
     id: 5,
     title: 'B.S. Kinesiology',
     location: 'California State University, Northridge',
-    date: 'Mar 2018 - Mar 2020',
+    date: 'Mar 2018 - May 2020',
     description: [
       'After transferring from community college, completed 2 years to earn a Bachelor of Science in Kinesiology.',
     ],

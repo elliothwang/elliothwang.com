@@ -6,13 +6,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  width: 20vw;
 }
 
 .title {
   color: $title-color-dark;
   font-size: 2.25vmin;
+
+  @include tablet-below {
+    margin-bottom: 0;
+  }
 }
 
 .ul {
@@ -25,5 +27,6 @@
 
 .ul > * {
   color: $text-color-dark;
+  font-size: 2vmin;
   margin: 0 1vmin;
 }

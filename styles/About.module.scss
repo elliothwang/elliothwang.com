@@ -3,9 +3,19 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  height: 75vh;
+  width: 100vw;
   background-color: $background-dark;
+  border-top: 0.2vmin solid $text-color-dark;
+  border-bottom: 0.2vmin solid $text-color-dark;
+
+  @include laptop-above {
+    flex-direction: row;
+  }
 }
 
 .about {
@@ -13,9 +23,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 50vh;
-  width: 40vw;
-  margin-left: 20vw;
+  height: 35vh;
+  width: 60vw;
+
+  @include laptop-above {
+    height: 50vh;
+    width: 40vw;
+    margin-right: 2.5vw;
+    margin-left: 20vw;
+  }
 }
 
 .title {
@@ -33,5 +49,18 @@
 }
 
 .skills {
-  margin-right: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  width: 60vw;
+  margin-top: 2vh;
+
+  @include laptop-above {
+    height: 25vh;
+    width: 20vw;
+    margin-top: 0;
+    margin-right: 20vw;
+    margin-left: 0vw;
+  }
 }

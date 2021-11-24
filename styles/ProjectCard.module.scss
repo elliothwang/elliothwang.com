@@ -1,0 +1,100 @@
+@import 'globals';
+@import 'mixins';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 45vw;
+  margin: 1vw;
+  border: 0.1vmin solid $text-color-dark;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.header {
+  height: 15vh;
+  width: 45vw;
+  background-color: white;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 15vh;
+  width: 45vw;
+  font-size: 3.5vmin;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.content {
+  height: 20vh;
+  width: 45vw;
+  background-color: $accent-1-dark;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 45vw;
+  margin: 0;
+  font-size: 2vmin;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 45vw;
+  margin: 0;
+  font-size: 1.3vmin;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 5vh;
+  width: 45vw;
+  @include tablet-above {
+    width: 35vw;
+  }
+}
+
+.github {
+  color: $text-color-dark;
+  margin-left: 0.25vw;
+  &:hover {
+    color: $button-background-dark;
+  }
+}
+
+.deployed {
+  color: $text-color-dark;
+  margin-right: 0.25vw;
+  &:hover {
+    color: $button-background-dark;
+  }
+}

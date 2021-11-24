@@ -13,6 +13,8 @@ const Skills = () => {
         <li>Gatsby</li>
         <li>GraphQL</li>
         <li>Sass</li>
+        <li>Material UI</li>
+        <li>TailwindCSS</li>
       </ul>
     </div>
   );

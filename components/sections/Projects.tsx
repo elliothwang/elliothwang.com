@@ -7,7 +7,12 @@ const Projects = () => {
       <h1 className={styles.title}>What have I made?</h1>
 
       {/* grid mapping with ProjectCards component */}
-      <ProjectCard />
+      <div className={styles.cards}>
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+        <ProjectCard />
+      </div>
     </div>
   );
 };

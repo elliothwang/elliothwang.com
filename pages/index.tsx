@@ -17,6 +17,7 @@ const HomePage = () => {
       <Layout>
         <main>
           <Hero />
+          {/* TODO: add styled corners around content sections */}
           <section id="about">
             <About />
           </section>
