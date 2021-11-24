@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -22,9 +18,10 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "postcss.config.js", "next.config.js", "components/sections"  ],
-  "exclude": [
-    "node_modules"
-  ]
+    "**/*.tsx",
+    "postcss.config.js",
+    "next.config.ts",
+    "components/sections"
+  ],
+  "exclude": ["node_modules"]
 }
