@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
-import Contact from '../components/sections/ContactBubble';
+import Contact from '../components/sections/Contact';
 
 const ContactPage = () => {
   return (

@@ -8,6 +8,9 @@
   align-items: center;
   width: 100vw;
   background-color: $background-dark;
+  border-top: 0.2vmin solid $text-color-dark;
+  border-bottom: 0.2vmin solid $text-color-dark;
+  overflow: hidden;
 }
 
 .title {
@@ -16,6 +19,12 @@
   margin-left: 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
 }
 
 .timeline {

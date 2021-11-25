@@ -7,15 +7,26 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 75vh;
+  height: 70vh;
   width: 100vw;
   background-color: $background-dark;
   border-top: 0.2vmin solid $text-color-dark;
   border-bottom: 0.2vmin solid $text-color-dark;
+  overflow: hidden;
 
   @include laptop-above {
+    height: 45vh;
     flex-direction: row;
   }
+}
+
+.container > * {
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
 }
 
 .about {
@@ -23,20 +34,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 35vh;
+  height: 45vh;
   width: 60vw;
 
   @include laptop-above {
-    height: 50vh;
+    // height: 50vh;
     width: 40vw;
-    margin-right: 2.5vw;
     margin-left: 20vw;
   }
 }
 
 .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 15vh;
+  width: 60vw;
+  margin: 0;
   color: $title-color-dark;
   font-size: 5vmin;
+
+  @include laptop-above {
+    width: 40vw;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
 }
 
 .p {
@@ -54,10 +82,15 @@
   align-items: center;
   height: 25vh;
   width: 60vw;
-  margin-top: 2vh;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
 
   @include laptop-above {
-    height: 25vh;
+    height: 35vh;
     width: 20vw;
     margin-top: 0;
     margin-right: 20vw;

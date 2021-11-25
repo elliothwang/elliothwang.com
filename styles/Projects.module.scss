@@ -6,26 +6,50 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: auto;
+  height: 175vh;
   width: 100vw;
   background-color: $background-dark;
+  overflow: hidden;
+
+  @include tablet-above {
+    height: 100vh;
+  }
 }
 
 .title {
-  margin-left: 10vw;
-  margin-right: 10vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 15vh;
+  width: 80vw;
+  margin: 0 10vw;
   color: $title-color-dark;
   font-size: 5vmin;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   flex-wrap: wrap;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  height: 160vh;
+  width: 80vw;
+  margin: 0 10vw;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
+
   @include tablet-above {
+    height: 80vh;
     margin-left: 10vw;
     margin-right: 10vw;
   }

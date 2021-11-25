@@ -6,23 +6,45 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 60vw;
+  margin: 0;
   color: $title-color-dark;
   font-size: 2.25vmin;
 
-  @include tablet-below {
-    margin-bottom: 0;
+  @include laptop-above {
+    height: 5vh;
+    width: 20vw;
+    margin-bottom: -2.5vmin;
   }
 }
 
 .ul {
   display: inline-block;
+  height: 20vh;
+  width: 40vw;
   columns: 2;
   -webkit-columns: 2;
   -moz-columns: 2;
   margin-left: 2vw;
+
+  @include laptop-above {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    width: 20vw;
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
 }
 
 .ul > * {

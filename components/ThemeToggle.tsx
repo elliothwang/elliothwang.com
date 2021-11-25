@@ -6,10 +6,6 @@ const ThemeToggle = ({ theme, setTheme }) => {
     setTheme(!theme);
   };
 
-  useEffect(() => {
-    console.log(theme);
-  }, [theme]);
-
   return (
     <div className={styles.button} onClick={changeTheme}>
       <div id="thumb" className={theme ? styles.dark : styles.light}></div>

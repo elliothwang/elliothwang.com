@@ -1,12 +1,30 @@
 import styles from '../../styles/Hero.module.scss';
 
-const Hero = () => {
+const Hero = ({ loaded }) => {
   return (
     <div className={styles.hero}>
-      <h5 className={styles.greeting}>Hi, there! I'm</h5>
-      <h1 className={styles.title}>Elliot Hwang.</h1>
-      <h3 className={styles.subTitle}>Web Developer.</h3>
-      <p className={styles.summary}>
+      <h5
+        className={styles.greeting}
+        style={loaded ? { transform: 'translate(0%)' } : null}
+      >
+        Hi, there! I'm
+      </h5>
+      <h1
+        className={styles.title}
+        style={loaded ? { transform: 'translate(0%)' } : null}
+      >
+        Elliot Hwang.
+      </h1>
+      <h3
+        className={styles.subTitle}
+        style={loaded ? { transform: 'translate(0%)' } : null}
+      >
+        Web Developer.
+      </h3>
+      <p
+        className={styles.summary}
+        style={loaded ? { transform: 'translate(0%)' } : null}
+      >
         I am a full stack developer with a desire to help others through my
         work. As a previous pre-medical student, my passion for <br /> helping
         others has shifted from working in medicine to contributing to code that

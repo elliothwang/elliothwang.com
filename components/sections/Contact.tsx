@@ -1,6 +1,6 @@
 import styles from '../../styles/ContactSection.module.scss';
 
-const ContactBubble = () => {
+const Contact = () => {
   return (
     <div className={styles.contact}>
       <h1 className={styles.msg}>Get in touch!</h1>
@@ -10,4 +10,4 @@ const ContactBubble = () => {
   );
 };
 
-export default ContactBubble;
+export default Contact;
