@@ -2,20 +2,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.scss';
 
-const ProjectCard = () => {
+const ProjectCard = ({ el }) => {
   return (
     <div className={styles.card}>
       <div className={styles.header}>
-        <h2 className={styles.title}>Title</h2>
-        {/* <Image src=""></Image> */}
+        <h2 className={styles.title}>{el.title}</h2>
+        {/* <Image
+          src={el.image}
+          alt={el.alt}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        /> */}
       </div>
       <div className={styles.content}>
-        <h3 className={styles.description}>Description</h3>
-        <h5 className={styles.tech}>Tech used</h5>
+        <h3 className={styles.description}>{el.description}</h3>
+        <h5 className={styles.tech}>{el.technologies}</h5>
         <div className={styles.links}>
           <div>
-            <Link href="">
+            <Link href={el.github}>
               <a>
+                {/* TODO: import github & link svgs as components */}
                 <svg
                   className={styles.github}
                   xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +37,7 @@ const ProjectCard = () => {
             </Link>
           </div>
           <div>
-            <Link href="">
+            <Link href={el.deployed}>
               <a>
                 <svg
                   className={styles.deployed}

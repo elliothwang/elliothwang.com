@@ -26,7 +26,7 @@ const Timeline = () => {
               date={el.date}
               dateClassName={styles.date}
               iconStyle={el.icon === 'work' ? workIconStyle : schoolIconStyle}
-              // TODO: import work & school svg icons to use in timeline element
+              // TODO: import work & school svg icons as components
               // icon={el.icon === 'work' ? <WorkIcon /> : <SchoolIcon />}
               position={i % 2 === 0 ? 'right' : 'left'}
             >

@@ -48,11 +48,12 @@
 
 .description {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   height: 10vh;
   width: 45vw;
   margin: 0;
+  color: $text-color-dark;
   font-size: 2vmin;
   @include tablet-above {
     width: 35vw;
@@ -66,7 +67,8 @@
   height: 5vh;
   width: 45vw;
   margin: 0;
-  font-size: 1.3vmin;
+  color: $text-color-dark;
+  font-size: 1.5vmin;
   @include tablet-above {
     width: 35vw;
   }
