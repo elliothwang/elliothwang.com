@@ -8,11 +8,16 @@
   align-items: flex-start;
   height: 175vh;
   width: 100vw;
+  padding-bottom: 7.5vh;
   background-color: $background-dark;
   overflow: hidden;
 
   @include tablet-above {
     height: 100vh;
+  }
+
+  @include laptop-above {
+    height: 215vh;
   }
 }
 
@@ -49,7 +54,12 @@
   transition: all 0.75s 0.25s ease;
 
   @include tablet-above {
-    height: 80vh;
+    height: 84vh;
+    width: 80vw;
+  }
+
+  @include laptop-above {
+    height: 220vh;
     margin-left: 10vw;
     margin-right: 10vw;
   }

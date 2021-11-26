@@ -8,11 +8,11 @@ import Experience from '../components/sections/Experience';
 import Contact from '../components/sections/Contact';
 
 const HomePage = () => {
+  const [loaded, setLoaded] = useState(false);
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutScrolled, setAboutScrolled] = useState(false);
   const [projectsScrolled, setProjectsScrolled] = useState(false);
   const [experienceScrolled, setExperienceScrolled] = useState(false);
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(function mount() {
     function onLoad() {
@@ -32,10 +32,10 @@ const HomePage = () => {
         ? setHeaderScrolled(true)
         : setHeaderScrolled(false);
       window.scrollY >= 250 ? setAboutScrolled(true) : setAboutScrolled(false);
-      window.scrollY >= 750
+      window.scrollY >= 800
         ? setProjectsScrolled(true)
         : setProjectsScrolled(false);
-      window.scrollY >= 1250
+      window.scrollY >= 1500
         ? setExperienceScrolled(true)
         : setExperienceScrolled(false);
     }
@@ -67,7 +67,6 @@ const HomePage = () => {
           <section id="experience">
             <Experience scrolled={experienceScrolled} />
           </section>
-          <Contact />
         </main>
       </Layout>
     </>

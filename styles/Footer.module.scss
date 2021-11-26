@@ -3,6 +3,7 @@
 
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: $background-dark;
@@ -11,6 +12,21 @@
   border-top: 0.1vmin solid $text-color-dark;
 }
 
+.contact {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 20vh;
+  width: 100vw;
+  padding-top: 1vh;
+}
+
 .copyright {
-  color: $accent-1-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100vw;
+  font-size: 2vmin;
+  color: $text-color-dark;
 }

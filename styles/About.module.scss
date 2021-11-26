@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 70vh;
+  height: 65vh;
   width: 100vw;
   background-color: $background-dark;
   border-top: 0.2vmin solid $text-color-dark;
@@ -15,7 +15,7 @@
   overflow: hidden;
 
   @include laptop-above {
-    height: 45vh;
+    height: 75vh;
     flex-direction: row;
   }
 }
@@ -34,12 +34,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 45vh;
+  height: 40vh;
   width: 60vw;
 
   @include laptop-above {
-    // height: 50vh;
-    width: 40vw;
+    height: 75vh;
+    width: 35vw;
     margin-left: 20vw;
   }
 }
@@ -50,12 +50,12 @@
   align-items: center;
   height: 15vh;
   width: 60vw;
-  margin: 0;
+  margin: 0 auto;
   color: $title-color-dark;
   font-size: 5vmin;
 
   @include laptop-above {
-    width: 40vw;
+    width: 35vw;
   }
 }
 
@@ -64,10 +64,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+
+  @include laptop-above {
+    height: 50vh;
+    margin-top: -5vh;
+  }
 }
 
 .p {
+  margin-right: 2.5vw;
+  margin-left: 2.5vw;
   font-size: 2vmin;
   color: $text-color-dark;
 }
@@ -90,10 +96,8 @@
   transition: all 0.75s 0.25s ease;
 
   @include laptop-above {
-    height: 35vh;
-    width: 20vw;
-    margin-top: 0;
+    height: 75vh;
+    width: 25vw;
     margin-right: 20vw;
-    margin-left: 0vw;
   }
 }

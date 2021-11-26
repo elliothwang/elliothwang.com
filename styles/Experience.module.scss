@@ -14,9 +14,12 @@
 }
 
 .title {
-  align-self: flex-start;
-  margin-right: 20vw;
-  margin-left: 20vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 15vh;
+  width: 60vw;
+  margin: 0 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
   transform: translateY(50%);
@@ -28,5 +31,11 @@
 }
 
 .timeline {
-  margin: 5vh 20vw;
+  margin: 0 20vw 7.5vh 20vw;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
 }

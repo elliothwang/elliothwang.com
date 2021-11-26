@@ -7,13 +7,15 @@ const ProjectCard = ({ el }) => {
     <div className={styles.card}>
       <div className={styles.header}>
         <h2 className={styles.title}>{el.title}</h2>
-        {/* <Image
+        <Image
+          className={styles.image}
           src={el.image}
           alt={el.alt}
-          layout="fill"
+          height="100"
+          width="100"
           objectFit="cover"
           objectPosition="center"
-        /> */}
+        />
       </div>
       <div className={styles.content}>
         <h3 className={styles.description}>{el.description}</h3>

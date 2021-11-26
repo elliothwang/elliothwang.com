@@ -13,11 +13,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: center;
   height: 5vh;
   width: 60vw;
-  margin: 0;
+  margin: 0 auto;
   color: $title-color-dark;
   font-size: 2.25vmin;
+
+  @include tablet-above {
+    margin-top: 5vh;
+  }
 
   @include laptop-above {
     height: 5vh;
@@ -39,8 +44,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30vh;
+    height: 35vh;
     width: 20vw;
+    margin-left: 2.5vw;
     columns: 1;
     -webkit-columns: 1;
     -moz-columns: 1;

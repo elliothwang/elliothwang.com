@@ -6,20 +6,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 35vh;
-  width: 45vw;
-  margin: 1vw;
+  height: 40vh;
+  width: 80vw;
+  // margin: 1vw;
   border: 0.1vmin solid $text-color-dark;
 
   @include tablet-above {
-    width: 35vw;
+    height: 40vh;
+    width: 39vw;
+    margin: 0 auto;
+  }
+
+  @include laptop-above {
+    height: 50vh;
+    width: 80vw;
+    margin: 0 auto;
   }
 }
 
 .header {
   height: 15vh;
   width: 45vw;
-  background-color: white;
 
   @include tablet-above {
     width: 35vw;
@@ -38,6 +45,12 @@
   @include tablet-above {
     width: 35vw;
   }
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {

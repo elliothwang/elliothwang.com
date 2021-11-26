@@ -52,7 +52,7 @@ $extra-large-width: 1200px;
 }
 
 @mixin dektop-only {
-  @media (min-width: #{$large-width}) and (max-width: #{$extra-large--width - 1px}) {
+  @media (min-width: #{$large-width}) and (max-width: #{$extra-large-width - 1px}) {
     @content;
   }
 }
