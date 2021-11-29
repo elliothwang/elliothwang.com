@@ -17,12 +17,12 @@ const Header = ({ loaded, scrolled }) => {
 
   return (
     <>
-      <div className={styles.sidebarBttn} onClick={showSidebar}>
+      {/* <div className={styles.sidebarBttn} onClick={showSidebar}>
         <div className={sidebar ? styles.topBarActive : styles.topBar}></div>
         <div className={sidebar ? styles.midBarActive : styles.midBar}></div>
         <div className={sidebar ? styles.botBarActive : styles.botBar}></div>
-      </div>
-      <header
+      </div> */}
+      <div
         className={styles.header}
         style={scrolled ? { transform: 'translateY(-100%)' } : null}
       >
@@ -90,7 +90,7 @@ const Header = ({ loaded, scrolled }) => {
             </li>
           </ul>
         </nav>
-      </header>
+      </div>
     </>
   );
 };

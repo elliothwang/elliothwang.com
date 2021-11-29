@@ -1,6 +1,6 @@
 import '../styles/globals.scss';
 import { useState, useEffect } from 'react';
-import LoadingScreen from '../components/LoadingScreen';
+import Loader from '../components/Loader';
 
 const MyApp = ({ Component, pageProps }) => {
   const [loading, setLoading] = useState(false);
@@ -13,7 +13,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     // <>
     //   {loading ? (
-    //     <LoadingScreen />
+    //     <Loader />
     //   ) : (
     //     <div className="body">
     //       <Component {...pageProps} />;

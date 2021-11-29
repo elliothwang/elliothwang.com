@@ -5,7 +5,7 @@ const Layout = ({ loaded, scrolled, children }) => {
   return (
     <>
       <Header loaded={loaded} scrolled={scrolled} />
-      {/* TODO: create social media links modal. add social media links to footer for now */}
+      {/* TODO: create social media links modal */}
       {children}
       <Footer />
     </>

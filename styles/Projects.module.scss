@@ -6,8 +6,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
   height: 175vh;
   width: 100vw;
+  max-width: 100%;
   padding-bottom: 7.5vh;
   background-color: $background-dark;
   overflow: hidden;
@@ -30,12 +32,12 @@
   margin: 0 10vw;
   color: $title-color-dark;
   font-size: 5vmin;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+  // transform: translateY(50%);
+  // -webkit-transition: all 0.75s ease;
+  // -moz-transition: all 0.75s ease;
+  // -ms-transition: all 0.75s ease;
+  // -o-transition: all 0.75s ease;
+  // transition: all 0.75s ease;
 }
 
 .cards {
@@ -46,12 +48,12 @@
   height: 160vh;
   width: 80vw;
   margin: 0 10vw;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  // transform: translateY(50%);
+  // -webkit-transition: all 0.75s 0.25s ease;
+  // -moz-transition: all 0.75s 0.25s ease;
+  // -ms-transition: all 0.75s 0.25s ease;
+  // -o-transition: all 0.75s 0.25s ease;
+  // transition: all 0.75s 0.25s ease;
 
   @include tablet-above {
     height: 84vh;

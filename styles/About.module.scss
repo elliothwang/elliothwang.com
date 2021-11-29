@@ -1,6 +1,11 @@
 @import 'globals';
 @import 'mixins';
 
+// TODO: remove this class & the div with className of border when changing borders
+.border {
+  @include corner-borders;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -9,10 +14,10 @@
   position: relative;
   height: 65vh;
   width: 100vw;
+  max-width: 100%;
   background-color: $background-dark;
-  border-top: 0.2vmin solid $text-color-dark;
-  border-bottom: 0.2vmin solid $text-color-dark;
   overflow: hidden;
+  z-index: 1;
 
   @include laptop-above {
     height: 75vh;
@@ -20,14 +25,14 @@
   }
 }
 
-.container > * {
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
-}
+// .container > * {
+//   transform: translateY(50%);
+//   -webkit-transition: all 0.75s ease;
+//   -moz-transition: all 0.75s ease;
+//   -ms-transition: all 0.75s ease;
+//   -o-transition: all 0.75s ease;
+//   transition: all 0.75s ease;
+// }
 
 .about {
   display: flex;
@@ -88,12 +93,12 @@
   align-items: center;
   height: 25vh;
   width: 60vw;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  // transform: translateY(50%);
+  // -webkit-transition: all 0.75s 0.25s ease;
+  // -moz-transition: all 0.75s 0.25s ease;
+  // -ms-transition: all 0.75s 0.25s ease;
+  // -o-transition: all 0.75s 0.25s ease;
+  // transition: all 0.75s 0.25s ease;
 
   @include laptop-above {
     height: 75vh;

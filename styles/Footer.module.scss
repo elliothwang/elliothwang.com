@@ -6,10 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $background-dark;
   height: 25vh;
+  width: 100vw;
+  max-width: 100%;
   bottom: 0;
-  border-top: 0.1vmin solid $text-color-dark;
+  background-color: $background-dark;
 }
 
 .contact {

@@ -1,15 +1,22 @@
 @import 'globals';
 @import 'mixins';
 
+// TODO: remove this class & the div with className of border when changing borders
+.border {
+  @include corner-borders;
+}
+
 .exp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100vw;
+  // TODO: change this back to 100% when moving borders
+  max-width: 100%;
   background-color: $background-dark;
-  border-top: 0.2vmin solid $text-color-dark;
-  border-bottom: 0.2vmin solid $text-color-dark;
+  z-index: 1;
   overflow: hidden;
 }
 
@@ -22,20 +29,23 @@
   margin: 0 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  z-index: 1;
+  // transform: translateY(50%);
+  // -webkit-transition: all 0.75s 0.25s ease;
+  // -moz-transition: all 0.75s 0.25s ease;
+  // -ms-transition: all 0.75s 0.25s ease;
+  // -o-transition: all 0.75s 0.25s ease;
+  // transition: all 0.75s 0.25s ease;
 }
 
 .timeline {
   margin: 0 20vw 7.5vh 20vw;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  z-index: 1;
+
+  // transform: translateY(50%);
+  // -webkit-transition: all 0.75s 0.25s ease;
+  // -moz-transition: all 0.75s 0.25s ease;
+  // -ms-transition: all 0.75s 0.25s ease;
+  // -o-transition: all 0.75s 0.25s ease;
+  // transition: all 0.75s 0.25s ease;
 }
