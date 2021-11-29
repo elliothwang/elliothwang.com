@@ -20,7 +20,9 @@ const MyApp = ({ Component, pageProps }) => {
     //     </div>
     //   )}
     // </>
-    <div className="body">{loading ? null : <Component {...pageProps} />}</div>
+    <div className="body">
+      <Component {...pageProps} />;
+    </div>
   );
 };
 
