@@ -69,14 +69,15 @@ const Header = ({ loaded, scrolled }) => {
               </Link>
             </li>
             <li>
-              <Link href="/contact">
-                <a
-                  className={sidebar ? styles.activeLink : styles.link4}
-                  style={loaded ? { transform: 'translateY(0%)' } : null}
-                >
-                  Contact
-                </a>
-              </Link>
+              <a
+                className={sidebar ? styles.activeLink : styles.link4}
+                style={loaded ? { transform: 'translateY(0%)' } : null}
+                href="mailto:officialelliothwang@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact
+              </a>
             </li>
             <li>
               <div

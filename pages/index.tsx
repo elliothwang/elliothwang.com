@@ -5,7 +5,6 @@ import Hero from '../components/sections/Hero';
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Experience from '../components/sections/Experience';
-import Contact from '../components/sections/Contact';
 
 const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
@@ -16,7 +15,7 @@ const HomePage = () => {
 
   useEffect(function mount() {
     function onLoad() {
-      setLoaded(true);
+      setTimeout(() => setLoaded(true), 3000);
     }
 
     window.addEventListener('load', onLoad);

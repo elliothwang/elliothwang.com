@@ -1,0 +1,27 @@
+@import 'globals';
+@import 'mixins';
+
+.screen {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  animation: fade 0.4s ease-in forwards;
+  background: $background-dark;
+
+  @keyframes fade {
+    0% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
