@@ -3,6 +3,10 @@ $small-width: 480px;
 $medium-width: 768px;
 $large-width: 1024px;
 $extra-large-width: 1200px;
+$corner-width: 0.2vw;
+$corner-size: 10vmin;
+$color-border: $accent-1-dark;
+$color-background: $background-dark;
 
 @mixin mobile-below {
   @media (max-width: #{$small-width - 1px}) {
@@ -70,15 +74,46 @@ $extra-large-width: 1200px;
   }
 }
 
-@mixin corner-borders(
-  $corner-width: 0.2vw,
-  $corner-size: 10vmin,
-  $color-border: $accent-1-dark,
-  $color-background: $background-dark
-) {
-  position: relative;
+@mixin corner-borders-60() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   border: $corner-width solid $color-border;
   background-color: $color-background;
+  width: 60vw;
+
+  &::before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: -$corner-width;
+    bottom: -$corner-width;
+    left: $corner-size;
+    right: $corner-size;
+    background-color: $color-background;
+  }
+
+  &::after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: $corner-size;
+    bottom: $corner-size;
+    left: -$corner-width;
+    right: -$corner-width;
+    background-color: $color-background;
+  }
+}
+
+@mixin corner-borders-100() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: $corner-width solid $color-border;
+  background-color: $color-background;
+  width: 80vw;
 
   &::before {
     content: '';

@@ -6,20 +6,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.5vh;
   height: 40vh;
-  width: 80vw;
-  // margin: 1vw;
+  width: 60vw;
   border: 0.1vmin solid $text-color-dark;
 
   @include tablet-above {
-    height: 40vh;
-    width: 39vw;
+    height: 30vh;
+    width: 30vw;
     margin: 0 auto;
   }
 
   @include laptop-above {
-    height: 50vh;
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
   }
 }
@@ -57,6 +56,7 @@
   height: 20vh;
   width: 45vw;
   background-color: $accent-1-dark;
+  display: none;
 
   @include tablet-above {
     width: 35vw;

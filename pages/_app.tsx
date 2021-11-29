@@ -11,6 +11,7 @@ const MyApp = ({ Component, pageProps }) => {
   }, []);
 
   return (
+    // TODO: figure out why first component doesn't load after preloader
     // <>
     //   {loading ? (
     //     <Loader />

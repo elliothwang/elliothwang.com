@@ -15,6 +15,7 @@ const Header = ({ loaded, scrolled }) => {
     setSidebar(!sidebar);
   };
 
+  // TODO: fix header
   return (
     <>
       {/* <div className={styles.sidebarBttn} onClick={showSidebar}>

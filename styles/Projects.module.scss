@@ -1,43 +1,60 @@
 @import 'globals';
 @import 'mixins';
 
+.border {
+  @include corner-borders-100;
+  height: 191vh;
+  margin-left: 9.75vw;
+
+  @include tablet-above {
+    height: 89vh;
+  }
+
+  @include laptop-above {
+    height: 159vh;
+  }
+}
+
 .projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  height: 175vh;
+  height: 192vh;
   width: 100vw;
   max-width: 100%;
-  padding-bottom: 7.5vh;
   background-color: $background-dark;
   overflow: hidden;
 
   @include tablet-above {
-    height: 100vh;
+    height: 90vh;
   }
 
   @include laptop-above {
-    height: 215vh;
+    height: 160vh;
   }
 }
 
 .title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 15vh;
-  width: 80vw;
-  margin: 0 10vw;
+  width: 60vw;
+  margin: 0 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
-  // transform: translateY(50%);
-  // -webkit-transition: all 0.75s ease;
-  // -moz-transition: all 0.75s ease;
-  // -ms-transition: all 0.75s ease;
-  // -o-transition: all 0.75s ease;
-  // transition: all 0.75s ease;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+
+  @include tablet-above {
+    justify-content: flex-start;
+  }
 }
 
 .cards {
@@ -48,21 +65,21 @@
   height: 160vh;
   width: 80vw;
   margin: 0 10vw;
-  // transform: translateY(50%);
-  // -webkit-transition: all 0.75s 0.25s ease;
-  // -moz-transition: all 0.75s 0.25s ease;
-  // -ms-transition: all 0.75s 0.25s ease;
-  // -o-transition: all 0.75s 0.25s ease;
-  // transition: all 0.75s 0.25s ease;
+  transform: translateY(25%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
 
   @include tablet-above {
-    height: 84vh;
-    width: 80vw;
+    height: 60vh;
+    width: 61vw;
+    margin: 0 20vw 5vh 20vw;
   }
 
   @include laptop-above {
-    height: 220vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    height: 130vh;
+    width: 60vw;
   }
 }

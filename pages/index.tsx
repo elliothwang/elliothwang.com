@@ -27,11 +27,12 @@ const HomePage = () => {
 
   useEffect(function mount() {
     function onScroll() {
+      // TODO: set scroll based on window size!
       window.scrollY >= 200
         ? setHeaderScrolled(true)
         : setHeaderScrolled(false);
-      window.scrollY >= 250 ? setAboutScrolled(true) : setAboutScrolled(false);
-      window.scrollY >= 800
+      window.scrollY >= 175 ? setAboutScrolled(true) : setAboutScrolled(false);
+      window.scrollY >= 825
         ? setProjectsScrolled(true)
         : setProjectsScrolled(false);
       window.scrollY >= 1500
@@ -56,7 +57,6 @@ const HomePage = () => {
       <Layout loaded={loaded} scrolled={headerScrolled}>
         <main>
           <Hero loaded={loaded} />
-          {/* TODO: add styled corners around content sections */}
           <section id="about">
             <About scrolled={aboutScrolled} />
           </section>

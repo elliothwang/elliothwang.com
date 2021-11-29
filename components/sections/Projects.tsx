@@ -5,6 +5,7 @@ import projectElements from '../../public/projectElements';
 const Projects = ({ scrolled }) => {
   return (
     <div className={styles.projects}>
+      <div className={styles.border}></div>
       <h1
         className={styles.title}
         style={scrolled ? { transform: 'translateY(0%)' } : null}

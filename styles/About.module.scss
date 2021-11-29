@@ -1,9 +1,16 @@
 @import 'globals';
 @import 'mixins';
 
-// TODO: remove this class & the div with className of border when changing borders
 .border {
-  @include corner-borders;
+  @include corner-borders-60;
+  height: 64vh;
+  margin-bottom: 65vh;
+  margin-left: 0.75vw;
+
+  @include tablet-above {
+    height: 74vh;
+    margin-bottom: 75vh;
+  }
 }
 
 .container {
@@ -19,20 +26,23 @@
   overflow: hidden;
   z-index: 1;
 
-  @include laptop-above {
+  @include tablet-above {
     height: 75vh;
+  }
+
+  @include laptop-above {
     flex-direction: row;
   }
 }
 
-// .container > * {
-//   transform: translateY(50%);
-//   -webkit-transition: all 0.75s ease;
-//   -moz-transition: all 0.75s ease;
-//   -ms-transition: all 0.75s ease;
-//   -o-transition: all 0.75s ease;
-//   transition: all 0.75s ease;
-// }
+.container > * {
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
 
 .about {
   display: flex;
@@ -51,7 +61,7 @@
 
 .title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 15vh;
   width: 60vw;
@@ -59,8 +69,14 @@
   color: $title-color-dark;
   font-size: 5vmin;
 
+  @include mobile-below {
+    margin-top: 2vh;
+  }
+
   @include laptop-above {
+    justify-content: flex-start;
     width: 35vw;
+    margin-left: 7.5vw;
   }
 }
 
@@ -73,6 +89,7 @@
   @include laptop-above {
     height: 50vh;
     margin-top: -5vh;
+    margin-left: 5vw;
   }
 }
 
@@ -93,12 +110,12 @@
   align-items: center;
   height: 25vh;
   width: 60vw;
-  // transform: translateY(50%);
-  // -webkit-transition: all 0.75s 0.25s ease;
-  // -moz-transition: all 0.75s 0.25s ease;
-  // -ms-transition: all 0.75s 0.25s ease;
-  // -o-transition: all 0.75s 0.25s ease;
-  // transition: all 0.75s 0.25s ease;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
 
   @include laptop-above {
     height: 75vh;

@@ -1,9 +1,17 @@
 @import 'globals';
 @import 'mixins';
 
-// TODO: remove this class & the div with className of border when changing borders
 .border {
-  @include corner-borders;
+  @include corner-borders-60;
+  height: 254vh;
+
+  @include tablet-above {
+    height: 250vh;
+  }
+
+  @include laptop-above {
+    height: 217vh;
+  }
 }
 
 .exp {
@@ -12,17 +20,25 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  height: 255vh;
   width: 100vw;
-  // TODO: change this back to 100% when moving borders
   max-width: 100%;
   background-color: $background-dark;
   z-index: 1;
   overflow: hidden;
+
+  @include laptop-above {
+    height: 251vh;
+  }
+
+  @include laptop-above {
+    height: 218vh;
+  }
 }
 
 .title {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 15vh;
   width: 60vw;
@@ -30,22 +46,26 @@
   color: $title-color-dark;
   font-size: 5vmin;
   z-index: 1;
-  // transform: translateY(50%);
-  // -webkit-transition: all 0.75s 0.25s ease;
-  // -moz-transition: all 0.75s 0.25s ease;
-  // -ms-transition: all 0.75s 0.25s ease;
-  // -o-transition: all 0.75s 0.25s ease;
-  // transition: all 0.75s 0.25s ease;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
+
+  @include tablet-above {
+    justify-content: flex-start;
+    margin-left: 32.5vw;
+  }
 }
 
 .timeline {
   margin: 0 20vw 7.5vh 20vw;
   z-index: 1;
-
-  // transform: translateY(50%);
-  // -webkit-transition: all 0.75s 0.25s ease;
-  // -moz-transition: all 0.75s 0.25s ease;
-  // -ms-transition: all 0.75s 0.25s ease;
-  // -o-transition: all 0.75s 0.25s ease;
-  // transition: all 0.75s 0.25s ease;
+  transform: translateY(50%);
+  -webkit-transition: all 0.75s 0.25s ease;
+  -moz-transition: all 0.75s 0.25s ease;
+  -ms-transition: all 0.75s 0.25s ease;
+  -o-transition: all 0.75s 0.25s ease;
+  transition: all 0.75s 0.25s ease;
 }

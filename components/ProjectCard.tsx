@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.scss';
 
 const ProjectCard = ({ el }) => {
+  // TODO: fix project card!
   return (
     <div className={styles.card}>
       <div className={styles.header}>
