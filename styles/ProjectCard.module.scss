@@ -6,43 +6,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   margin-bottom: 2.5vh;
   height: 40vh;
   width: 60vw;
   border: 0.1vmin solid $text-color-dark;
 
-  @include tablet-above {
-    height: 30vh;
+  @include above-480-px {
+    height: 60vh;
     width: 30vw;
-    margin: 0 auto;
+    margin: 2vh auto;
   }
 
-  @include laptop-above {
+  @include above-768-px {
+    height: 30vh;
     width: 60vw;
-    margin: 0 auto;
-  }
-}
-
-.header {
-  height: 15vh;
-  width: 45vw;
-
-  @include tablet-above {
-    width: 35vw;
-  }
-}
-
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: 15vh;
-  width: 45vw;
-  font-size: 3.5vmin;
-
-  @include tablet-above {
-    width: 35vw;
   }
 }
 
@@ -50,16 +28,70 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 30vh;
+  width: 30vw;
+  position: absolute;
+  top: 0;
+  opacity: 0.8;
+  background-color: $background-dark;
+
+  &:hover {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  @include above-768-px {
+    height: 30vh;
+    width: 30vw;
+    left: 0;
+    background-color: none;
+  }
+}
+
+.image > * {
+  filter: brightness(100%);
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 20vh;
   width: 45vw;
-  background-color: $accent-1-dark;
-  display: none;
 
-  @include tablet-above {
-    width: 35vw;
+  @include above-480-px {
+    height: 30vh;
+    width: 30vw;
+    position: absolute;
+    bottom: 0;
+  }
+
+  @include above-768-px {
+    top: 0;
+    right: 0;
+    opacity: 1;
+    background-color: $text-color-dark;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 45vw;
+  margin: 0;
+  font-size: 3.5vmin;
+  color: $title-color-dark;
+
+  @include above-480-px {
+    height: 7.5vh;
+    width: 30vw;
+  }
+
+  @include above-768-px {
+    color: $accent-1-dark;
   }
 }
 
@@ -67,14 +99,18 @@
   display: flex;
   align-items: center;
   text-align: center;
-  height: 10vh;
+  height: 12.5vh;
   width: 45vw;
   margin: 0;
-  color: $text-color-dark;
   font-size: 2vmin;
+  color: $text-color-dark;
 
-  @include tablet-above {
-    width: 35vw;
+  @include above-480-px {
+    width: 25vw;
+  }
+
+  @include above-768-px {
+    color: $background-dark;
   }
 }
 
@@ -82,14 +118,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  text-align: center;
+  height: 7vh;
   width: 45vw;
   margin: 0;
   color: $text-color-dark;
   font-size: 1.5vmin;
 
-  @include tablet-above {
-    width: 35vw;
+  @include above-480-px {
+    width: 25vw;
+  }
+
+  @include above-768-px {
+    color: $background-dark;
   }
 }
 
@@ -97,28 +138,36 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  height: 5vh;
+  height: 3vh;
   width: 45vw;
 
-  @include tablet-above {
-    width: 35vw;
+  @include above-480-px {
+    width: 29vw;
   }
 }
 
 .github {
-  color: $text-color-dark;
+  color: $title-color-dark;
   margin-left: 0.25vw;
 
   &:hover {
     color: $button-background-dark;
   }
+
+  @include above-768-px {
+    color: $accent-1-dark;
+  }
 }
 
 .deployed {
-  color: $text-color-dark;
+  color: $title-color-dark;
   margin-right: 0.25vw;
 
   &:hover {
     color: $button-background-dark;
+  }
+
+  @include above-768-px {
+    color: $background-dark;
   }
 }

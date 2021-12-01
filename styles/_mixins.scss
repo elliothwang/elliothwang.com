@@ -8,67 +8,67 @@ $corner-size: 10vmin;
 $color-border: $accent-1-dark;
 $color-background: $background-dark;
 
-@mixin mobile-below {
+@mixin below-480-px {
   @media (max-width: #{$small-width - 1px}) {
     @content;
   }
 }
 
-@mixin tablet-below {
+@mixin below-768-px {
   @media (max-width: #{$medium-width - 1px}) {
     @content;
   }
 }
 
-@mixin tablet-only {
+@mixin between-480-768-px {
   @media (min-width: #{$small-width}) and (max-width: #{$medium-width - 1px}) {
     @content;
   }
 }
 
-@mixin tablet-above {
+@mixin above-480-px {
   @media (min-width: #{$small-width}) {
     @content;
   }
 }
 
-@mixin laptop-below {
+@mixin below-1024-px {
   @media (max-width: #{$large-width - 1px}) {
     @content;
   }
 }
 
-@mixin laptop-only {
+@mixin between-768-1024-px {
   @media (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px}) {
     @content;
   }
 }
 
-@mixin laptop-above {
+@mixin above-768-px {
   @media (min-width: #{$medium-width}) {
     @content;
   }
 }
 
-@mixin desktop-below {
+@mixin below-1024-px {
   @media (max-width: #{$large-width - 1px}) {
     @content;
   }
 }
 
-@mixin dektop-only {
+@mixin between-1024-1200-px {
   @media (min-width: #{$large-width}) and (max-width: #{$extra-large-width - 1px}) {
     @content;
   }
 }
 
-@mixin desktop-above {
+@mixin above-1024-px {
   @media (min-width: #{$large-width}) {
     @content;
   }
 }
 
-@mixin large-desktop-above {
+@mixin above-1200-px {
   @media (min-width: #{$extra-large-width}) {
     @content;
   }
@@ -106,7 +106,7 @@ $color-background: $background-dark;
   }
 }
 
-@mixin corner-borders-100() {
+@mixin corner-borders-80() {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +114,38 @@ $color-background: $background-dark;
   border: $corner-width solid $color-border;
   background-color: $color-background;
   width: 80vw;
+
+  &::before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: -$corner-width;
+    bottom: -$corner-width;
+    left: $corner-size;
+    right: $corner-size;
+    background-color: $color-background;
+  }
+
+  &::after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: $corner-size;
+    bottom: $corner-size;
+    left: -$corner-width;
+    right: -$corner-width;
+    background-color: $color-background;
+  }
+}
+
+@mixin corner-borders-100() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: $corner-width solid $color-border;
+  background-color: $color-background;
+  width: 100vw;
 
   &::before {
     content: '';

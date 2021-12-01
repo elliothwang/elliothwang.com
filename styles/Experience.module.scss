@@ -1,16 +1,23 @@
 @import 'globals';
 @import 'mixins';
 
-.border {
-  @include corner-borders-60;
-  height: 254vh;
+.page {
+  height: 225vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
 
-  @include tablet-above {
-    height: 250vh;
+  @include above-480-px {
+    height: 210vh;
   }
 
-  @include laptop-above {
-    height: 217vh;
+  @include above-768-px {
+    height: 225vh;
+  }
+
+  @include above-1024-px {
+    height: 250vh;
   }
 }
 
@@ -20,19 +27,40 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 255vh;
+  height: 200vh;
   width: 100vw;
   max-width: 100%;
   background-color: $background-dark;
   z-index: 1;
   overflow: hidden;
 
-  @include laptop-above {
-    height: 251vh;
+  @include above-480-px {
+    height: 185vh;
   }
 
-  @include laptop-above {
-    height: 218vh;
+  @include above-768-px {
+    height: 200vh;
+  }
+
+  @include above-1024-px {
+    height: 225vh;
+  }
+}
+
+.border {
+  @include corner-borders-60;
+  height: 199vh;
+
+  @include above-480-px {
+    height: 184vh;
+  }
+
+  @include above-768-px {
+    height: 199vh;
+  }
+
+  @include above-1024-px {
+    height: 224vh;
   }
 }
 
@@ -42,30 +70,40 @@
   align-items: center;
   height: 15vh;
   width: 60vw;
-  margin: 0 20vw;
+  margin: 5vh 20vw 5vh 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
   z-index: 1;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  transform: translateY(0%);
 
-  @include tablet-above {
+  @include above-480-px {
+    margin: 2.5vh 20vw 0 20vw;
+  }
+
+  @include above-1024-px {
+    margin: 0 20vw;
     justify-content: flex-start;
     margin-left: 32.5vw;
+    transform: translateY(50%);
+    -webkit-transition: all 0.75s 0.25s ease;
+    -moz-transition: all 0.75s 0.25s ease;
+    -ms-transition: all 0.75s 0.25s ease;
+    -o-transition: all 0.75s 0.25s ease;
+    transition: all 0.75s 0.25s ease;
   }
 }
 
 .timeline {
   margin: 0 20vw 7.5vh 20vw;
   z-index: 1;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  transform: translateY(0%);
+
+  @include above-1024-px {
+    transform: translateY(50%);
+    -webkit-transition: all 0.75s 0.25s ease;
+    -moz-transition: all 0.75s 0.25s ease;
+    -ms-transition: all 0.75s 0.25s ease;
+    -o-transition: all 0.75s 0.25s ease;
+    transition: all 0.75s 0.25s ease;
+  }
 }

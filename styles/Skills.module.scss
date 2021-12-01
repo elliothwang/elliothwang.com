@@ -1,21 +1,14 @@
 @import 'globals';
 @import 'mixins';
 
-// TODO: fix tablet/laptop content spacing (content shouldn't be in line with corner borders)
-
 .skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @include laptop-above {
-    margin-left: 10vw;
-  }
 }
 
-// TODO: fix skills (margins & overflow) for mobile/tablet view
-// TODO: make title one line on mobile/tablet view
+// TODO: make title one line on below 1024px
 
 .title {
   display: flex;
@@ -28,13 +21,8 @@
   color: $title-color-dark;
   font-size: 2.25vmin;
 
-  @include laptop-above {
+  @include above-1024-px {
     justify-content: flex-start;
-    margin-top: 5vh;
-    margin-bottom: 0;
-  }
-
-  @include laptop-above {
     height: 5vh;
     width: 20vw;
     margin-bottom: -2.5vmin;
@@ -50,7 +38,7 @@
   -moz-columns: 2;
   margin-left: 2vw;
 
-  @include laptop-above {
+  @include above-1024-px {
     display: flex;
     flex-direction: column;
     justify-content: center;

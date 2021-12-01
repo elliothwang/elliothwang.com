@@ -1,16 +1,12 @@
 @import 'globals';
 @import 'mixins';
 
-.border {
-  @include corner-borders-60;
-  height: 64vh;
-  margin-bottom: 65vh;
-  margin-left: 0.75vw;
-
-  @include tablet-above {
-    height: 74vh;
-    margin-bottom: 75vh;
-  }
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
 }
 
 .container {
@@ -19,29 +15,36 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 65vh;
+  height: 75vh;
   width: 100vw;
   max-width: 100%;
   background-color: $background-dark;
   overflow: hidden;
   z-index: 1;
 
-  @include tablet-above {
-    height: 75vh;
-  }
-
-  @include laptop-above {
+  @include above-1024-px {
     flex-direction: row;
   }
 }
 
-.container > * {
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+.border {
+  @include corner-borders-60;
+  height: 74vh;
+  margin-left: 0.75vw;
+}
+
+.about,
+.title {
+  transform: translateY(0%);
+
+  @include above-1024-px {
+    transform: translateY(50%);
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+  }
 }
 
 .about {
@@ -52,7 +55,7 @@
   height: 40vh;
   width: 60vw;
 
-  @include laptop-above {
+  @include above-1024-px {
     height: 75vh;
     width: 35vw;
     margin-left: 20vw;
@@ -69,11 +72,11 @@
   color: $title-color-dark;
   font-size: 5vmin;
 
-  @include mobile-below {
+  @include below-480-px {
     margin-top: 2vh;
   }
 
-  @include laptop-above {
+  @include above-1024-px {
     justify-content: flex-start;
     width: 35vw;
     margin-left: 7.5vw;
@@ -85,19 +88,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 8vw;
 
-  @include laptop-above {
+  @include above-1024-px {
     height: 50vh;
-    margin-top: -5vh;
-    margin-left: 5vw;
+    margin: -5vh 0 0 5vw;
   }
 }
 
 .p {
-  margin-right: 2.5vw;
-  margin-left: 2.5vw;
+  margin: 0.5vh 2.5vw;
   font-size: 2vmin;
   color: $text-color-dark;
+
+  @include above-1024-px {
+    margin: 2.5vh 2.5vw;
+  }
 }
 
 .highlight {
@@ -110,16 +116,17 @@
   align-items: center;
   height: 25vh;
   width: 60vw;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  transform: translateY(0%);
 
-  @include laptop-above {
+  @include above-1024-px {
     height: 75vh;
     width: 25vw;
     margin-right: 20vw;
+    transform: translateY(50%);
+    -webkit-transition: all 0.75s 0.25s ease;
+    -moz-transition: all 0.75s 0.25s ease;
+    -ms-transition: all 0.75s 0.25s ease;
+    -o-transition: all 0.75s 0.25s ease;
+    transition: all 0.75s 0.25s ease;
   }
 }

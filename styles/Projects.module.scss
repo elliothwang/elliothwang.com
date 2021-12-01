@@ -1,17 +1,19 @@
 @import 'globals';
 @import 'mixins';
 
-.border {
-  @include corner-borders-100;
-  height: 191vh;
-  margin-left: 9.75vw;
+.page {
+  height: 217vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-dark;
 
-  @include tablet-above {
-    height: 89vh;
+  @include above-480-px {
+    height: 205vh;
   }
 
-  @include laptop-above {
-    height: 159vh;
+  @include above-768-px {
+    height: 192vh;
   }
 }
 
@@ -27,12 +29,26 @@
   background-color: $background-dark;
   overflow: hidden;
 
-  @include tablet-above {
-    height: 90vh;
+  @include above-480-px {
+    height: 180vh;
   }
 
-  @include laptop-above {
-    height: 160vh;
+  @include above-768-px {
+    height: 167vh;
+  }
+}
+
+.border {
+  @include corner-borders-80;
+  height: 191vh;
+  margin-left: 9.75vw;
+
+  @include above-480-px {
+    height: 179vh;
+  }
+
+  @include above-768-px {
+    height: 166vh;
   }
 }
 
@@ -45,15 +61,23 @@
   margin: 0 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
-  transform: translateY(50%);
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+  transform: translateY(0%);
 
-  @include tablet-above {
+  @include above-480-px {
     justify-content: flex-start;
+  }
+
+  @include above-768-px {
+    margin-top: -10vh;
+  }
+
+  @include above-1024-px {
+    transform: translateY(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
   }
 }
 
@@ -65,21 +89,26 @@
   height: 160vh;
   width: 80vw;
   margin: 0 10vw;
-  transform: translateY(25%);
-  -webkit-transition: all 0.75s 0.25s ease;
-  -moz-transition: all 0.75s 0.25s ease;
-  -ms-transition: all 0.75s 0.25s ease;
-  -o-transition: all 0.75s 0.25s ease;
-  transition: all 0.75s 0.25s ease;
+  transform: translateY(0%);
 
-  @include tablet-above {
-    height: 60vh;
+  @include above-480-px {
+    height: 200vh;
     width: 61vw;
     margin: 0 20vw 5vh 20vw;
   }
 
-  @include laptop-above {
+  @include above-768-px {
     height: 130vh;
     width: 60vw;
+    margin: 0 20vw;
+  }
+
+  @include above-1024-px {
+    transform: translateY(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
   }
 }

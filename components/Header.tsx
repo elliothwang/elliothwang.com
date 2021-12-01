@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
@@ -5,44 +6,58 @@ import styles from '../styles/Header.module.scss';
 
 const Header = ({ loaded, scrolled }) => {
   const [dark, setDark] = useState(true);
-  const [sidebar, setSidebar] = useState(false);
+  const [navShown, setNavShown] = useState(true);
+  const [sidebarShown, setSidebarShown] = useState(false);
 
   const handleThemeChange = () => {
     setDark(!dark);
   };
 
   const showSidebar = () => {
-    setSidebar(!sidebar);
+    setSidebarShown(!sidebarShown);
+    const TopScroll = window.pageYOffset || document.documentElement.scrollTop;
+    const LeftScroll =
+      window.pageXOffset || document.documentElement.scrollLeft;
+    window.scrollTo(LeftScroll, TopScroll);
   };
 
-  // TODO: fix header
+  useEffect(() => {
+    window.screen.width >= 768 ? setNavShown(true) : setNavShown(false);
+    setSidebarShown(false);
+  }, []);
+
   return (
     <>
-      {/* <div className={styles.sidebarBttn} onClick={showSidebar}>
-        <div className={sidebar ? styles.topBarActive : styles.topBar}></div>
-        <div className={sidebar ? styles.midBarActive : styles.midBar}></div>
-        <div className={sidebar ? styles.botBarActive : styles.botBar}></div>
-      </div> */}
+      <div className={styles.sidebarBttn} onClick={showSidebar}>
+        <div
+          className={!sidebarShown ? styles.topBarActive : styles.topBar}
+        ></div>
+        <div
+          className={!sidebarShown ? styles.midBarActive : styles.midBar}
+        ></div>
+        <div
+          className={!sidebarShown ? styles.botBarActive : styles.botBar}
+        ></div>
+      </div>
       <div
-        className={styles.header}
+        className={sidebarShown ? styles.activeHeader : styles.header}
         style={scrolled ? { transform: 'translateY(-100%)' } : null}
       >
         <nav className={styles.nav}>
           <ul className={styles.list}>
             <li>
-              <Link href="/">
-                <a
-                  className={styles.logo}
-                  style={loaded ? { transform: 'translateY(0%)' } : null}
-                >
-                  el
-                </a>
-              </Link>
+              <a
+                href="/"
+                className={styles.logo}
+                style={loaded ? { transform: 'translateY(0%)' } : null}
+              >
+                el
+              </a>
             </li>
             <li>
               <Link href="/#about">
                 <a
-                  className={sidebar ? styles.activeLink : styles.link1}
+                  className={sidebarShown ? styles.activeLink : styles.link1}
                   style={loaded ? { transform: 'translateY(0%)' } : null}
                 >
                   About
@@ -52,7 +67,7 @@ const Header = ({ loaded, scrolled }) => {
             <li>
               <Link href="/#projects">
                 <a
-                  className={sidebar ? styles.activeLink : styles.link2}
+                  className={sidebarShown ? styles.activeLink : styles.link2}
                   style={loaded ? { transform: 'translateY(0%)' } : null}
                 >
                   Projects
@@ -62,7 +77,7 @@ const Header = ({ loaded, scrolled }) => {
             <li>
               <Link href="/#experience">
                 <a
-                  className={sidebar ? styles.activeLink : styles.link3}
+                  className={sidebarShown ? styles.activeLink : styles.link3}
                   style={loaded ? { transform: 'translateY(0%)' } : null}
                 >
                   Experience
@@ -71,7 +86,7 @@ const Header = ({ loaded, scrolled }) => {
             </li>
             <li>
               <a
-                className={sidebar ? styles.activeLink : styles.link4}
+                className={sidebarShown ? styles.activeLink : styles.link4}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
                 href="mailto:officialelliothwang@gmail.com"
                 target="_blank"
@@ -82,11 +97,11 @@ const Header = ({ loaded, scrolled }) => {
             </li>
             <li>
               <div
-                className={sidebar ? styles.activeButton : styles.button}
+                className={sidebarShown ? styles.activeButton : styles.button}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
                 onClick={handleThemeChange}
               >
-                <ThemeToggle theme={dark} setTheme={setDark} />
+                {/* <ThemeToggle theme={dark} setTheme={setDark} /> */}
               </div>
             </li>
           </ul>

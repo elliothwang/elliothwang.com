@@ -1,24 +1,38 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.scss';
+import coronaRona from '../public/images/corona-rona.png';
+import miniMidi from '../public/images/mini-midi.png';
+import spacecrafts from '../public/images/spacecrafts.png';
+import acustomGuitar from '../public/images/acustom-guitar.png';
 
 const ProjectCard = ({ el }) => {
-  // TODO: fix project card!
+  const handleClick = () => {
+    window.screen.width >= 768 && window.open(el.deployed);
+  };
+
   return (
     <div className={styles.card}>
-      <div className={styles.header}>
-        <h2 className={styles.title}>{el.title}</h2>
+      <div className={styles.image}>
         <Image
-          className={styles.image}
-          src={el.image}
+          src={
+            el.title === 'corona-rona'
+              ? coronaRona
+              : el.title === 'mini-midi'
+              ? miniMidi
+              : el.title === 'Spacecrafts'
+              ? spacecrafts
+              : acustomGuitar
+          }
           alt={el.alt}
-          height="100"
-          width="100"
+          layout="fill"
           objectFit="cover"
           objectPosition="center"
+          onClick={handleClick}
         />
       </div>
       <div className={styles.content}>
+        <h2 className={styles.title}>{el.title}</h2>
         <h3 className={styles.description}>{el.description}</h3>
         <h5 className={styles.tech}>{el.technologies}</h5>
         <div className={styles.links}>

@@ -1,7 +1,6 @@
 let projectElements = [
   // {
   //   id: 1,
-  //   image: '',
   //   alt: 'Picture of Weird Radio home page',
   //   title: 'Weird Radio',
   //   description: ['in progress'],
@@ -11,7 +10,6 @@ let projectElements = [
   // },
   {
     id: 2,
-    image: 'https://i.imgur.com/4MgiWiO.png',
     alt: 'Picture of corona-rona home page',
     title: 'corona-rona',
     description: [
@@ -25,7 +23,6 @@ let projectElements = [
   },
   {
     id: 3,
-    image: 'https://i.imgur.com/i2ggrFe.png',
     alt: 'Picture of mini-midi home page',
     title: 'mini-midi',
     description: [
@@ -37,7 +34,6 @@ let projectElements = [
   },
   {
     id: 4,
-    image: 'https://i.imgur.com/P6mx8uO.png',
     alt: 'Picture of Spacecrafts home page',
     title: 'Spacecrafts',
     description: [
@@ -49,7 +45,6 @@ let projectElements = [
   },
   {
     id: 5,
-    image: 'https://i.imgur.com/tp23rgE.png',
     alt: 'Picture of Acustom Guitar home page',
     title: 'Acustom Guitar',
     description: [

@@ -9,13 +9,14 @@ import Experience from '../components/sections/Experience';
 const HomePage = () => {
   const [loaded, setLoaded] = useState(false);
   const [headerScrolled, setHeaderScrolled] = useState(false);
-  const [aboutScrolled, setAboutScrolled] = useState(false);
+  const [aboutSecScrolled, setAboutSecScrolled] = useState(false);
   const [projectsScrolled, setProjectsScrolled] = useState(false);
   const [experienceScrolled, setExperienceScrolled] = useState(false);
 
   useEffect(function mount() {
     function onLoad() {
-      setTimeout(() => setLoaded(true), 3000);
+      setLoaded(true);
+      // setTimeout(() => setLoaded(true), 3000);
     }
 
     window.addEventListener('load', onLoad);
@@ -27,17 +28,20 @@ const HomePage = () => {
 
   useEffect(function mount() {
     function onScroll() {
-      // TODO: set scroll based on window size!
-      window.scrollY >= 200
-        ? setHeaderScrolled(true)
-        : setHeaderScrolled(false);
-      window.scrollY >= 175 ? setAboutScrolled(true) : setAboutScrolled(false);
-      window.scrollY >= 825
-        ? setProjectsScrolled(true)
-        : setProjectsScrolled(false);
-      window.scrollY >= 1500
-        ? setExperienceScrolled(true)
-        : setExperienceScrolled(false);
+      if (window.screen.width >= 1024) {
+        window.scrollY >= 200
+          ? setHeaderScrolled(true)
+          : setHeaderScrolled(false);
+        window.scrollY >= 200
+          ? setAboutSecScrolled(true)
+          : setAboutSecScrolled(false);
+        window.scrollY >= 1100
+          ? setProjectsScrolled(true)
+          : setProjectsScrolled(false);
+        window.scrollY >= 3100
+          ? setExperienceScrolled(true)
+          : setExperienceScrolled(false);
+      }
     }
 
     window.addEventListener('scroll', onScroll);
@@ -58,7 +62,7 @@ const HomePage = () => {
         <main>
           <Hero loaded={loaded} />
           <section id="about">
-            <About scrolled={aboutScrolled} />
+            <About scrolled={aboutSecScrolled} />
           </section>
           <section id="projects">
             <Projects scrolled={projectsScrolled} />

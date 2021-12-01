@@ -1,11 +1,9 @@
-import styles from '../../styles/Skills.module.scss';
+import styles from '../styles/Skills.module.scss';
 
 const Skills = () => {
   return (
     <div className={styles.skills}>
-      <h3 className={styles.title}>
-        Check out some of the <br /> technologies I use!
-      </h3>
+      <h3 className={styles.title}>Some technologies I use!</h3>
       <ul className={styles.ul}>
         <li>JavaScript (ES6+)</li>
         <li>TypeScript</li>
