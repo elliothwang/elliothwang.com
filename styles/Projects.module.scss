@@ -2,14 +2,14 @@
 @import 'mixins';
 
 .page {
-  height: 217vh;
+  height: 296vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $background-dark;
 
   @include above-480-px {
-    height: 205vh;
+    height: 190vh;
   }
 
   @include above-768-px {
@@ -23,14 +23,14 @@
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  height: 192vh;
+  height: 271vh;
   width: 100vw;
   max-width: 100%;
   background-color: $background-dark;
   overflow: hidden;
 
   @include above-480-px {
-    height: 180vh;
+    height: 155vh;
   }
 
   @include above-768-px {
@@ -40,11 +40,11 @@
 
 .border {
   @include corner-borders-80;
-  height: 191vh;
+  height: 270vh;
   margin-left: 9.75vw;
 
   @include above-480-px {
-    height: 179vh;
+    height: 154vh;
   }
 
   @include above-768-px {
@@ -58,13 +58,14 @@
   align-items: center;
   height: 15vh;
   width: 60vw;
-  margin: 0 20vw;
+  margin: -5vh 20vw 0 20vw;
   color: $title-color-dark;
   font-size: 5vmin;
   transform: translateY(0%);
 
   @include above-480-px {
     justify-content: flex-start;
+    margin-top: 0;
   }
 
   @include above-768-px {
@@ -86,13 +87,13 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 160vh;
+  height: 250vh;
   width: 80vw;
   margin: 0 10vw;
   transform: translateY(0%);
 
   @include above-480-px {
-    height: 200vh;
+    height: 125vh;
     width: 61vw;
     margin: 0 20vw 5vh 20vw;
   }

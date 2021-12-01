@@ -8,12 +8,11 @@
   align-items: center;
   position: relative;
   margin-bottom: 2.5vh;
-  height: 40vh;
+  height: 60vh;
   width: 60vw;
   border: 0.1vmin solid $text-color-dark;
 
   @include above-480-px {
-    height: 60vh;
     width: 30vw;
     margin: 2vh auto;
   }
@@ -29,7 +28,7 @@
   justify-content: center;
   align-items: center;
   height: 30vh;
-  width: 30vw;
+  width: 60vw;
   position: absolute;
   top: 0;
   opacity: 0.8;
@@ -38,6 +37,11 @@
   &:hover {
     opacity: 0.4;
     cursor: pointer;
+  }
+
+  @include above-480-px {
+    height: 30vh;
+    width: 30vw;
   }
 
   @include above-768-px {
@@ -57,14 +61,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-  width: 45vw;
+  position: absolute;
+  height: 30vh;
+  width: 60vw;
+  bottom: 0;
 
   @include above-480-px {
     height: 30vh;
     width: 30vw;
-    position: absolute;
-    bottom: 0;
   }
 
   @include above-768-px {
