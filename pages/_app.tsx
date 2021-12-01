@@ -22,7 +22,7 @@ const MyApp = ({ Component, pageProps }) => {
     //   )}
     // </>
     <div className="body">
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </div>
   );
 };
