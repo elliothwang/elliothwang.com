@@ -38,7 +38,7 @@ const ProjectCard = ({ el }) => {
         <div className={styles.links}>
           <div>
             <Link href={el.github}>
-              <a>
+              <a target="_blank">
                 {/* TODO: import github & link svgs as components */}
                 <svg
                   className={styles.github}
@@ -55,7 +55,7 @@ const ProjectCard = ({ el }) => {
           </div>
           <div>
             <Link href={el.deployed}>
-              <a>
+              <a target="_blank">
                 <svg
                   className={styles.deployed}
                   xmlns="http://www.w3.org/2000/svg"
