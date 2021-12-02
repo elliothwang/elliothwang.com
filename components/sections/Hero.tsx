@@ -26,14 +26,13 @@ const Hero = ({ loaded }) => {
         style={loaded ? { transform: 'translate(0%)' } : null}
       >
         I am a full stack developer with a desire to help others through my
-        work. As a previous pre-medical student, my passion for <br /> helping
-        others has shifted from working in medicine to contributing to code that
-        will&nbsp;
+        work. <br />
+        My goal is to contribute to code that will{' '}
         <span className={styles.highlight}>
           provide solutions and assistance for others
         </span>
-        . <br /> I&apos;d like to look back at my code and know that I&apos;ve
-        made a&nbsp;
+        . <br /> Ultimately, I would like to look back at what I&apos;ve done
+        and know that I&apos;ve made a{' '}
         <span className={styles.highlight}>
           positive impact on other people
         </span>

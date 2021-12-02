@@ -33,10 +33,11 @@ const About = ({ scrolled }) => {
                   : null
               }
             >
-              Hi, there! My name is Elliot Hwang. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Sint atque temporibus ipsam quos
-              excepturi fugiat amet, iste ut porro et, itaque impedit laborum
-              reprehenderit?
+              Hi, there! My name is{' '}
+              <span className={styles.highlight}>Elliot Hwang</span>. As a
+              previous pre-medical student, my passion for helping others has
+              shifted from working in medicine to contributing to code and
+              technology that helps others.
             </p>
             <p
               className={styles.p}
@@ -46,11 +47,13 @@ const About = ({ scrolled }) => {
                   : null
               }
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              atque temporibus ipsam quos excepturi fugiat amet. I&apos;m also
-              a&nbsp;
-              <span className={styles.highlight}>singer/songwriter</span>. You
-              should check out my social medias!
+              Although I have just begun my journey as a developer, I am always
+              eager to challenge myself to learn and try new things. Most of my
+              projects are inspired by my passions for health and music.
+              Speaking of which, I am also a{' '}
+              <span className={styles.highlight}>singer/songwriter</span>.
+              {/* TODO: create social medias modal */}
+              {/* You should check out my social medias! */}
             </p>
           </div>
         </div>
