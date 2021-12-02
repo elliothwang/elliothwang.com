@@ -1,5 +1,5 @@
 <div align="center">
-  ![demo](/public/favicon.ico?raw=true)
+  <img src="/public/images/favicon.ico" alt="logo" width="100">
 </div>
 
 <h1 align="center">
