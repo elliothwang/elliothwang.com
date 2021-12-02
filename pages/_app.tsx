@@ -21,6 +21,7 @@ const MyApp = ({ Component, pageProps }) => {
     //     </div>
     //   )}
     // </>
+    // TODO: fix horizontal scrolling on laptop/desktop view
     <div className="body">
       <Component {...pageProps} />
     </div>
