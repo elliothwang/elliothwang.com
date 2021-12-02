@@ -1,6 +1,7 @@
 let projectElements = [
   // {
   //   id: 1,
+  //   image: '/../public/images/weird-radio.png',
   //   alt: 'Picture of Weird Radio home page',
   //   title: 'Weird Radio',
   //   description: ['in progress'],
@@ -10,6 +11,7 @@ let projectElements = [
   // },
   {
     id: 2,
+    image: '/../public/images/corona-rona.png',
     alt: 'Picture of corona-rona home page',
     title: 'corona-rona',
     description: [
@@ -23,6 +25,7 @@ let projectElements = [
   },
   {
     id: 3,
+    image: '/../public/images/mini-midi.png',
     alt: 'Picture of mini-midi home page',
     title: 'mini-midi',
     description: [
@@ -34,6 +37,7 @@ let projectElements = [
   },
   {
     id: 4,
+    image: '/../public/images/spacecrafts.png',
     alt: 'Picture of Spacecrafts home page',
     title: 'Spacecrafts',
     description: [
@@ -43,18 +47,31 @@ let projectElements = [
     github: 'https://github.com/elliothwang/spacecrafts',
     deployed: 'https://spacecrafts.herokuapp.com/',
   },
+  // {
+  //   id: 5,
+  //   image: '/../public/images/acustom-guitar.png',
+  //   alt: 'Picture of Acustom Guitar home page',
+  //   title: 'Acustom Guitar',
+  //   description: [
+  //     'In this application, users can use full CRUD functionality on custom guitars. View a 3D guitar model as you build.',
+  //   ],
+  //   technologies: [
+  //     'JavaScript, HTML, CSS, jQuery, Express, Node.js, MongoDB, Google OAuth',
+  //   ],
+  //   github: 'https://github.com/elliothwang/guitar-builder',
+  //   deployed: 'https://acustom-guitar.herokuapp.com/',
+  // },
   {
-    id: 5,
-    alt: 'Picture of Acustom Guitar home page',
-    title: 'Acustom Guitar',
-    description: [
-      'In this application, users can use full CRUD functionality on custom guitars. View a 3D guitar model as you build.',
-    ],
+    id: 6,
+    image: '/../public/images/demo.png',
+    alt: "Picture of elliothwang.com's Hero section",
+    title: 'elliothwang.com',
+    description: ["Elliot Hwang's developer portfolio."],
     technologies: [
-      'Javascript, HTML, CSS, jQuery, Express, Node.js, MongoDB, Google OAuth',
+      'JavaScript, TypeScript, HTML, CSS, React, Redux, Next.js, Sass',
     ],
-    github: 'https://github.com/elliothwang/guitar-builder',
-    deployed: 'https://acustom-guitar.herokuapp.com/',
+    github: 'https://github.com/elliothwang/portfolio',
+    deployed: 'https://elliothwang.com',
   },
 ];
 

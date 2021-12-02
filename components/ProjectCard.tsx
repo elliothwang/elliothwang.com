@@ -1,10 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.scss';
-import coronaRona from '../public/images/corona-rona.png';
-import miniMidi from '../public/images/mini-midi.png';
-import spacecrafts from '../public/images/spacecrafts.png';
-import acustomGuitar from '../public/images/acustom-guitar.png';
 
 const ProjectCard = ({ el }) => {
   const handleClick = () => {
@@ -15,15 +11,7 @@ const ProjectCard = ({ el }) => {
     <div className={styles.card}>
       <div className={styles.image}>
         <Image
-          src={
-            el.title === 'corona-rona'
-              ? coronaRona
-              : el.title === 'mini-midi'
-              ? miniMidi
-              : el.title === 'Spacecrafts'
-              ? spacecrafts
-              : acustomGuitar
-          }
+          src={el.image}
           alt={el.alt}
           layout="fill"
           objectFit="cover"
