@@ -13,19 +13,4 @@ Elliot Hwang's first developer portfolio, <a href="https://elliothwang.com/" tar
 
 <!-- TODO: fix demo image -->
 
-1
-![demo](/public/images/demo.png)
-1.33
 ![demo](/public/images/demo.png?raw=true)
-1.66
-![demo](../public/images/demo.png?raw=true)
-2
-![demo](/images/demo.png)
-3
-![demo](https://github.com/elliothwang/elliothwang.github.io/blob/main/public/images/demo.png)
-4
-![demo](https://github.com/elliothwang/portfolio/blob/main/public/images/demo.png)
-5
-![demo](https://github.com/elliothwang/portfolio/public/images/demo.png?raw=true)
-6
-![demo](https://raw.githubusercontent.com/elliothwang/portfolio/public/images/demo.png)
