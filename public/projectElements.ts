@@ -47,32 +47,32 @@ let projectElements = [
     github: 'https://github.com/elliothwang/spacecrafts',
     deployed: 'https://spacecrafts.herokuapp.com/',
   },
-  // {
-  //   id: 5,
-  //   image: '/../public/images/acustom-guitar.png',
-  //   alt: 'Picture of Acustom Guitar home page',
-  //   title: 'Acustom Guitar',
-  //   description: [
-  //     'In this application, users can use full CRUD functionality on custom guitars. View a 3D guitar model as you build.',
-  //   ],
-  //   technologies: [
-  //     'JavaScript, HTML, CSS, jQuery, Express, Node.js, MongoDB, Google OAuth',
-  //   ],
-  //   github: 'https://github.com/elliothwang/guitar-builder',
-  //   deployed: 'https://acustom-guitar.herokuapp.com/',
-  // },
   {
-    id: 6,
-    image: '/../public/images/demo.png',
-    alt: "Picture of elliothwang.com's Hero section",
-    title: 'elliothwang.com',
-    description: ["Elliot Hwang's developer portfolio."],
-    technologies: [
-      'JavaScript, TypeScript, HTML, CSS, React, Redux, Next.js, Sass',
+    id: 5,
+    image: '/../public/images/acustom-guitar.png',
+    alt: 'Picture of Acustom Guitar home page',
+    title: 'Acustom Guitar',
+    description: [
+      'In this application, users can use full CRUD functionality on custom guitars. View a 3D guitar model as you build.',
     ],
-    github: 'https://github.com/elliothwang/portfolio',
-    deployed: 'https://elliothwang.com',
+    technologies: [
+      'JavaScript, HTML, CSS, jQuery, Express, Node.js, MongoDB, Google OAuth',
+    ],
+    github: 'https://github.com/elliothwang/guitar-builder',
+    deployed: 'https://acustom-guitar.herokuapp.com/',
   },
+  // {
+  //   id: 6,
+  //   image: '/../public/images/demo.png',
+  //   alt: "Picture of elliothwang.com's Hero section",
+  //   title: 'elliothwang.com',
+  //   description: ["Elliot Hwang's developer portfolio."],
+  //   technologies: [
+  //     'JavaScript, TypeScript, HTML, CSS, React, Redux, Next.js, Sass',
+  //   ],
+  //   github: 'https://github.com/elliothwang/portfolio',
+  //   deployed: 'https://elliothwang.com',
+  // },
 ];
 
 export default projectElements;
