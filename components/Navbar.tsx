@@ -16,13 +16,14 @@ const Navbar = ({ loaded, scrolled }) => {
         <nav className={styles.nav}>
           <ul className={styles.ul}>
             <li>
-              <a
-                href="/"
-                className={styles.logo}
-                style={loaded ? { transform: 'translateY(0%)' } : null}
-              >
-                el
-              </a>
+              <Link href="/">
+                <a
+                  className={styles.logo}
+                  style={loaded ? { transform: 'translateY(0%)' } : null}
+                >
+                  el
+                </a>
+              </Link>
             </li>
             <li>
               <Link href="/#about">

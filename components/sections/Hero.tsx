@@ -7,7 +7,7 @@ const Hero = ({ loaded }) => {
         className={styles.greeting}
         style={loaded ? { transform: 'translate(0%)' } : null}
       >
-        Hi, there! I'm
+        Hi, there! I&apos;m
       </h5>
       <h1
         className={styles.title}
@@ -28,11 +28,12 @@ const Hero = ({ loaded }) => {
         I am a full stack developer with a desire to help others through my
         work. As a previous pre-medical student, my passion for <br /> helping
         others has shifted from working in medicine to contributing to code that
-        will{' '}
+        will&nbsp;
         <span className={styles.highlight}>
           provide solutions and assistance for others
         </span>
-        . <br /> I’d like to look back at my code and know that I’ve made a{' '}
+        . <br /> I&apos;d like to look back at my code and know that I&apos;ve
+        made a&nbsp;
         <span className={styles.highlight}>
           positive impact on other people
         </span>

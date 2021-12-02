@@ -47,7 +47,8 @@ const About = ({ scrolled }) => {
               }
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              atque temporibus ipsam quos excepturi fugiat amet. I'm also a{' '}
+              atque temporibus ipsam quos excepturi fugiat amet. I&apos;m also
+              a&nbsp;
               <span className={styles.highlight}>singer/songwriter</span>. You
               should check out my social medias!
             </p>
