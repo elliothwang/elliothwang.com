@@ -1,6 +1,5 @@
 <div align="center">
-<!-- TODO: fix logo image -->
-  <img src="/public/images/favicon.ico" alt="logo" width="100">
+  ![demo](/public/favicon.ico?raw=true)
 </div>
 
 <h1 align="center">
@@ -10,7 +9,5 @@
 <p align="center">
 Elliot Hwang's first developer portfolio, <a href="https://elliothwang.com/" target="_blank">elliothwang.com</a>. Built with <a href="https://nextjs.org/" target="_blank">Next.js</a> and hosted on <a href="https://pages.github.com/" target="_blank">Github Pages</a>
 </p>
-
-<!-- TODO: fix demo image -->
 
 ![demo](/public/images/demo.png?raw=true)
