@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
+import { setLoaded } from '../redux/actions/main';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Hero from '../components/sections/Hero';
@@ -6,7 +8,9 @@ import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Experience from '../components/sections/Experience';
 
-const HomePage = () => {
+const HomePage = (props) => {
+  // const { loaded, setLoaded } = props;
+  // ? regular state works but redux doesnt
   const [loaded, setLoaded] = useState(false);
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutSecScrolled, setAboutSecScrolled] = useState(false);
@@ -16,8 +20,7 @@ const HomePage = () => {
   useEffect(function mount() {
     function onLoad() {
       // TODO: figure out why first component doesn't load after preloader
-      setLoaded(true);
-      // setTimeout(() => setLoaded(true), 3000);
+      setTimeout(() => setLoaded(true), 3000);
     }
 
     window.addEventListener('load', onLoad);
@@ -26,6 +29,8 @@ const HomePage = () => {
       window.removeEventListener('load', onLoad);
     };
   });
+
+  console.log(loaded);
 
   useEffect(function mount() {
     function onScroll() {
@@ -75,4 +80,12 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+const mapStateToProps = (state) => {
+  return { name: state.main.loaded };
+};
+
+const mapDispatchToProps = {
+  setLoaded,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

@@ -1,6 +1,7 @@
-import '../styles/globals.scss';
 import { useState, useEffect } from 'react';
+import { wrapper } from '../redux/store';
 import Loader from '../components/Loader';
+import '../styles/globals.scss';
 
 const MyApp = ({ Component, pageProps }) => {
   const [loading, setLoading] = useState(false);
@@ -28,4 +29,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
