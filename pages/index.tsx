@@ -15,6 +15,7 @@ const HomePage = () => {
 
   useEffect(function mount() {
     function onLoad() {
+      // TODO: figure out why first component doesn't load after preloader
       setLoaded(true);
       // setTimeout(() => setLoaded(true), 3000);
     }
@@ -28,20 +29,18 @@ const HomePage = () => {
 
   useEffect(function mount() {
     function onScroll() {
-      if (window.screen.width >= 1024) {
-        window.scrollY >= 200
-          ? setHeaderScrolled(true)
-          : setHeaderScrolled(false);
-        window.scrollY >= 200
-          ? setAboutSecScrolled(true)
-          : setAboutSecScrolled(false);
-        window.scrollY >= 1100
-          ? setProjectsScrolled(true)
-          : setProjectsScrolled(false);
-        window.scrollY >= 3100
-          ? setExperienceScrolled(true)
-          : setExperienceScrolled(false);
-      }
+      window.scrollY >= 175
+        ? setHeaderScrolled(true)
+        : setHeaderScrolled(false);
+      window.scrollY >= 200
+        ? setAboutSecScrolled(true)
+        : setAboutSecScrolled(false);
+      window.scrollY >= 1100
+        ? setProjectsScrolled(true)
+        : setProjectsScrolled(false);
+      window.scrollY >= 3050
+        ? setExperienceScrolled(true)
+        : setExperienceScrolled(false);
     }
 
     window.addEventListener('scroll', onScroll);

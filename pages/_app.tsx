@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }) => {
     //     <Loader />
     //   ) : (
     //     <div className="body">
-    //       <Component {...pageProps} />;
+    //       <Component {...pageProps} />
     //     </div>
     //   )}
     // </>

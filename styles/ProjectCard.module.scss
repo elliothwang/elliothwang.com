@@ -27,10 +27,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   height: 30vh;
   width: 60vw;
-  position: absolute;
-  top: 0;
+  margin-top: -30vh;
   opacity: 0.8;
   background-color: $background-dark;
 
@@ -47,7 +47,8 @@
   @include above-768-px {
     height: 30vh;
     width: 30vw;
-    left: 0;
+    margin-top: 0;
+    margin-left: -30vw;
     background-color: none;
   }
 }
