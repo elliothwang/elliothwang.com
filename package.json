@@ -12,6 +12,7 @@
     "disable-scroll": "^0.6.0",
     "gh-pages": "^3.2.3",
     "next": "12.0.4",
+    "postcss-color-rebeccapurple": "^7.0.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.0.0",
     "react": "17.0.2",

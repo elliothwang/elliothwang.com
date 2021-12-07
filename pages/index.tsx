@@ -8,13 +8,13 @@ import Experience from '../components/sections/Experience';
 import styles from '../styles/index.module.scss';
 
 // TODO: style scrollbar! Desired rulesets are in index.module.scss;
-const index = () => {
+const Index = () => {
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutScrolled, setAboutScrolled] = useState(false);
   const [projectsScrolled, setProjectsScrolled] = useState(false);
   const [experienceScrolled, setExperienceScrolled] = useState(false);
 
-  useEffect(function mount() {
+  useEffect(function Mount() {
     function onScroll() {
       window.scrollY >= 175
         ? setHeaderScrolled(true)
@@ -56,4 +56,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
