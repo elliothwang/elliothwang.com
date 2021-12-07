@@ -52,8 +52,6 @@ const About = ({ scrolled }) => {
               projects are inspired by my passions for health and music.
               Speaking of which, I am also a{' '}
               <span className={styles.highlight}>singer/songwriter</span>.
-              {/* TODO: create social medias modal */}
-              {/* You should check out my social medias! */}
             </p>
           </div>
         </div>

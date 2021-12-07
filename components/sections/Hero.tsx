@@ -1,29 +1,52 @@
+import { useState, useEffect } from 'react';
 import styles from '../../styles/Hero.module.scss';
 
-const Hero = ({ loaded }) => {
+const Hero = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setAnimate(true), 100);
+  }, []);
+
   return (
     <div className={styles.hero}>
       <h5
         className={styles.greeting}
-        style={loaded ? { transform: 'translate(0%)' } : null}
+        style={
+          animate
+            ? { transform: 'translate(0%)' }
+            : { transform: 'translate(-200%)' }
+        }
       >
         Hi, there! I&apos;m
       </h5>
       <h1
         className={styles.title}
-        style={loaded ? { transform: 'translate(0%)' } : null}
+        style={
+          animate
+            ? { transform: 'translate(0%)' }
+            : { transform: 'translate(-200%)' }
+        }
       >
         Elliot Hwang.
       </h1>
       <h3
         className={styles.subTitle}
-        style={loaded ? { transform: 'translate(0%)' } : null}
+        style={
+          animate
+            ? { transform: 'translate(0%)' }
+            : { transform: 'translate(-200%)' }
+        }
       >
         Web Developer.
       </h3>
       <p
         className={styles.summary}
-        style={loaded ? { transform: 'translate(0%)' } : null}
+        style={
+          animate
+            ? { transform: 'translate(0%)' }
+            : { transform: 'translate(-200%)' }
+        }
       >
         I am a full stack developer with a desire to help others through my
         work. <br />
