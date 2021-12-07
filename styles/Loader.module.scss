@@ -33,10 +33,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5vmin;
-  width: 5vmin;
+  height: 10vmin;
+  width: 10vmin;
   margin: 0 auto;
-  animation: rotation 1s infinite linear;
+  animation: rotation 1.53s infinite linear;
 
   @keyframes rotation {
     from {

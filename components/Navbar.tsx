@@ -1,6 +1,7 @@
-// import { useState } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-// import ThemeToggle from './ThemeToggle';
+import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
 
 // TODO: add light theme styling
@@ -21,7 +22,14 @@ const Navbar = ({ loaded, scrolled }) => {
                   className={styles.logo}
                   style={loaded ? { transform: 'translateY(0%)' } : null}
                 >
-                  el
+                  <Image
+                    src="/../public/images/nav-logo.png"
+                    alt="logo"
+                    height="75"
+                    width="75"
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
                 </a>
               </Link>
             </li>
