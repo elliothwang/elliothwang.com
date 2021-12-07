@@ -68,7 +68,7 @@ let projectElements = [
   //   title: 'elliothwang.com',
   //   description: ["Elliot Hwang's developer portfolio."],
   //   technologies: [
-  //     'JavaScript, TypeScript, HTML, CSS, React, Redux, Next.js, Sass',
+  //     'JavaScript, TypeScript, HTML, CSS, React, Next.js, Sass',
   //   ],
   //   github: 'https://github.com/elliothwang/portfolio',
   //   deployed: 'https://elliothwang.com',
