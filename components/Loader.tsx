@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import styles from '../styles/Loader.module.scss';
 
-// TODO: create logo & loader animation to replace temporary ones in Loader & Navbar;
+// TODO: loader animation to replace temporary spinning logo;
 const Loader = () => {
   return (
     <div className={styles.screen}>
       <div className={styles.logo}>
         <Image
-          src="/../public/images/loader-logo.png"
+          src="/../images/loader-logo.png"
           alt="logo"
           height="100"
           width="100"
