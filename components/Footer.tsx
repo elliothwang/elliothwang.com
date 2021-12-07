@@ -1,6 +1,7 @@
 import styles from '../styles/Footer.module.scss';
 import Contact from './sections/Contact';
 
+// TODO: Refactor Footer to not look like basura;
 const Footer = () => {
   let date: number = new Date().getFullYear();
   return (

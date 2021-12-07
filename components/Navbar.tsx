@@ -3,8 +3,8 @@ import Link from 'next/link';
 // import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
 
+// TODO: add light theme styling
 const Navbar = ({ loaded, scrolled }) => {
-  // TODO: add light theme styling
   // const [dark, setDark] = useState(true);
 
   return (

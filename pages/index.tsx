@@ -7,7 +7,8 @@ import Projects from '../components/sections/Projects';
 import Experience from '../components/sections/Experience';
 import styles from '../styles/index.module.scss';
 
-const index = ({ loaded }) => {
+// TODO: style scrollbar! Desired rulesets are in index.module.scss;
+const index = () => {
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutScrolled, setAboutScrolled] = useState(false);
   const [projectsScrolled, setProjectsScrolled] = useState(false);
@@ -37,7 +38,7 @@ const index = ({ loaded }) => {
         <meta name="description" content="Elliot Hwang's Developer Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout loaded={loaded} scrolled={headerScrolled}>
+      <Layout scrolled={headerScrolled}>
         <main>
           <Hero />
           <section id="about">

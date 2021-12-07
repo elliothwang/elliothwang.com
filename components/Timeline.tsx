@@ -8,6 +8,7 @@ import WorkIcon from '../public/icons/work.svg';
 import SchoolIcon from '../public/icons/school.svg';
 import styles from '../styles/Timeline.module.scss';
 
+// TODO: import work & school svg icons as components;
 const Timeline = () => {
   let workIconStyle: object = { background: '#70587c' };
   let schoolIconStyle: object = { background: '#171738' };
@@ -26,7 +27,6 @@ const Timeline = () => {
               date={el.date}
               dateClassName={styles.date}
               iconStyle={el.icon === 'work' ? workIconStyle : schoolIconStyle}
-              // TODO: import work & school svg icons as components
               // icon={el.icon === 'work' ? <WorkIcon /> : <SchoolIcon />}
               position={i % 2 === 0 ? 'right' : 'left'}
             >

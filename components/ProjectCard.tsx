@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/ProjectCard.module.scss';
 
+// TODO: import github & link svgs as components;
 const ProjectCard = ({ el }) => {
   const handleClick = () => {
     window.screen.width >= 768 && window.open(el.deployed);
@@ -27,7 +28,6 @@ const ProjectCard = ({ el }) => {
           <div>
             <Link href={el.github}>
               <a target="_blank">
-                {/* TODO: import github & link svgs as components */}
                 <svg
                   className={styles.github}
                   xmlns="http://www.w3.org/2000/svg"
