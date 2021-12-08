@@ -15,7 +15,7 @@ const Index = () => {
 
   useEffect(function Mount() {
     function onScroll() {
-      window.scrollY >= 175
+      window.scrollY >= 150
         ? setHeaderScrolled(true)
         : setHeaderScrolled(false);
       window.scrollY >= 200 && setAboutScrolled(true);

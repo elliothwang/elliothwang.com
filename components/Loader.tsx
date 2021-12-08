@@ -13,6 +13,7 @@ const Loader = () => {
           width="100"
           objectFit="cover"
           objectPosition="center"
+          priority
         />
       </div>
     </div>

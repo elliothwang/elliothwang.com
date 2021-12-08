@@ -1,16 +1,11 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-// import ThemeToggle from './ThemeToggle';
+import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Sidebar.module.scss';
 
 // TODO: fix broken sidebar clicks;
-const Sidebar = ({ loaded, shown, setShown }) => {
-  // const [dark, setDark] = useState(true);
-
-  const handleSidebarClick = () => {
-    setShown(false);
-  };
-
+const Sidebar = ({ loaded, shown, handleSidebarClick }) => {
+  console.log(shown);
   return (
     <>
       <div
@@ -63,6 +58,7 @@ const Sidebar = ({ loaded, shown, setShown }) => {
                 href="mailto:officialelliothwang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleSidebarClick}
               >
                 Contact
               </a>
