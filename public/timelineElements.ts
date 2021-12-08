@@ -5,8 +5,7 @@ let timelineElements = [
     location: 'General Assembly',
     date: 'Feb 2021 - May 2021',
     description: [
-      'A 12-week course that teaches the fundamentals of full-stack web development. ',
-      'This program consists of 4 major projects implementing languages, frameworks, and technologies including: HTML, CSS, Sass, Javascript, jQuery, PostgreSQL, MongoDB, Django, NodeJS, ReactJS, Git, Github.',
+      'A 12-week full-stack program that consists of 4 major projects implementing languages, frameworks, and technologies including: HTML, CSS, Sass, Javascript, jQuery, PostgreSQL, MongoDB, Django, NodeJS, ReactJS, Git, Github.',
     ],
     icon: 'school',
   },

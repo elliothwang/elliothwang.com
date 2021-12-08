@@ -68,6 +68,12 @@ $color-background: $background-dark;
   }
 }
 
+@mixin above-1170-px {
+  @media (min-width: #{$extra-large-width - 30px}) {
+    @content;
+  }
+}
+
 @mixin above-1200-px {
   @media (min-width: #{$extra-large-width}) {
     @content;
@@ -80,7 +86,7 @@ $color-background: $background-dark;
   align-items: center;
   position: absolute;
   border: $corner-width solid $color-border;
-  background-color: $color-background;
+  background: $color-background;
   width: 60vw;
 
   &::before {
@@ -91,7 +97,7 @@ $color-background: $background-dark;
     bottom: -$corner-width;
     left: $corner-size;
     right: $corner-size;
-    background-color: $color-background;
+    background: $color-background;
   }
 
   &::after {
@@ -102,7 +108,7 @@ $color-background: $background-dark;
     bottom: $corner-size;
     left: -$corner-width;
     right: -$corner-width;
-    background-color: $color-background;
+    background: $color-background;
   }
 }
 
@@ -112,7 +118,7 @@ $color-background: $background-dark;
   align-items: center;
   position: absolute;
   border: $corner-width solid $color-border;
-  background-color: $color-background;
+  background: $color-background;
   width: 80vw;
 
   &::before {
@@ -123,7 +129,7 @@ $color-background: $background-dark;
     bottom: -$corner-width;
     left: $corner-size;
     right: $corner-size;
-    background-color: $color-background;
+    background: $color-background;
   }
 
   &::after {
@@ -134,7 +140,7 @@ $color-background: $background-dark;
     bottom: $corner-size;
     left: -$corner-width;
     right: -$corner-width;
-    background-color: $color-background;
+    background: $color-background;
   }
 }
 
@@ -144,7 +150,7 @@ $color-background: $background-dark;
   align-items: center;
   position: absolute;
   border: $corner-width solid $color-border;
-  background-color: $color-background;
+  background: $color-background;
   width: 100vw;
 
   &::before {
@@ -155,7 +161,7 @@ $color-background: $background-dark;
     bottom: -$corner-width;
     left: $corner-size;
     right: $corner-size;
-    background-color: $color-background;
+    background: $color-background;
   }
 
   &::after {
@@ -166,6 +172,6 @@ $color-background: $background-dark;
     bottom: $corner-size;
     left: -$corner-width;
     right: -$corner-width;
-    background-color: $color-background;
+    background: $color-background;
   }
 }

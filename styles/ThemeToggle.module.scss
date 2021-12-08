@@ -19,7 +19,7 @@ $thumb-dimensions: calc(($toggle-height - $toggle-padding) * 1.2);
   border: 0;
   border-radius: calc($toggle-width / 2);
   cursor: pointer;
-  background-color: $text-color-dark;
+  background: $text-color-dark;
   transition: background 0.25s ease-in-out;
 }
 
@@ -29,7 +29,7 @@ $thumb-dimensions: calc(($toggle-height - $toggle-padding) * 1.2);
   width: $thumb-dimensions;
   top: $toggle-padding;
   left: $toggle-padding;
-  background-color: $accent-1-dark;
+  background: $accent-1-dark;
   border-radius: 50%;
   transition: transform 0.25s ease-in-out;
   transform: translate3d(-calc($toggle-width - $toggle-height), 0, 0);
@@ -41,7 +41,7 @@ $thumb-dimensions: calc(($toggle-height - $toggle-padding) * 1.2);
   width: $thumb-dimensions;
   top: $toggle-padding;
   left: $toggle-padding;
-  background-color: $accent-1-light;
+  background: $accent-1-light;
   border-radius: 50%;
   transition: transform 0.25s ease-in-out;
   transform: translate3d(calc($toggle-width - $toggle-height), 0, 0);

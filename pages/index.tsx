@@ -7,7 +7,6 @@ import Projects from '../components/sections/Projects';
 import Experience from '../components/sections/Experience';
 import styles from '../styles/index.module.scss';
 
-// TODO: style scrollbar! Desired rulesets are in index.module.scss;
 const Index = () => {
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutScrolled, setAboutScrolled] = useState(false);

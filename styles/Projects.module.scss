@@ -2,19 +2,11 @@
 @import 'mixins';
 
 .page {
-  height: 296vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $background-dark;
-
-  @include above-480-px {
-    height: 190vh;
-  }
-
-  @include above-768-px {
-    height: 192vh;
-  }
+  background: $background-dark;
 }
 
 .projects {
@@ -26,7 +18,7 @@
   height: 271vh;
   width: 100vw;
   max-width: 100%;
-  background-color: $background-dark;
+  background: $background-dark;
   overflow: hidden;
 
   @include above-480-px {
@@ -41,7 +33,7 @@
 .border {
   @include corner-borders-80;
   height: 270vh;
-  margin-left: 9.75vw;
+  margin-left: 9.35vw;
 
   @include above-480-px {
     height: 154vh;
@@ -94,7 +86,7 @@
 
   @include above-480-px {
     height: 125vh;
-    width: 61vw;
+    width: 60vw;
     margin: 0 20vw 5vh 20vw;
   }
 

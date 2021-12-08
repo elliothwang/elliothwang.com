@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $background-dark;
+  background: $background-dark;
 }
 
 .container {
@@ -18,7 +18,7 @@
   height: 75vh;
   width: 100vw;
   max-width: 100%;
-  background-color: $background-dark;
+  background: $background-dark;
   overflow: hidden;
   z-index: 1;
 
@@ -28,9 +28,8 @@
 }
 
 .border {
-  @include corner-borders-60;
+  @include corner-borders-80;
   height: 74vh;
-  margin-left: 0.75vw;
 }
 
 .about,
@@ -53,12 +52,11 @@
   justify-content: center;
   align-items: flex-start;
   height: 40vh;
-  width: 60vw;
+  width: 80vw;
 
   @include above-1024-px {
-    height: 75vh;
-    width: 35vw;
-    margin-left: 20vw;
+    height: 52.5vh;
+    width: 40vw;
   }
 }
 
@@ -66,20 +64,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
-  width: 60vw;
+  height: 10vh;
+  width: 80vw;
   margin: 0 auto;
   color: $title-color-dark;
   font-size: 5vmin;
 
-  @include below-480-px {
-    margin-top: 2vh;
-  }
-
   @include above-1024-px {
     justify-content: flex-start;
-    width: 35vw;
-    margin-left: 7.5vw;
+    height: 12.5vh;
+    width: 40vw;
   }
 }
 
@@ -88,11 +82,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 8vw;
+  height: 30vh;
+  width: 50vw;
+  margin: 0 auto;
+
+  @include above-480-px {
+    width: 60vw;
+  }
 
   @include above-1024-px {
-    height: 50vh;
-    margin: -5vh 0 0 5vw;
+    height: 40vh;
+    width: 40vw;
   }
 }
 
@@ -102,7 +102,7 @@
   color: $text-color-dark;
 
   @include above-1024-px {
-    margin: 2.5vh 2.5vw;
+    margin: 2.5vh 2.5vw 2.5vh 0;
   }
 }
 
@@ -114,14 +114,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25vh;
-  width: 60vw;
+  height: 20vh;
+  width: 80vw;
   transform: translateY(0%);
 
   @include above-1024-px {
-    height: 75vh;
-    width: 25vw;
-    margin-right: 20vw;
+    height: 52.5vh;
+    width: 20vw;
     transform: translateY(50%);
     -webkit-transition: all 0.75s 0.25s ease;
     -moz-transition: all 0.75s 0.25s ease;

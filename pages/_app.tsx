@@ -2,7 +2,7 @@ import '../styles/globals.scss';
 import { useState, useEffect } from 'react';
 import Loader from '../components/Loader';
 
-const MyApp = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default App;

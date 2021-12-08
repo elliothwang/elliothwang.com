@@ -1,7 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 
-// TODO: create social media links modal;
+// TODO (v2): create social media links modal;
 const Layout = ({ scrolled, children }) => {
   return (
     <>

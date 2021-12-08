@@ -2,22 +2,14 @@
 @import 'mixins';
 
 .page {
-  height: 225vh;
+  height: 155vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $background-dark;
+  background: $background-dark;
 
-  @include above-480-px {
+  @include above-1170-px {
     height: 210vh;
-  }
-
-  @include above-768-px {
-    height: 225vh;
-  }
-
-  @include above-1024-px {
-    height: 250vh;
   }
 }
 
@@ -27,40 +19,24 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 200vh;
+  height: 130vh;
   width: 100vw;
   max-width: 100%;
-  background-color: $background-dark;
+  background: $background-dark;
   z-index: 1;
   overflow: hidden;
 
-  @include above-480-px {
+  @include above-1170-px {
     height: 185vh;
-  }
-
-  @include above-768-px {
-    height: 200vh;
-  }
-
-  @include above-1024-px {
-    height: 225vh;
   }
 }
 
 .border {
-  @include corner-borders-60;
-  height: 199vh;
+  @include corner-borders-80;
+  height: 129vh;
 
-  @include above-480-px {
+  @include above-1170-px {
     height: 184vh;
-  }
-
-  @include above-768-px {
-    height: 199vh;
-  }
-
-  @include above-1024-px {
-    height: 224vh;
   }
 }
 
@@ -69,8 +45,8 @@
   justify-content: center;
   align-items: center;
   height: 15vh;
-  width: 60vw;
-  margin: 5vh 20vw 5vh 20vw;
+  width: 80vw;
+  margin: 5vh 10vw 5vh 10vw;
   color: $title-color-dark;
   font-size: 5vmin;
   z-index: 1;
@@ -81,7 +57,7 @@
   }
 
   @include above-1024-px {
-    margin: 0 20vw;
+    margin: 0 10vw;
     justify-content: flex-start;
     margin-left: 32.5vw;
     transform: translateY(50%);
@@ -94,9 +70,13 @@
 }
 
 .timeline {
-  margin: 0 20vw 7.5vh 20vw;
+  height: 100vh;
+  width: 60vw;
+  margin: 0 10vw 7.5vh 10vw;
   z-index: 1;
   transform: translateY(0%);
+  overflow-y: scroll;
+  background: red;
 
   @include above-1024-px {
     transform: translateY(50%);
@@ -106,4 +86,26 @@
     -o-transition: all 0.75s 0.25s ease;
     transition: all 0.75s 0.25s ease;
   }
+
+  @include above-1170-px {
+    height: 150vh;
+  }
+}
+
+.timeline::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.timeline::-webkit-scrollbar-track {
+  background: $background-dark;
+  border-radius: 5vmin;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+  background: $accent-1-dark;
+  border-radius: 5vmin;
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+  background: $title-color-dark;
 }

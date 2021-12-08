@@ -4,7 +4,8 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
 
-// TODO: add light theme styling
+// TODO (v2): add light theme styling;
+// TODO: add smooth-scrolling to anchor on nav click;
 const Navbar = ({ loaded, scrolled }) => {
   // const [dark, setDark] = useState(true);
 
@@ -23,7 +24,7 @@ const Navbar = ({ loaded, scrolled }) => {
                   style={loaded ? { transform: 'translateY(0%)' } : null}
                 >
                   <Image
-                    src="/../../public/images/nav-logo.png"
+                    src="/../public/images/nav-logo.png"
                     alt="logo"
                     height="75"
                     width="75"

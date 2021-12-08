@@ -1,5 +1,6 @@
 import styles from '../../styles/Contact.module.scss';
 
+// TODO (v2): create Contact route, create contact form, & refactor contact button;
 const Contact = () => {
   return (
     <div className={styles.contact}>
