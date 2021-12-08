@@ -3,6 +3,7 @@ import Link from 'next/link';
 // import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Sidebar.module.scss';
 
+// TODO: fix broken sidebar clicks;
 const Sidebar = ({ loaded, shown, setShown }) => {
   // const [dark, setDark] = useState(true);
 

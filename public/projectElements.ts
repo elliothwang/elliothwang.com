@@ -1,7 +1,7 @@
 let projectElements = [
   // {
   //   id: 1,
-  //   image: '/../public/images/weird-radio.png',
+  //   image: '/images/weird-radio.png',
   //   alt: 'Picture of Weird Radio home page',
   //   title: 'Weird Radio',
   //   description: ['in progress'],
@@ -11,7 +11,7 @@ let projectElements = [
   // },
   {
     id: 2,
-    image: '/../public/images/corona-rona.png',
+    image: '/images/corona-rona.png',
     alt: 'Picture of corona-rona home page',
     title: 'corona-rona',
     description: [
@@ -25,7 +25,7 @@ let projectElements = [
   },
   {
     id: 3,
-    image: '/../public/images/mini-midi.png',
+    image: '/images/mini-midi.png',
     alt: 'Picture of mini-midi home page',
     title: 'mini-midi',
     description: [
@@ -37,7 +37,7 @@ let projectElements = [
   },
   {
     id: 4,
-    image: '/../public/images/spacecrafts.png',
+    image: '/images/spacecrafts.png',
     alt: 'Picture of Spacecrafts home page',
     title: 'Spacecrafts',
     description: [
@@ -49,7 +49,7 @@ let projectElements = [
   },
   {
     id: 5,
-    image: '/../public/images/acustom-guitar.png',
+    image: '/images/acustom-guitar.png',
     alt: 'Picture of Acustom Guitar home page',
     title: 'Acustom Guitar',
     description: [
@@ -63,7 +63,7 @@ let projectElements = [
   },
   // {
   //   id: 6,
-  //   image: '/../public/images/demo.png',
+  //   image: '/images/demo.png',
   //   alt: "Picture of elliothwang.com's Hero section",
   //   title: 'elliothwang.com',
   //   description: ["Elliot Hwang's developer portfolio."],

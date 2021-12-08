@@ -24,7 +24,7 @@ const Navbar = ({ loaded, scrolled }) => {
                   style={loaded ? { transform: 'translateY(0%)' } : null}
                 >
                   <Image
-                    src="/../public/images/nav-logo.png"
+                    src={'/images/nav-logo.png'}
                     alt="logo"
                     height="75"
                     width="75"
