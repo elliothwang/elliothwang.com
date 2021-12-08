@@ -49,6 +49,7 @@
   margin: 5vh 10vw 5vh 10vw;
   color: $title-color-dark;
   font-size: 5vmin;
+  font-weight: 0;
   z-index: 1;
   transform: translateY(0%);
 
@@ -76,7 +77,6 @@
   z-index: 1;
   transform: translateY(0%);
   overflow-y: scroll;
-  background: red;
 
   @include above-1024-px {
     transform: translateY(50%);

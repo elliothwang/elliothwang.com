@@ -4,7 +4,6 @@ import styles from '../styles/ProjectCard.module.scss';
 
 // TODO (v2): create project routes & refactor project card;
 // TODO: import github & link svgs as components;
-// TODO: fix image src path;
 const ProjectCard = ({ el }) => {
   const handleClick = () => {
     window.screen.width >= 768 && window.open(el.deployed);
