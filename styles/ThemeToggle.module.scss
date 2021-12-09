@@ -87,7 +87,7 @@ $thumb-dimensions-above-768: calc(
     top: $toggle-padding-above-768;
     left: $toggle-padding-above-768;
     transform: translate3d(
-      -calc($toggle-width-above-768 - $toggle-height-above-768),
+      calc($toggle-width-above-768 - $toggle-height-above-768),
       0,
       0
     );
