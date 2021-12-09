@@ -1,6 +1,5 @@
 import Image from 'next/image';
-// import Link from 'next/link';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import SidebarButton from './SidebarButton';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
@@ -41,28 +40,29 @@ const Navbar = ({
             </li>
             <li>
               <Link
-                href="about"
                 activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={500}
+                // isDynamic={true}
                 className={styles.about}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
+                onClick={() => window.location.assign('/about')}
               >
                 About
               </Link>
             </li>
             <li>
               <Link
-                href="projects"
                 activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
                 offset={-160}
                 duration={750}
+                // isDynamic={true}
                 className={styles.projects}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
               >
@@ -71,13 +71,13 @@ const Navbar = ({
             </li>
             <li>
               <Link
-                href="experience"
                 activeClass="active"
                 to="experience"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={1000}
+                // isDynamic={true}
                 className={styles.experience}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
               >

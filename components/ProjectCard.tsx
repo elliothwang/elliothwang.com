@@ -6,7 +6,7 @@ import styles from '../styles/ProjectCard.module.scss';
 // TODO: import github & link svgs as components;
 const ProjectCard = ({ el }) => {
   const handleClick = () => {
-    window.screen.width >= 768 && window.open(el.deployed);
+    window.screen.width >= 768 && window.open(el.demo);
   };
 
   return (
@@ -43,10 +43,10 @@ const ProjectCard = ({ el }) => {
             </Link>
           </div>
           <div>
-            <Link href={el.deployed}>
+            <Link href={el.demo}>
               <a target="_blank">
                 <svg
-                  className={styles.deployed}
+                  className={styles.demo}
                   xmlns="http://www.w3.org/2000/svg"
                   width="3vmin"
                   height="3vmin"

@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react';
 import disableScroll from 'disable-scroll';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
-import SidebarButton from './SidebarButton';
 
-// TODO: add smooth-scrolling to anchor on nav click;
 // TODO: page reload should scroll to selected anchor section;
 // TODO (v2): add light theme styling;
 const Header = ({ scrolled }) => {
