@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import SidebarButton from './SidebarButton';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
@@ -25,6 +26,7 @@ const Navbar = ({
                 <a
                   className={styles.logo}
                   style={loaded ? { transform: 'translateY(0%)' } : null}
+                  onClick={() => window.location.reload()}
                 >
                   <Image
                     src={'/images/nav-logo.png'}
@@ -38,33 +40,48 @@ const Navbar = ({
               </Link>
             </li>
             <li>
-              <Link href="/#about">
-                <a
-                  className={styles.about}
-                  style={loaded ? { transform: 'translateY(0%)' } : null}
-                >
-                  About
-                </a>
+              <Link
+                href="about"
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className={styles.about}
+                style={loaded ? { transform: 'translateY(0%)' } : null}
+              >
+                About
               </Link>
             </li>
             <li>
-              <Link href="/#projects">
-                <a
-                  className={styles.projects}
-                  style={loaded ? { transform: 'translateY(0%)' } : null}
-                >
-                  Projects
-                </a>
+              <Link
+                href="projects"
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-160}
+                duration={750}
+                className={styles.projects}
+                style={loaded ? { transform: 'translateY(0%)' } : null}
+              >
+                Projects
               </Link>
             </li>
             <li>
-              <Link href="/#experience">
-                <a
-                  className={styles.experience}
-                  style={loaded ? { transform: 'translateY(0%)' } : null}
-                >
-                  Experience
-                </a>
+              <Link
+                href="experience"
+                activeClass="active"
+                to="experience"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}
+                className={styles.experience}
+                style={loaded ? { transform: 'translateY(0%)' } : null}
+              >
+                Experience
               </Link>
             </li>
             <li>
