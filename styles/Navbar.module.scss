@@ -62,6 +62,7 @@
 
   &:hover {
     color: $text-color-dark;
+    cursor: pointer;
   }
 
   @include below-768-px {
