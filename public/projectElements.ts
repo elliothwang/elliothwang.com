@@ -4,8 +4,12 @@ let projectElements = [
     image: '/images/weird-radio.png',
     alt: 'Picture of Weird Radio home page',
     title: 'Weird Radio',
-    description: ['in progress'],
-    technologies: ['JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQL'],
+    description: [
+      "Website for the 'Weird Radio' radio channel. Viewers can listen to the live channel and find featured artists and shows.",
+    ],
+    technologies: [
+      'JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQL, Netlify',
+    ],
     github: 'https://github.com/daleinen7/weird-radio',
     demo: 'https://weirdradio.netlify.app/',
   },
@@ -18,7 +22,7 @@ let projectElements = [
       'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, React, Redux, Sass, d3.js, REST API',
+      'JavaScript, HTML, CSS, React, Redux, Sass, d3.js, REST API, Netlify',
     ],
     github: 'https://github.com/elliothwang/rona-rates',
     demo: 'https://rona-rates.netlify.app/',
@@ -31,7 +35,9 @@ let projectElements = [
     description: [
       'In mini-midi, users can play a midi and use full CRUD functionality on single-note songs.',
     ],
-    technologies: ['JavaScript, HTML, CSS, MongoDB, Express, React, Node.js'],
+    technologies: [
+      'JavaScript, HTML, CSS, MongoDB, Express, React, Node.js, Heroku',
+    ],
     github: 'https://github.com/elliothwang/mini-midi',
     demo: 'https://mini-midi.herokuapp.com/',
   },
@@ -43,7 +49,9 @@ let projectElements = [
     description: [
       'The first iteration of my developer portfolio. Designed and built by Elliot Hwang.',
     ],
-    technologies: ['JavaScript, TypeScript, HTML, CSS, React, Next.js, Sass'],
+    technologies: [
+      'JavaScript, TypeScript, HTML, CSS, React, Next.js, Sass, Vercel',
+    ],
     github: 'https://github.com/elliothwang/elliothwang.com',
     demo: 'https://elliothwang.com',
   },
