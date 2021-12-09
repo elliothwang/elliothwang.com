@@ -46,10 +46,9 @@ const Navbar = ({
                 smooth={true}
                 offset={0}
                 duration={500}
-                // isDynamic={true}
+                isDynamic={true}
                 className={styles.about}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
-                onClick={() => window.location.assign('/about')}
               >
                 About
               </Link>
@@ -62,7 +61,7 @@ const Navbar = ({
                 smooth={true}
                 offset={-160}
                 duration={750}
-                // isDynamic={true}
+                isDynamic={true}
                 className={styles.projects}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
               >
@@ -77,7 +76,7 @@ const Navbar = ({
                 smooth={true}
                 offset={0}
                 duration={1000}
-                // isDynamic={true}
+                isDynamic={true}
                 className={styles.experience}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
               >

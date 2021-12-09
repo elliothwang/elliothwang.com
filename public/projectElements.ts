@@ -5,7 +5,7 @@ let projectElements = [
     alt: 'Picture of Weird Radio home page',
     title: 'Weird Radio',
     description: ['in progress'],
-    technologies: ['JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQl'],
+    technologies: ['JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQL'],
     github: 'https://github.com/daleinen7/weird-radio',
     demo: 'https://weirdradio.netlify.app/',
   },
