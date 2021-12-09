@@ -1,20 +1,6 @@
 let projectElements = [
   {
     id: 1,
-    image: '/images/weird-radio.png',
-    alt: 'Picture of Weird Radio home page',
-    title: 'Weird Radio',
-    description: [
-      "Website for the 'Weird Radio' radio channel. Viewers can listen to the live channel and find featured artists and shows.",
-    ],
-    technologies: [
-      'JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQL, Netlify',
-    ],
-    github: 'https://github.com/daleinen7/weird-radio',
-    demo: 'https://weirdradio.netlify.app/',
-  },
-  {
-    id: 2,
     image: '/images/rona-rates.png',
     alt: 'Picture of Rona Rates home page',
     title: 'corona-rona',
@@ -28,7 +14,7 @@ let projectElements = [
     demo: 'https://rona-rates.netlify.app/',
   },
   {
-    id: 3,
+    id: 2,
     image: '/images/mini-midi.png',
     alt: 'Picture of mini-midi home page',
     title: 'mini-midi',
@@ -40,6 +26,20 @@ let projectElements = [
     ],
     github: 'https://github.com/elliothwang/mini-midi',
     demo: 'https://mini-midi.herokuapp.com/',
+  },
+  {
+    id: 3,
+    image: '/images/weird-radio.png',
+    alt: 'Picture of Weird Radio home page',
+    title: 'Weird Radio',
+    description: [
+      "In progress! Website for the 'Weird Radio' radio channel. Viewers can listen to the live channel and find featured artists and shows.",
+    ],
+    technologies: [
+      'JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQL, Netlify',
+    ],
+    github: 'https://github.com/daleinen7/weird-radio',
+    demo: 'https://weirdradio.netlify.app/',
   },
   {
     id: 4,
