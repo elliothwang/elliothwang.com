@@ -3,7 +3,7 @@ let projectElements = [
     id: 1,
     image: '/images/rona-rates.png',
     alt: 'Picture of Rona Rates home page',
-    title: 'corona-rona',
+    title: 'Rona Rates',
     description: [
       'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats.',
     ],
