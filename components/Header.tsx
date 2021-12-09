@@ -26,10 +26,7 @@ const Header = ({ scrolled }) => {
     }
   };
 
-  console.log(sidebarShown);
-
   useEffect(() => {
-    disableScroll.off();
     setTimeout(() => setAnimate(true), 100);
   }, []);
 
