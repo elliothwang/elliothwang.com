@@ -1,13 +1,8 @@
 import styles from '../styles/ThemeToggle.module.scss';
-import { useEffect } from 'react';
 
-const ThemeToggle = ({ theme, setTheme }) => {
-  const changeTheme = () => {
-    setTheme(!theme);
-  };
-
+const ThemeToggle = ({ theme, handleThemeClick }) => {
   return (
-    <div className={styles.button} onClick={changeTheme}>
+    <div className={styles.button} onClick={handleThemeClick}>
       <div id="thumb" className={theme ? styles.dark : styles.light}></div>
       <span className="moon">
         <svg

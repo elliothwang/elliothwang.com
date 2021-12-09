@@ -1,13 +1,17 @@
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import SidebarButton from './SidebarButton';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
 
-// TODO (v2): add light theme styling;
-const Navbar = ({ loaded, scrolled }) => {
-  // const [dark, setDark] = useState(true);
-
+const Navbar = ({
+  loaded,
+  scrolled,
+  shown,
+  theme,
+  handleButtonClick,
+  handleThemeClick,
+}) => {
   return (
     <>
       <div
@@ -25,8 +29,8 @@ const Navbar = ({ loaded, scrolled }) => {
                   <Image
                     src={'/images/nav-logo.png'}
                     alt="logo"
-                    height="70"
-                    width="70"
+                    height="60"
+                    width="60"
                     objectFit="cover"
                     objectPosition="center"
                   />
@@ -78,9 +82,21 @@ const Navbar = ({ loaded, scrolled }) => {
               <div
                 className={styles.themeButton}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
-                // onClick={handleThemeChange}
+                onClick={handleThemeClick}
               >
-                {/* <ThemeToggle theme={dark} setTheme={setDark} /> */}
+                <ThemeToggle
+                  theme={theme}
+                  handleThemeClick={handleThemeClick}
+                />
+              </div>
+            </li>
+            <li>
+              <div className={styles.sidebarButton}>
+                <SidebarButton
+                  loaded={loaded}
+                  shown={shown}
+                  handleButtonClick={handleButtonClick}
+                />
               </div>
             </li>
           </ul>

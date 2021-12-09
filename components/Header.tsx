@@ -6,12 +6,13 @@ import SidebarButton from './SidebarButton';
 
 // TODO: add smooth-scrolling to anchor on nav click;
 // TODO: page reload should scroll to selected anchor section;
+// TODO (v2): add light theme styling;
 const Header = ({ scrolled }) => {
   const [dark, setDark] = useState(true);
   const [animate, setAnimate] = useState(false);
   const [sidebarShown, setSidebarShown] = useState(false);
 
-  const handleThemeChange = () => {
+  const handleThemeClick = () => {
     setDark(!dark);
   };
 
@@ -28,20 +29,27 @@ const Header = ({ scrolled }) => {
   console.log(sidebarShown);
 
   useEffect(() => {
+    disableScroll.off();
     setTimeout(() => setAnimate(true), 100);
   }, []);
 
   return (
     <>
-      <div onClick={handleButtonClick}>
-        <SidebarButton loaded={animate} shown={sidebarShown} />
-      </div>
       <Sidebar
+        theme={dark}
         loaded={animate}
         shown={sidebarShown}
         handleSidebarClick={handleButtonClick}
+        handleThemeClick={handleThemeClick}
       />
-      <Navbar loaded={animate} scrolled={scrolled} />
+      <Navbar
+        theme={dark}
+        loaded={animate}
+        scrolled={scrolled}
+        shown={sidebarShown}
+        handleButtonClick={handleButtonClick}
+        handleThemeClick={handleThemeClick}
+      />
     </>
   );
 };

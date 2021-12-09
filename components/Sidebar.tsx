@@ -1,11 +1,14 @@
-import { useState } from 'react';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Sidebar.module.scss';
 
-// TODO: fix broken sidebar clicks;
-const Sidebar = ({ loaded, shown, handleSidebarClick }) => {
-  console.log(shown);
+const Sidebar = ({
+  loaded,
+  shown,
+  theme,
+  handleSidebarClick,
+  handleThemeClick,
+}) => {
   return (
     <>
       <div
@@ -67,9 +70,12 @@ const Sidebar = ({ loaded, shown, handleSidebarClick }) => {
               <div
                 className={styles.themeButton}
                 style={loaded ? { transform: 'translate(0%)' } : null}
-                // onClick={handleThemeChange}
+                onClick={handleThemeClick}
               >
-                {/* <ThemeToggle theme={dark} setTheme={setDark} /> */}
+                <ThemeToggle
+                  theme={theme}
+                  handleThemeClick={handleThemeClick}
+                />
               </div>
             </li>
           </ul>
