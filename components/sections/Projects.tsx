@@ -2,6 +2,7 @@ import ProjectCard from '../ProjectCard';
 import styles from '../../styles/Projects.module.scss';
 import projectElements from '../../public/projectElements';
 
+// TODO: responsive transitions;
 const Projects = ({ scrolled }) => {
   return (
     <div className={styles.page}>
