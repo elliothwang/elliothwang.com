@@ -2,13 +2,7 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Sidebar.module.scss';
 
-const Sidebar = ({
-  loaded,
-  shown,
-  theme,
-  handleSidebarClick,
-  handleThemeClick,
-}) => {
+const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
   return (
     <>
       <div
@@ -25,7 +19,11 @@ const Sidebar = ({
               <Link href="/#about">
                 <a
                   className={styles.about}
-                  style={loaded ? { transform: 'translate(0%)' } : null}
+                  style={
+                    shown
+                      ? { transform: 'translate(0%)' }
+                      : { transform: 'translate(200%)' }
+                  }
                   onClick={handleSidebarClick}
                 >
                   About
@@ -36,7 +34,11 @@ const Sidebar = ({
               <Link href="/#projects">
                 <a
                   className={styles.projects}
-                  style={loaded ? { transform: 'translate(0%)' } : null}
+                  style={
+                    shown
+                      ? { transform: 'translate(0%)' }
+                      : { transform: 'translate(200%)' }
+                  }
                   onClick={handleSidebarClick}
                 >
                   Projects
@@ -47,7 +49,11 @@ const Sidebar = ({
               <Link href="/#experience">
                 <a
                   className={styles.experience}
-                  style={loaded ? { transform: 'translate(0%)' } : null}
+                  style={
+                    shown
+                      ? { transform: 'translate(0%)' }
+                      : { transform: 'translate(200%)' }
+                  }
                   onClick={handleSidebarClick}
                 >
                   Experience
@@ -57,7 +63,11 @@ const Sidebar = ({
             <li>
               <a
                 className={styles.contact}
-                style={loaded ? { transform: 'translate(0%)' } : null}
+                style={
+                  shown
+                    ? { transform: 'translate(0%)' }
+                    : { transform: 'translate(200%)' }
+                }
                 href="mailto:officialelliothwang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -69,7 +79,11 @@ const Sidebar = ({
             <li>
               <div
                 className={styles.themeButton}
-                style={loaded ? { transform: 'translate(0%)' } : null}
+                style={
+                  shown
+                    ? { transform: 'translate(0%)' }
+                    : { transform: 'translate(700%)' }
+                }
                 onClick={handleThemeClick}
               >
                 <ThemeToggle

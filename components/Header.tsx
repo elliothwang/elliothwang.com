@@ -32,7 +32,6 @@ const Header = ({ scrolled }) => {
     <>
       <Sidebar
         theme={dark}
-        loaded={animate}
         shown={sidebarShown}
         handleSidebarClick={handleButtonClick}
         handleThemeClick={handleThemeClick}

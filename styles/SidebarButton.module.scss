@@ -8,11 +8,12 @@
   right: 5vw;
   z-index: 3;
   cursor: pointer;
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+  transform: translateY(-300%);
+  -webkit-transition: all 0.75s 0.6s ease;
+  -moz-transition: all 0.75s 0.6s ease;
+  -ms-transition: all 0.75s 0.6s ease;
+  -o-transition: all 0.75s 0.6s ease;
+  transition: all 0.75s 0.6s ease;
 
   @include above-768-px {
     display: none;

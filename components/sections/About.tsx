@@ -50,8 +50,8 @@ const About = ({ scrolled }) => {
               Although I have just begun my journey as a developer, I am always
               eager to challenge myself to learn and try new things. Most of my
               projects are inspired by my passions for health and music.
-              Speaking of which, I am also a{' '}
-              <span className={styles.highlight}>singer/songwriter</span>.
+              {/* Speaking of which, I am also a{' '}
+              <span className={styles.highlight}>singer/songwriter</span>. */}
             </p>
           </div>
         </div>

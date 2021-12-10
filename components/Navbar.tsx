@@ -94,7 +94,7 @@ const Navbar = ({
                 Contact
               </a>
             </li>
-            <li>
+            {/* <li>
               <div
                 className={styles.themeButton}
                 style={loaded ? { transform: 'translateY(0%)' } : null}
@@ -105,7 +105,7 @@ const Navbar = ({
                   handleThemeClick={handleThemeClick}
                 />
               </div>
-            </li>
+            </li> */}
             <li>
               <div className={styles.sidebarButton}>
                 <SidebarButton

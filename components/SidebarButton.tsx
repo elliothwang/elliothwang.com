@@ -1,12 +1,11 @@
 import styles from '../styles/SidebarButton.module.scss';
 
-// TODO: animate on reload;
 const SidebarButton = ({ loaded, shown, handleButtonClick }) => {
   return (
     <>
       <div
         className={styles.sidebarButton}
-        style={loaded ? { transform: 'translate(0%)' } : null}
+        style={loaded ? { transform: 'translateY(0%)' } : null}
         onClick={handleButtonClick}
       >
         <div className={shown ? styles.topBarActive : styles.topBar}></div>

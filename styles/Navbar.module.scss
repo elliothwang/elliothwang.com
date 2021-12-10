@@ -29,6 +29,8 @@
   justify-content: center;
   align-items: center;
   margin: 0;
+  // ! remove this when adding theme toggle;
+  margin-right: 3vw;
   padding: 0;
   list-style-type: none;
 }
@@ -44,6 +46,10 @@
   -ms-transition: all 0.75s ease;
   -o-transition: all 0.75s ease;
   transition: all 0.75s ease;
+}
+
+.active {
+  color: $text-color-dark;
 }
 
 .about,

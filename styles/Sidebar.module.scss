@@ -38,13 +38,14 @@
 .about,
 .projects,
 .experience,
-.contact {
+.contact,
+.themeButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 0;
   margin: 5vmin auto;
   font-size: 10vmin;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   color: $title-color-dark;
@@ -55,16 +56,7 @@
 }
 
 .about {
-  transform: translate(200%);
-  -webkit-transition: all 0.5s 0.1s ease-in-out;
-  -moz-transition: all 0.5s 0.1s ease-in-out;
-  -ms-transition: all 0.5s 0.1s ease-in-out;
-  -o-transition: all 0.5s 0.1s ease-in-out;
-  transition: all 0.5s 0.1s ease-in-out;
-}
-
-.projects {
-  transform: translate(200%);
+  display: inline-block;
   -webkit-transition: all 0.5s 0.2s ease-in-out;
   -moz-transition: all 0.5s 0.2s ease-in-out;
   -ms-transition: all 0.5s 0.2s ease-in-out;
@@ -72,8 +64,8 @@
   transition: all 0.5s 0.2s ease-in-out;
 }
 
-.experience {
-  transform: translate(200%);
+.projects {
+  display: inline-block;
   -webkit-transition: all 0.5s 0.3s ease-in-out;
   -moz-transition: all 0.5s 0.3s ease-in-out;
   -ms-transition: all 0.5s 0.3s ease-in-out;
@@ -81,8 +73,8 @@
   transition: all 0.5s 0.3s ease-in-out;
 }
 
-.contact {
-  transform: translate(200%);
+.experience {
+  display: inline-block;
   -webkit-transition: all 0.5s 0.4s ease-in-out;
   -moz-transition: all 0.5s 0.4s ease-in-out;
   -ms-transition: all 0.5s 0.4s ease-in-out;
@@ -90,11 +82,20 @@
   transition: all 0.5s 0.4s ease-in-out;
 }
 
-.themeButton {
-  transform: translate(200%);
+.contact {
+  display: inline-block;
   -webkit-transition: all 0.5s 0.5s ease-in-out;
   -moz-transition: all 0.5s 0.5s ease-in-out;
   -ms-transition: all 0.5s 0.5s ease-in-out;
   -o-transition: all 0.5s 0.5s ease-in-out;
   transition: all 0.5s 0.5s ease-in-out;
+}
+
+.themeButton {
+  display: inline-block;
+  -webkit-transition: all 0.5s 0.6s ease-in-out;
+  -moz-transition: all 0.5s 0.6s ease-in-out;
+  -ms-transition: all 0.5s 0.6s ease-in-out;
+  -o-transition: all 0.5s 0.6s ease-in-out;
+  transition: all 0.5s 0.6s ease-in-out;
 }
