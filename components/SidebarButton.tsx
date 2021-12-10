@@ -12,9 +12,9 @@ const SidebarButton = ({ loaded, shown, handleButtonClick }) => {
         }
         onClick={handleButtonClick}
       >
-        <div className={shown ? styles.topBarActive : styles.topBar}></div>
-        <div className={shown ? styles.midBarActive : styles.midBar}></div>
-        <div className={shown ? styles.botBarActive : styles.botBar}></div>
+        <div className={shown ? styles.topBarActive : styles.bar}></div>
+        <div className={shown ? styles.midBarActive : styles.bar}></div>
+        <div className={shown ? styles.botBarActive : styles.bar}></div>
       </div>
     </>
   );

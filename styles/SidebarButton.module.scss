@@ -15,12 +15,7 @@
   }
 }
 
-.topBar,
-.topBarActive,
-.midBar,
-.midBarActive,
-.botBar,
-.botBarActive {
+.bar {
   display: block;
   height: 5px;
   width: 50px;
@@ -31,13 +26,16 @@
 }
 
 .topBarActive {
+  @extend .bar;
   @include sidebar-button-transition(15px, 45deg);
 }
 
 .midBarActive {
+  @extend .bar;
   width: 0;
 }
 
 .botBarActive {
+  @extend .bar;
   @include sidebar-button-transition(-15px, -45deg);
 }

@@ -5,7 +5,7 @@
   justify-content: flex-end;
   position: fixed;
   top: 0;
-  height: 10vh;
+  height: 7.5vh;
   width: 100vw;
   max-width: 99%;
   background: $background-dark;
@@ -15,6 +15,7 @@
   @include transition(0.75s, null);
 
   @include above-768-px {
+    height: 10vh;
     z-index: 1;
   }
 }
