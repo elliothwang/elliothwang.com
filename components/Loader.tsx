@@ -7,7 +7,7 @@ const Loader = () => {
     <div className={styles.screen}>
       <div className={styles.logo}>
         <Image
-          src={'/images/loader-logo.png'}
+          src={'/images/logo.png'}
           alt="logo"
           height="100"
           width="100"

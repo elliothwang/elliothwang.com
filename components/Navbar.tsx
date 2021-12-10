@@ -36,7 +36,7 @@ const Navbar = ({
                   onClick={() => window.location.reload()}
                 >
                   <Image
-                    src={'/images/nav-logo.png'}
+                    src={'/images/logo.png'}
                     alt="logo"
                     height="60"
                     width="60"

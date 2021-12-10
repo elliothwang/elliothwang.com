@@ -8,7 +8,7 @@ import WorkIcon from '../public/icons/work.svg';
 import SchoolIcon from '../public/icons/school.svg';
 import styles from '../styles/Timeline.module.scss';
 
-// TODO: import work & school svg icons as components;
+// TODO (v2): import work & school svg icons as components;
 const Timeline = () => {
   let workIconStyle: object = { background: '#70587c' };
   let schoolIconStyle: object = { background: '#171738' };

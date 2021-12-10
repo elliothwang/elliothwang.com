@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="/public/images/loader-logo.png?raw=true" alt="logo" width="50">
+  <img src="/public/images/logo.png?raw=true" alt="logo" width="50">
 </div>
 
 <h1 align="center">
