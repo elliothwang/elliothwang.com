@@ -5,10 +5,10 @@ let projectElements = [
     alt: 'Picture of Rona Rates home page',
     title: 'Rona Rates',
     description: [
-      'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats.',
+      'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats from the NovelCOVID API.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, React, Redux, Sass, d3.js, REST API, Netlify',
+      'JavaScript, HTML, CSS, React, Redux, d3.js, REST API, Netlify',
     ],
     github: 'https://github.com/elliothwang/rona-rates',
     demo: 'https://rona-rates.netlify.app/',
@@ -17,12 +17,12 @@ let projectElements = [
     id: 2,
     image: '/images/mini-midi.png',
     alt: 'Picture of mini-midi home page',
-    title: 'mini-midi',
+    title: 'mini midi',
     description: [
       'In mini-midi, users can play a midi and use full CRUD functionality on single-note songs.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, MongoDB, Express, React, Node.js, Heroku',
+      'JavaScript, HTML, CSS, MongoDB, Express, React, Node.js, Sass, jQuery, Heroku',
     ],
     github: 'https://github.com/elliothwang/mini-midi',
     demo: 'https://mini-midi.herokuapp.com/',
