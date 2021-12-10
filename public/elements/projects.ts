@@ -43,7 +43,7 @@ let projects = [
   },
   {
     id: 4,
-    image: '/images/demo.png',
+    image: '/images/elliothwang.com.png',
     alt: 'Picture of elliothwang.com home page',
     title: 'elliothwang.com',
     description: [
