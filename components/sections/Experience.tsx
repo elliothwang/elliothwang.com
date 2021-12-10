@@ -9,9 +9,11 @@ const Experience = ({ scrolled }) => {
         <h1
           className={styles.title}
           style={
-            scrolled && window.screen.width >= 1024
-              ? { transform: 'translateY(0%)' }
-              : { transform: 'translateY(50%)' }
+            window.screen.width >= 1024
+              ? scrolled
+                ? { transform: 'translateY(0%)' }
+                : { transform: 'translateY(50%)' }
+              : { transform: 'translateY(0%)' }
           }
         >
           What have I done?
@@ -19,9 +21,11 @@ const Experience = ({ scrolled }) => {
         <div
           className={styles.timeline}
           style={
-            scrolled && window.screen.width >= 1024
-              ? { transform: 'translateY(0%)' }
-              : { transform: 'translateY(50%)' }
+            window.screen.width >= 1024
+              ? scrolled
+                ? { transform: 'translateY(0%)' }
+                : { transform: 'translateY(50%)' }
+              : { transform: 'translateY(0%)' }
           }
         >
           <Timeline />

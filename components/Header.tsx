@@ -3,7 +3,7 @@ import disableScroll from 'disable-scroll';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
-// TODO: page reload should scroll to selected anchor section;
+// TODO (v2): page reload should scroll to selected anchor section;
 // TODO (v2): add light theme styling;
 const Header = ({ scrolled }) => {
   const [dark, setDark] = useState(true);

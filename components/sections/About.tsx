@@ -9,17 +9,21 @@ const About = ({ scrolled }) => {
         <div
           className={styles.about}
           style={
-            scrolled && window.screen.width >= 1024
-              ? { transform: 'translateY(0%)' }
-              : { transform: 'translateY(50%)' }
+            window.screen.width >= 1024
+              ? scrolled
+                ? { transform: 'translateY(0%)' }
+                : { transform: 'translateY(50%)' }
+              : { transform: 'translateY(0%)' }
           }
         >
           <h1
             className={styles.title}
             style={
-              scrolled && window.screen.width >= 1024
-                ? { transform: 'translateY(0%)' }
-                : { transform: 'translateY(50%)' }
+              window.screen.width >= 1024
+                ? scrolled
+                  ? { transform: 'translateY(0%)' }
+                  : { transform: 'translateY(50%)' }
+                : { transform: 'translateY(0%)' }
             }
           >
             Who am I?
@@ -35,9 +39,9 @@ const About = ({ scrolled }) => {
             <p
               className={styles.p}
               style={
-                scrolled && window.screen.width >= 1024
-                  ? { transform: 'translateY(0%)' }
-                  : null
+                window.screen.width >= 1024
+                  ? scrolled && { transform: 'translateY(0%)' }
+                  : { transform: 'translateY(0%)' }
               }
             >
               Although I have just begun my journey as a developer, I am always
@@ -51,9 +55,11 @@ const About = ({ scrolled }) => {
         <div
           className={styles.skills}
           style={
-            scrolled && window.screen.width >= 1024
-              ? { transform: 'translateY(0%)' }
-              : { transform: 'translateY(50%)' }
+            window.screen.width >= 1024
+              ? scrolled
+                ? { transform: 'translateY(0%)' }
+                : { transform: 'translateY(50%)' }
+              : { transform: 'translateY(0%)' }
           }
         >
           <Skills />
