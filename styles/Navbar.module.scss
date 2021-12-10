@@ -31,11 +31,15 @@
 
 .logo {
   position: absolute;
-  top: 2.25vh;
+  top: 0.75vh;
   left: 5vw;
   z-index: 3;
 
   @include transition(0.75s, null);
+
+  @include above-768-px {
+    top: 2.25vh;
+  }
 }
 
 .active {

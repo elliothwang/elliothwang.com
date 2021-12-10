@@ -57,9 +57,11 @@ const About = ({ scrolled }) => {
         <div
           className={styles.skills}
           style={
-            scrolled && window.screen.width >= 1024
-              ? { transform: 'translateY(0%)' }
-              : { transform: 'translateY(50%)' }
+            window.screen.width >= 1024
+              ? scrolled
+                ? { transform: 'translateY(0%)' }
+                : { transform: 'translateY(50%)' }
+              : { transform: 'translateY(0%)' }
           }
         >
           <Skills />
