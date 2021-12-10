@@ -1,17 +1,11 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 5vh;
   width: 60vw;
   margin-top: 5vh;

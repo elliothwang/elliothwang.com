@@ -5,7 +5,11 @@ const SidebarButton = ({ loaded, shown, handleButtonClick }) => {
     <>
       <div
         className={styles.sidebarButton}
-        style={loaded ? { transform: 'translateY(0%)' } : null}
+        style={
+          loaded
+            ? { transform: 'translateY(0%)' }
+            : { transform: 'translateY(-300%)' }
+        }
         onClick={handleButtonClick}
       >
         <div className={shown ? styles.topBarActive : styles.topBar}></div>

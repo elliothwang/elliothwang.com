@@ -76,7 +76,7 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                 Contact
               </a>
             </li>
-            <li>
+            {/* <li>
               <div
                 className={styles.themeButton}
                 style={
@@ -91,7 +91,7 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                   handleThemeClick={handleThemeClick}
                 />
               </div>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

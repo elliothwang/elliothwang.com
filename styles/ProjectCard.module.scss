@@ -1,11 +1,7 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   position: relative;
   margin-bottom: 2.5vh;
   height: 60vh;
@@ -24,9 +20,7 @@
 }
 
 .image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   position: relative;
   height: 30vh;
   width: 60vw;
@@ -58,10 +52,7 @@
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   position: absolute;
   height: 30vh;
   width: 60vw;
@@ -81,9 +72,7 @@
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 15vh;
   width: 45vw;
   margin: 0;
@@ -101,8 +90,7 @@
 }
 
 .description {
-  display: flex;
-  align-items: center;
+  @include flex-ctr-ctr;
   text-align: center;
   height: 12.5vh;
   width: 45vw;
@@ -120,9 +108,7 @@
 }
 
 .tech {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   text-align: center;
   height: 7vh;
   width: 45vw;

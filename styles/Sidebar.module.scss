@@ -1,10 +1,7 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .sidebar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   position: fixed;
   top: 0;
   height: 100vh;
@@ -13,11 +10,8 @@
   background: $background-dark;
   overflow-x: hidden;
   z-index: 2;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+
+  @include transition(1s, null);
 
   @include above-768-px {
     display: none;
@@ -40,9 +34,7 @@
 .experience,
 .contact,
 .themeButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   margin: 5vmin auto;
   font-size: 10vmin;
   text-align: center;
@@ -57,45 +49,25 @@
 
 .about {
   display: inline-block;
-  -webkit-transition: all 0.5s 0.2s ease-in-out;
-  -moz-transition: all 0.5s 0.2s ease-in-out;
-  -ms-transition: all 0.5s 0.2s ease-in-out;
-  -o-transition: all 0.5s 0.2s ease-in-out;
-  transition: all 0.5s 0.2s ease-in-out;
+  @include transition(0.5s, 0.2s);
 }
 
 .projects {
   display: inline-block;
-  -webkit-transition: all 0.5s 0.3s ease-in-out;
-  -moz-transition: all 0.5s 0.3s ease-in-out;
-  -ms-transition: all 0.5s 0.3s ease-in-out;
-  -o-transition: all 0.5s 0.3s ease-in-out;
-  transition: all 0.5s 0.3s ease-in-out;
+  @include transition(0.5s, 0.3s);
 }
 
 .experience {
   display: inline-block;
-  -webkit-transition: all 0.5s 0.4s ease-in-out;
-  -moz-transition: all 0.5s 0.4s ease-in-out;
-  -ms-transition: all 0.5s 0.4s ease-in-out;
-  -o-transition: all 0.5s 0.4s ease-in-out;
-  transition: all 0.5s 0.4s ease-in-out;
+  @include transition(0.5s, 0.4s);
 }
 
 .contact {
   display: inline-block;
-  -webkit-transition: all 0.5s 0.5s ease-in-out;
-  -moz-transition: all 0.5s 0.5s ease-in-out;
-  -ms-transition: all 0.5s 0.5s ease-in-out;
-  -o-transition: all 0.5s 0.5s ease-in-out;
-  transition: all 0.5s 0.5s ease-in-out;
+  @include transition(0.5s, 0.5s);
 }
 
 .themeButton {
   display: inline-block;
-  -webkit-transition: all 0.5s 0.6s ease-in-out;
-  -moz-transition: all 0.5s 0.6s ease-in-out;
-  -ms-transition: all 0.5s 0.6s ease-in-out;
-  -o-transition: all 0.5s 0.6s ease-in-out;
-  transition: all 0.5s 0.6s ease-in-out;
+  @include transition(0.5s, 0.6s);
 }

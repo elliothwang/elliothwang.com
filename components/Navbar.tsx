@@ -16,7 +16,11 @@ const Navbar = ({
     <>
       <div
         className={styles.navbar}
-        style={scrolled ? { transform: 'translateY(-100%)' } : null}
+        style={
+          scrolled
+            ? { transform: 'translateY(-100%)' }
+            : { transform: 'translateY(0%)' }
+        }
       >
         <nav className={styles.nav}>
           <ul className={styles.ul}>
@@ -24,7 +28,11 @@ const Navbar = ({
               <Link href="/">
                 <a
                   className={styles.logo}
-                  style={loaded ? { transform: 'translateY(0%)' } : null}
+                  style={
+                    loaded
+                      ? { transform: 'translateY(0%)' }
+                      : { transform: 'translateY(-200%)' }
+                  }
                   onClick={() => window.location.reload()}
                 >
                   <Image
@@ -48,7 +56,11 @@ const Navbar = ({
                 duration={500}
                 isDynamic={true}
                 className={styles.about}
-                style={loaded ? { transform: 'translateY(0%)' } : null}
+                style={
+                  loaded
+                    ? { transform: 'translateY(0%)' }
+                    : { transform: 'translateY(-300%)' }
+                }
               >
                 About
               </Link>
@@ -63,7 +75,11 @@ const Navbar = ({
                 duration={750}
                 isDynamic={true}
                 className={styles.projects}
-                style={loaded ? { transform: 'translateY(0%)' } : null}
+                style={
+                  loaded
+                    ? { transform: 'translateY(0%)' }
+                    : { transform: 'translateY(-300%)' }
+                }
               >
                 Projects
               </Link>
@@ -78,7 +94,11 @@ const Navbar = ({
                 duration={1000}
                 isDynamic={true}
                 className={styles.experience}
-                style={loaded ? { transform: 'translateY(0%)' } : null}
+                style={
+                  loaded
+                    ? { transform: 'translateY(0%)' }
+                    : { transform: 'translateY(-300%)' }
+                }
               >
                 Experience
               </Link>
@@ -86,7 +106,11 @@ const Navbar = ({
             <li>
               <a
                 className={styles.contact}
-                style={loaded ? { transform: 'translateY(0%)' } : null}
+                style={
+                  loaded
+                    ? { transform: 'translateY(0%)' }
+                    : { transform: 'translateY(-300%)' }
+                }
                 href="mailto:officialelliothwang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -97,7 +121,11 @@ const Navbar = ({
             {/* <li>
               <div
                 className={styles.themeButton}
-                style={loaded ? { transform: 'translateY(0%)' } : null}
+                style={
+                  loaded
+                    ? { transform: 'translateY(0%)' }
+                    : { transform: 'translateY(-300%)' }
+                }
                 onClick={handleThemeClick}
               >
                 <ThemeToggle

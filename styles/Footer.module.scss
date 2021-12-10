@@ -1,11 +1,7 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   // height: 5vh;
   width: 100vw;
   max-width: 100%;
@@ -14,18 +10,14 @@
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  @include flex-ctr-ctr;
   height: 20vh;
   width: 100vw;
   padding-top: 1vh;
 }
 
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 5vh;
   width: 100vw;
   font-size: 1.5vmin;

@@ -1,19 +1,13 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .page {
+  @include flex-ctr-ctr;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: $background-dark;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   position: relative;
   height: 75vh;
   width: 100vw;
@@ -32,38 +26,22 @@
   height: 74vh;
 }
 
-.about,
-.title {
-  transform: translateY(0%);
-
-  @include above-1024-px {
-    transform: translateY(50%);
-    -webkit-transition: all 0.75s ease;
-    -moz-transition: all 0.75s ease;
-    -ms-transition: all 0.75s ease;
-    -o-transition: all 0.75s ease;
-    transition: all 0.75s ease;
-  }
-}
-
 .about {
-  display: flex;
+  @include flex-ctr-start;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   height: 40vh;
   width: 80vw;
 
   @include above-1024-px {
     height: 52.5vh;
     width: 40vw;
+
+    @include transition(0.75s, null);
   }
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 10vh;
   width: 80vw;
   margin: 0 auto;
@@ -74,14 +52,13 @@
     justify-content: flex-start;
     height: 12.5vh;
     width: 40vw;
+
+    @include transition(0.75s, null);
   }
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   height: 30vh;
   width: 50vw;
   margin: 0 auto;
@@ -111,9 +88,7 @@
 }
 
 .skills {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 20vh;
   width: 80vw;
   transform: translateY(0%);
@@ -121,11 +96,7 @@
   @include above-1024-px {
     height: 52.5vh;
     width: 20vw;
-    transform: translateY(50%);
-    -webkit-transition: all 0.75s 0.25s ease;
-    -moz-transition: all 0.75s 0.25s ease;
-    -ms-transition: all 0.75s 0.25s ease;
-    -o-transition: all 0.75s 0.25s ease;
-    transition: all 0.75s 0.25s ease;
+
+    @include transition(0.75s, 0.25s);
   }
 }

@@ -1,5 +1,4 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .sidebarButton {
   display: inline;
@@ -8,12 +7,8 @@
   right: 5vw;
   z-index: 3;
   cursor: pointer;
-  transform: translateY(-300%);
-  -webkit-transition: all 0.75s 0.6s ease;
-  -moz-transition: all 0.75s 0.6s ease;
-  -ms-transition: all 0.75s 0.6s ease;
-  -o-transition: all 0.75s 0.6s ease;
-  transition: all 0.75s 0.6s ease;
+
+  @include transition(0.75s, 0.6s);
 
   @include above-768-px {
     display: none;
@@ -31,19 +26,12 @@
   width: 50px;
   background: $title-color-dark;
   margin: 10px auto;
-  -webkit-transition: all 0.75s ease;
-  -moz-transition: all 0.75s ease;
-  -ms-transition: all 0.75s ease;
-  -o-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+
+  @include transition(0.75s, null);
 }
 
 .topBarActive {
-  -webkit-transform: translateY(15px) rotateZ(45deg);
-  -moz-transform: translateY(15px) rotateZ(45deg);
-  -ms-transform: translateY(15px) rotateZ(45deg);
-  -o-transform: translateY(15px) rotateZ(45deg);
-  transform: translateY(15px) rotateZ(45deg);
+  @include sidebar-button-transition(15px, 45deg);
 }
 
 .midBarActive {
@@ -51,9 +39,5 @@
 }
 
 .botBarActive {
-  -webkit-transform: translateY(-15px) rotateZ(-45deg);
-  -moz-transform: translateY(-15px) rotateZ(-45deg);
-  -ms-transform: translateY(-15px) rotateZ(-45deg);
-  -o-transform: translateY(-15px) rotateZ(-45deg);
-  transform: translateY(-15px) rotateZ(-45deg);
+  @include sidebar-button-transition(-15px, -45deg);
 }

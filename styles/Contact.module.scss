@@ -1,11 +1,7 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   height: 20vh;
 }
 
@@ -46,6 +42,10 @@
   -webkit-user-select: none;
   touch-action: manipulation;
 
+  @include above-768-px {
+    padding: 0 2.6rem;
+  }
+
   &:hover {
     opacity: 0.9;
     box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
@@ -56,10 +56,4 @@
 .button > * {
   text-decoration: none;
   color: $text-color-dark;
-}
-
-@media (min-width: 768px) {
-  .button {
-    padding: 0 2.6rem;
-  }
 }

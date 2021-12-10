@@ -1,18 +1,13 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .page {
+  @include flex-ctr-ctr;
   height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: $background-dark;
 }
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @include flex-col-ctr-ctr;
   align-items: flex-start;
   position: relative;
   height: 271vh;
@@ -45,9 +40,7 @@
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 15vh;
   width: 60vw;
   margin: -5vh 20vw 0 20vw;
@@ -65,24 +58,16 @@
   }
 
   @include above-1024-px {
-    transform: translateY(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    @include transition(0.75s, null);
   }
 }
 
 .cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   flex-wrap: wrap;
   height: 250vh;
   width: 80vw;
   margin: 0 10vw;
-  transform: translateY(0%);
 
   @include above-480-px {
     height: 125vh;
@@ -97,11 +82,6 @@
   }
 
   @include above-1024-px {
-    transform: translateY(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
+    @include transition(0.75s, null);
   }
 }

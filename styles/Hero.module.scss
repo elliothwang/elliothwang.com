@@ -1,11 +1,8 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .hero {
-  display: flex;
+  @include flex-ctr-start;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   height: 100vh;
   width: 100vw;
   max-width: 100%;
@@ -30,11 +27,8 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 1vmin;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
+
+  @include transition(1s, null);
 }
 
 .title {
@@ -42,11 +36,8 @@
   font-size: 12.5vmin;
   font-weight: 600;
   margin: 0;
-  -webkit-transition: all 1.25s 0.25s ease;
-  -moz-transition: all 1.25s 0.25s ease;
-  -ms-transition: all 1.25s 0.25s ease;
-  -o-transition: all 1.25s 0.25s ease;
-  transition: all 1.25s 0.25s ease;
+
+  @include transition(1.25s, 0.25s);
 }
 
 .subTitle {
@@ -54,22 +45,16 @@
   font-size: 10vmin;
   font-weight: 400;
   margin: 0;
-  -webkit-transition: all 1.25s 0.5s ease;
-  -moz-transition: all 1.25s 0.5s ease;
-  -ms-transition: all 1.25s 0.5s ease;
-  -o-transition: all 1.25s 0.5s ease;
-  transition: all 1.25s 0.5s ease;
+
+  @include transition(1.25s, 0.5s);
 }
 
 .summary {
   color: $text-color-dark;
   font-size: 2.5vmin;
   margin: 10vmin;
-  -webkit-transition: all 1s 0.75s ease;
-  -moz-transition: all 1s 0.75s ease;
-  -ms-transition: all 1s 0.75s ease;
-  -o-transition: all 1s 0.75s ease;
-  transition: all 1s 0.75s ease;
+
+  @include transition(1.25s, 0.75s);
 }
 
 .highlight {

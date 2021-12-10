@@ -1,4 +1,4 @@
-import '../styles/globals.scss';
+import '../styles/main.scss';
 import { useState, useEffect } from 'react';
 import Loader from '../components/Loader';
 

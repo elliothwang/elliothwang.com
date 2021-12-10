@@ -1,4 +1,4 @@
-@import 'globals';
+@import 'color-themes';
 $small-width: 480px;
 $medium-width: 768px;
 $large-width: 1024px;
@@ -80,6 +80,31 @@ $color-background: $background-dark;
   }
 }
 
+@mixin flex-ctr-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-col-ctr-ctr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-start-ctr {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-ctr-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 @mixin corner-borders-60() {
   display: flex;
   justify-content: center;
@@ -144,34 +169,18 @@ $color-background: $background-dark;
   }
 }
 
-@mixin corner-borders-100() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  border: $corner-width solid $color-border;
-  background: $color-background;
-  width: 100vw;
+@mixin transition($time1, $time2) {
+  -webkit-transition: all $time1 $time2 ease;
+  -moz-transition: all $time1 $time2 ease;
+  -ms-transition: all $time1 $time2 ease;
+  -o-transition: all $time1 $time2 ease;
+  transition: all $time1 $time2 ease;
+}
 
-  &::before {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: -$corner-width;
-    bottom: -$corner-width;
-    left: $corner-size;
-    right: $corner-size;
-    background: $color-background;
-  }
-
-  &::after {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: $corner-size;
-    bottom: $corner-size;
-    left: -$corner-width;
-    right: -$corner-width;
-    background: $color-background;
-  }
+@mixin sidebar-button-transition($Y, $Z) {
+  -webkit-transform: translateY($Y) rotateZ($Z);
+  -moz-transform: translateY($Y) rotateZ($Z);
+  -ms-transform: translateY($Y) rotateZ($Z);
+  -o-transform: translateY($Y) rotateZ($Z);
+  transform: translateY($Y) rotateZ($Z);
 }

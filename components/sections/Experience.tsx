@@ -11,7 +11,7 @@ const Experience = ({ scrolled }) => {
           style={
             scrolled && window.screen.width >= 1024
               ? { transform: 'translateY(0%)' }
-              : null
+              : { transform: 'translateY(50%)' }
           }
         >
           What have I done?
@@ -21,7 +21,7 @@ const Experience = ({ scrolled }) => {
           style={
             scrolled && window.screen.width >= 1024
               ? { transform: 'translateY(0%)' }
-              : null
+              : { transform: 'translateY(50%)' }
           }
         >
           <Timeline />

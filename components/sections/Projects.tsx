@@ -12,7 +12,7 @@ const Projects = ({ scrolled }) => {
           style={
             scrolled && window.screen.width >= 1024
               ? { transform: 'translateY(0%)' }
-              : null
+              : { transform: 'translateY(50%)' }
           }
         >
           What have I made?
@@ -22,7 +22,7 @@ const Projects = ({ scrolled }) => {
           style={
             scrolled && window.screen.width >= 1024
               ? { transform: 'translateY(0%)' }
-              : null
+              : { transform: 'translateY(50%)' }
           }
         >
           {projectElements?.map((el: object, i: number) => {

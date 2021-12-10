@@ -5,7 +5,7 @@ let projectElements = [
     alt: 'Picture of Rona Rates home page',
     title: 'Rona Rates',
     description: [
-      'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats from the NovelCOVID API.',
+      'A single-page application in which viewers can find up-to-date US, state, and county COVID-19 info and stats from the NovelCOVID API.',
     ],
     technologies: [
       'JavaScript, HTML, CSS, React, Redux, d3.js, Axios, Google OAuth, Netlify',
@@ -19,7 +19,7 @@ let projectElements = [
     alt: 'Picture of mini midi home page',
     title: 'mini midi',
     description: [
-      'In mini-midi, users can play a midi and use full CRUD functionality on single-note songs.',
+      'Viewers can play a midi online and use full CRUD functionality on single-note songs.',
     ],
     technologies: [
       'JavaScript, HTML, CSS, Sass, MongoDB, Express, React, Node.js, jQuery, Heroku',

@@ -11,7 +11,7 @@ const About = ({ scrolled }) => {
           style={
             scrolled && window.screen.width >= 1024
               ? { transform: 'translateY(0%)' }
-              : null
+              : { transform: 'translateY(50%)' }
           }
         >
           <h1
@@ -19,20 +19,13 @@ const About = ({ scrolled }) => {
             style={
               scrolled && window.screen.width >= 1024
                 ? { transform: 'translateY(0%)' }
-                : null
+                : { transform: 'translateY(50%)' }
             }
           >
             Who am I?
           </h1>
           <div className={styles.content}>
-            <p
-              className={styles.p}
-              style={
-                scrolled && window.screen.width >= 1024
-                  ? { transform: 'translateY(0%)' }
-                  : null
-              }
-            >
+            <p className={styles.p}>
               Hi, there! My name is{' '}
               <span className={styles.highlight}>Elliot Hwang</span>. As a
               previous pre-medical student, my passion for helping others has
@@ -60,7 +53,7 @@ const About = ({ scrolled }) => {
           style={
             scrolled && window.screen.width >= 1024
               ? { transform: 'translateY(0%)' }
-              : null
+              : { transform: 'translateY(50%)' }
           }
         >
           <Skills />

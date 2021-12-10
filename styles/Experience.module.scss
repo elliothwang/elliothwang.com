@@ -1,11 +1,8 @@
-@import 'globals';
-@import 'mixins';
+@import 'main';
 
 .page {
+  @include flex-ctr-ctr;
   height: 155vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: $background-dark;
 
   @include above-1170-px {
@@ -14,10 +11,7 @@
 }
 
 .exp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-col-ctr-ctr;
   position: relative;
   height: 130vh;
   width: 100vw;
@@ -41,9 +35,7 @@
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-ctr-ctr;
   height: 15vh;
   width: 80vw;
   margin: 5vh 10vw 5vh 10vw;
@@ -51,7 +43,6 @@
   font-size: 5vmin;
   font-weight: 0;
   z-index: 1;
-  transform: translateY(0%);
 
   @include above-480-px {
     margin: 2.5vh 20vw 0 20vw;
@@ -61,12 +52,8 @@
     margin: 0 10vw;
     justify-content: flex-start;
     margin-left: 32.5vw;
-    transform: translateY(50%);
-    -webkit-transition: all 0.75s 0.25s ease;
-    -moz-transition: all 0.75s 0.25s ease;
-    -ms-transition: all 0.75s 0.25s ease;
-    -o-transition: all 0.75s 0.25s ease;
-    transition: all 0.75s 0.25s ease;
+
+    @include transition(0.75s, 0.25s);
   }
 }
 
@@ -75,16 +62,10 @@
   width: 60vw;
   margin: 0 10vw 7.5vh 10vw;
   z-index: 1;
-  transform: translateY(0%);
   overflow-y: scroll;
 
   @include above-1024-px {
-    transform: translateY(50%);
-    -webkit-transition: all 0.75s 0.25s ease;
-    -moz-transition: all 0.75s 0.25s ease;
-    -ms-transition: all 0.75s 0.25s ease;
-    -o-transition: all 0.75s 0.25s ease;
-    transition: all 0.75s 0.25s ease;
+    @include transition(0.75s, 0.25s);
   }
 
   @include above-1170-px {
