@@ -8,7 +8,7 @@ let projectElements = [
       'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats from the NovelCOVID API.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, React, Redux, d3.js, REST API, Netlify',
+      'JavaScript, HTML, CSS, React, Redux, d3.js, REST API, Google OAuth, Netlify',
     ],
     github: 'https://github.com/elliothwang/rona-rates',
     demo: 'https://rona-rates.netlify.app/',
