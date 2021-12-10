@@ -1,4 +1,4 @@
-let projectElements = [
+let projects = [
   {
     id: 1,
     image: '/images/rona-rates.png',
@@ -57,4 +57,4 @@ let projectElements = [
   },
 ];
 
-export default projectElements;
+export default projects;

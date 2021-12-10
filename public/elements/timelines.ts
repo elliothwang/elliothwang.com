@@ -1,4 +1,4 @@
-let timelineElements = [
+let timelines = [
   {
     id: 1,
     title: 'Full-Stack SWE Bootcamp',
@@ -57,4 +57,4 @@ let timelineElements = [
   },
 ];
 
-export default timelineElements;
+export default timelines;

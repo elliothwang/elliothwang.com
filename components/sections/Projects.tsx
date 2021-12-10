@@ -1,6 +1,6 @@
 import ProjectCard from '../ProjectCard';
 import styles from '../../styles/Projects.module.scss';
-import projectElements from '../../public/projectElements';
+import projects from '../../public/elements/projects';
 
 const Projects = ({ scrolled }) => {
   return (
@@ -29,7 +29,7 @@ const Projects = ({ scrolled }) => {
               : { transform: 'translateY(0%)' }
           }
         >
-          {projectElements?.map((el: object, i: number) => {
+          {projects?.map((el: object, i: number) => {
             return <ProjectCard key={i} el={el} />;
           })}
         </div>

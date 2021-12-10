@@ -1,5 +1,6 @@
 import styles from '../styles/ThemeToggle.module.scss';
 
+// TODO (v2): import moon & sun svg icons as components;
 const ThemeToggle = ({ theme, handleThemeClick }) => {
   return (
     <div className={styles.button} onClick={handleThemeClick}>
