@@ -1,5 +1,6 @@
 import styles from '../styles/SidebarButton.module.scss';
 
+// TODO: animate on reload;
 const SidebarButton = ({ loaded, shown, handleButtonClick }) => {
   return (
     <>

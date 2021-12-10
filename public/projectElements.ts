@@ -8,7 +8,7 @@ let projectElements = [
       'A single-page application in which viewers can find up-to-date US, state-specific, and county-specific COVID-19 info and stats from the NovelCOVID API.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, React, Redux, d3.js, REST API, Google OAuth, Netlify',
+      'JavaScript, HTML, CSS, React, Redux, d3.js, Axios, Google OAuth, Netlify',
     ],
     github: 'https://github.com/elliothwang/rona-rates',
     demo: 'https://rona-rates.netlify.app/',
@@ -16,13 +16,13 @@ let projectElements = [
   {
     id: 2,
     image: '/images/mini-midi.png',
-    alt: 'Picture of mini-midi home page',
+    alt: 'Picture of mini midi home page',
     title: 'mini midi',
     description: [
       'In mini-midi, users can play a midi and use full CRUD functionality on single-note songs.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, MongoDB, Express, React, Node.js, Sass, jQuery, Heroku',
+      'JavaScript, HTML, CSS, Sass, MongoDB, Express, React, Node.js, jQuery, Heroku',
     ],
     github: 'https://github.com/elliothwang/mini-midi',
     demo: 'https://mini-midi.herokuapp.com/',
@@ -33,10 +33,10 @@ let projectElements = [
     alt: 'Picture of Weird Radio home page',
     title: 'Weird Radio',
     description: [
-      "In progress! Website for the 'Weird Radio' radio channel. Viewers can listen to the live channel and find featured artists and shows.",
+      'Currently in progress! An internet radio station promoting experimental music. Working in a team of two engineers and two designers.',
     ],
     technologies: [
-      'JavaScript, HTML, CSS, Gatsby.js, React, Sass, GraphQL, Netlify',
+      'JavaScript, HTML, CSS, Sass, React, Gatsby.js, GraphQL, Netlify',
     ],
     github: 'https://github.com/daleinen7/weird-radio',
     demo: 'https://weirdradio.netlify.app/',
@@ -50,7 +50,7 @@ let projectElements = [
       'The first iteration of my developer portfolio. Designed and built by Elliot Hwang.',
     ],
     technologies: [
-      'JavaScript, TypeScript, HTML, CSS, React, Next.js, Sass, Vercel',
+      'JavaScript, TypeScript, HTML, CSS, Sass, React, Next.js, Vercel',
     ],
     github: 'https://github.com/elliothwang/elliothwang.com',
     demo: 'https://elliothwang.com',
