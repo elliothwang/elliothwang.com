@@ -38,8 +38,8 @@ const Navbar = ({
                   <Image
                     src={'/images/logo.png'}
                     alt="logo"
-                    height="60"
-                    width="60"
+                    height={window.screen.width >= 1024 ? '60' : '50'}
+                    width={window.screen.width >= 1024 ? '60' : '50'}
                     objectFit="cover"
                     objectPosition="center"
                   />
