@@ -48,8 +48,8 @@ const Hero = () => {
             : { transform: 'translate(-200%)' }
         }
       >
-        I am a full stack developer with a desire to help others through my
-        work. <br />
+        I am a front end developer with a desire to help others through my work.{' '}
+        <br />
         My goal is to contribute to code that will{' '}
         <span className={styles.highlight}>
           provide solutions and assistance for others
