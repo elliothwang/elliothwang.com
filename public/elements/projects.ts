@@ -19,7 +19,7 @@ let projects = [
     alt: 'Picture of mini midi home page',
     title: 'mini midi',
     description: [
-      'Viewers can play a midi online and use full CRUD functionality on single-note songs.',
+      'Viewers can play a midi online with their mouse or keyboard and record songs.',
     ],
     technologies: [
       'JavaScript, HTML, CSS, Sass, MongoDB, Express, React, Node.js, jQuery, Heroku',
