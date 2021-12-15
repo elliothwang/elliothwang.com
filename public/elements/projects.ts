@@ -5,7 +5,7 @@ let projects = [
     alt: 'Picture of Rona Rates home page',
     title: 'Rona Rates',
     description: [
-      'A single-page application in which viewers can find up-to-date US, state, and county COVID-19 info and stats from the NovelCOVID API.',
+      'Viewers can find up-to-date US, state, and county COVID-19 info and stats from the NovelCOVID API.',
     ],
     technologies: [
       'JavaScript, HTML, CSS, React, Redux, d3.js, Axios, Google OAuth, Netlify',

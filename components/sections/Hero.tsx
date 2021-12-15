@@ -54,8 +54,7 @@ const Hero = () => {
         <span className={styles.highlight}>
           provide solutions and assistance for others
         </span>
-        . <br /> Ultimately, I would like to look back at what I&apos;ve done
-        and know that I&apos;ve made a{' '}
+        . <br /> Ultimately, I would like to make a{' '}
         <span className={styles.highlight}>
           positive impact on other people
         </span>
