@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Hero from '../components/sections/Hero';
@@ -7,7 +7,7 @@ import Projects from '../components/sections/Projects';
 import Experience from '../components/sections/Experience';
 import styles from '../styles/index.module.scss';
 
-const Index = () => {
+const Index: FC = () => {
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutScrolled, setAboutScrolled] = useState(false);
   const [projectsScrolled, setProjectsScrolled] = useState(false);

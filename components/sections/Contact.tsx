@@ -1,7 +1,10 @@
+import { FC } from 'react';
+import { useThemeContext } from '../ThemeContext';
 import styles from '../../styles/Contact.module.scss';
 
 // TODO (v2): create Contact route, create contact form, & refactor contact button;
-const Contact = () => {
+const Contact: FC = () => {
+  const { darkMode } = useThemeContext();
   return (
     <div className={styles.contact}>
       <h3 className={styles.msg}>Want to get in touch?</h3>

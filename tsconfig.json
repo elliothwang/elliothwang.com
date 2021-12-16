@@ -21,7 +21,8 @@
     "**/*.tsx",
     "postcss.config.js",
     "next.config.js",
-    "components/sections"
+    "components/sections",
+    "components/ThemeContext.js"
   ],
   "exclude": ["node_modules"]
 }

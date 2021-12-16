@@ -1,7 +1,14 @@
-import styles from '../../styles/About.module.scss';
+import { FC } from 'react';
+import { useThemeContext } from '../ThemeContext';
 import Skills from '../Skills';
+import styles from '../../styles/About.module.scss';
 
-const About = ({ scrolled }) => {
+type Props = {
+  scrolled: boolean;
+};
+
+const About: FC<Props> = ({ scrolled }) => {
+  const { darkMode } = useThemeContext();
   return (
     <div className={styles.page}>
       <div className={styles.container}>

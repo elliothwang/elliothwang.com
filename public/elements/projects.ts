@@ -1,4 +1,4 @@
-let projects = [
+let projects: Array<object> = [
   {
     id: 1,
     image: '/images/rona-rates.png',

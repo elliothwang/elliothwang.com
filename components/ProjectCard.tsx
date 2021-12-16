@@ -1,10 +1,25 @@
-import Link from 'next/link';
+import { FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useThemeContext } from './ThemeContext';
 import styles from '../styles/ProjectCard.module.scss';
+
+type Props = {
+  el: {
+    image: string;
+    alt: string;
+    title: string;
+    description: Array<string>;
+    technologies: Array<string>;
+    github: string;
+    demo: string;
+  };
+};
 
 // TODO (v2): create project routes & refactor project card;
 // TODO (v2): import github & link svgs as components;
-const ProjectCard = ({ el }) => {
+const ProjectCard: FC<Props> = ({ el }) => {
+  const { darkMode } = useThemeContext();
   return (
     <div className={styles.card}>
       <div className={styles.image}>

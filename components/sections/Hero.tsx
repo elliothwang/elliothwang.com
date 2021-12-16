@@ -1,7 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
+import { useThemeContext } from '../ThemeContext';
 import styles from '../../styles/Hero.module.scss';
 
-const Hero = () => {
+const Hero: FC = () => {
+  const { darkMode } = useThemeContext();
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -9,7 +11,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className={styles.hero}>
+    <div
+      className={styles.hero}
+      // style={darkMode ? { background: 'black' } : { background: 'white' }}
+    >
       <h5
         className={styles.greeting}
         style={

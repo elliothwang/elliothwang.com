@@ -1,8 +1,14 @@
 import '../styles/main.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
 import Loader from '../components/Loader';
+import { ThemeProvider } from '../components/ThemeContext';
 
-const App = ({ Component, pageProps }) => {
+type Props = {
+  Component: any;
+  pageProps: any;
+};
+
+const App: FC<Props> = ({ Component, pageProps }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -11,13 +17,15 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      {loaded ? (
-        <div className="body">
-          <Component {...pageProps} loaded={loaded} />
-        </div>
-      ) : (
-        <Loader />
-      )}
+      <ThemeProvider>
+        {loaded ? (
+          <div className="body">
+            <Component {...pageProps} loaded={loaded} />
+          </div>
+        ) : (
+          <Loader />
+        )}
+      </ThemeProvider>
     </>
   );
 };

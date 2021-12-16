@@ -1,8 +1,17 @@
+import { FC } from 'react';
 import Link from 'next/link';
+import { useThemeContext } from './ThemeContext';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Sidebar.module.scss';
 
-const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
+type Props = {
+  shown: boolean;
+  handleSidebarClick: Function;
+};
+
+const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
+  const { darkMode } = useThemeContext();
+
   return (
     <>
       <div
@@ -24,7 +33,7 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                       ? { transform: 'translate(0%)' }
                       : { transform: 'translate(200%)' }
                   }
-                  onClick={handleSidebarClick}
+                  onClick={() => handleSidebarClick}
                 >
                   About
                 </a>
@@ -39,7 +48,7 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                       ? { transform: 'translate(0%)' }
                       : { transform: 'translate(200%)' }
                   }
-                  onClick={handleSidebarClick}
+                  onClick={() => handleSidebarClick}
                 >
                   Projects
                 </a>
@@ -54,7 +63,7 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                       ? { transform: 'translate(0%)' }
                       : { transform: 'translate(200%)' }
                   }
-                  onClick={handleSidebarClick}
+                  onClick={() => handleSidebarClick}
                 >
                   Experience
                 </a>
@@ -71,12 +80,12 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                 href="mailto:officialelliothwang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleSidebarClick}
+                onClick={() => handleSidebarClick}
               >
                 Contact
               </a>
             </li>
-            {/* <li>
+            <li>
               <div
                 className={styles.themeButton}
                 style={
@@ -84,14 +93,10 @@ const Sidebar = ({ shown, theme, handleSidebarClick, handleThemeClick }) => {
                     ? { transform: 'translate(0%)' }
                     : { transform: 'translate(700%)' }
                 }
-                onClick={handleThemeClick}
               >
-                <ThemeToggle
-                  theme={theme}
-                  handleThemeClick={handleThemeClick}
-                />
+                <ThemeToggle />
               </div>
-            </li> */}
+            </li>
           </ul>
         </nav>
       </div>

@@ -1,17 +1,21 @@
+import { FC } from 'react';
 import Image from 'next/image';
 import { Link } from 'react-scroll';
+import { useThemeContext } from './ThemeContext';
 import SidebarButton from './SidebarButton';
 import ThemeToggle from './ThemeToggle';
 import styles from '../styles/Navbar.module.scss';
 
-const Navbar = ({
-  loaded,
-  scrolled,
-  shown,
-  theme,
-  handleButtonClick,
-  handleThemeClick,
-}) => {
+type Props = {
+  loaded: boolean;
+  scrolled: boolean;
+  shown: boolean;
+  handleButtonClick: Function;
+};
+
+const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
+  const { darkMode } = useThemeContext();
+
   return (
     <>
       <div
@@ -118,7 +122,7 @@ const Navbar = ({
                 Contact
               </a>
             </li>
-            {/* <li>
+            <li>
               <div
                 className={styles.themeButton}
                 style={
@@ -126,14 +130,10 @@ const Navbar = ({
                     ? { transform: 'translateY(0%)' }
                     : { transform: 'translateY(-300%)' }
                 }
-                onClick={handleThemeClick}
               >
-                <ThemeToggle
-                  theme={theme}
-                  handleThemeClick={handleThemeClick}
-                />
+                <ThemeToggle />
               </div>
-            </li> */}
+            </li>
             <li>
               <div className={styles.sidebarButton}>
                 <SidebarButton

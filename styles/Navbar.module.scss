@@ -23,8 +23,6 @@
 .ul {
   @include flex-ctr-ctr;
   margin: 0;
-  // ! remove this when adding theme toggle;
-  margin-right: 3vw;
   padding: 0;
   list-style-type: none;
 }

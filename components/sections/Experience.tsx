@@ -1,7 +1,14 @@
+import { FC } from 'react';
+import { useThemeContext } from '../ThemeContext';
 import Timeline from '../Timeline';
 import styles from '../../styles/Experience.module.scss';
 
-const Experience = ({ scrolled }) => {
+type Props = {
+  scrolled: boolean;
+};
+
+const Experience: FC<Props> = ({ scrolled }) => {
+  const { darkMode } = useThemeContext();
   return (
     <div className={styles.page}>
       <div className={styles.exp}>

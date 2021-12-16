@@ -1,10 +1,14 @@
+import { FC } from 'react';
+import { useThemeContext } from './ThemeContext';
 import styles from '../styles/ThemeToggle.module.scss';
 
 // TODO (v2): import moon & sun svg icons as components;
-const ThemeToggle = ({ theme, handleThemeClick }) => {
+const ThemeToggle: FC = () => {
+  const { darkMode, setTheme } = useThemeContext();
+
   return (
-    <div className={styles.button} onClick={handleThemeClick}>
-      <div id="thumb" className={theme ? styles.dark : styles.light}></div>
+    <div className={styles.button} onClick={setTheme}>
+      <div id="thumb" className={darkMode ? styles.dark : styles.light}></div>
       <span className="moon">
         <svg
           xmlns="http://www.w3.org/2000/svg"

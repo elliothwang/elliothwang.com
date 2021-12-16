@@ -1,7 +1,11 @@
+import { FC } from 'react';
+import { useThemeContext } from './ThemeContext';
 import styles from '../styles/Footer.module.scss';
 
-const Footer = () => {
-  let date: number = new Date().getFullYear();
+const date: number = new Date().getFullYear();
+
+const Footer: FC = () => {
+  const { darkMode } = useThemeContext();
   return (
     <div className={styles.border}>
       <div className={styles.footer}>

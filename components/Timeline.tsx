@@ -1,3 +1,5 @@
+import { FC } from 'react';
+import { useThemeContext } from './ThemeContext';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -6,12 +8,22 @@ import 'react-vertical-timeline-component/style.min.css';
 import timelines from '../public/elements/timelines';
 import styles from '../styles/Timeline.module.scss';
 
+type Props = {
+  title: string;
+  location: string;
+  date: string;
+  description: Array<string>;
+  icon: string;
+};
+
+const workIconStyle: object = { background: '#70587c' };
+const schoolIconStyle: object = { background: '#171738' };
+const cardStyle: object = { background: '#c8b8db', color: '#fff' };
+const arrowStyle: object = { borderRight: '1vmin solid #c8b8db' };
+
 // TODO (v2): import work & school svg icons as components;
-const Timeline = () => {
-  let workIconStyle: object = { background: '#70587c' };
-  let schoolIconStyle: object = { background: '#171738' };
-  let cardStyle: object = { background: '#c8b8db', color: '#fff' };
-  let arrowStyle: object = { borderRight: '1vmin solid #c8b8db' };
+const Timeline: FC = () => {
+  const { darkMode } = useThemeContext();
 
   return (
     <div>

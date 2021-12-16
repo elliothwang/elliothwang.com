@@ -1,10 +1,17 @@
+import { FC } from 'react';
 import Image from 'next/image';
+import { useThemeContext } from './ThemeContext';
 import styles from '../styles/Loader.module.scss';
 
 // TODO (v2): create loader animation to replace temporary one;
-const Loader = () => {
+const Loader: FC = () => {
+  const { darkMode } = useThemeContext();
+
   return (
-    <div className={styles.screen}>
+    <div
+      className={styles.screen}
+      // style={darkMode ? { background: 'black' } : { background: 'gray' }}
+    >
       <div className={styles.logo}>
         <Image
           src={'/images/logo.png'}

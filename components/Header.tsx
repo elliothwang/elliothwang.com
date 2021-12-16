@@ -1,20 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
+import { useThemeContext } from './ThemeContext';
 import disableScroll from 'disable-scroll';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 
+type Props = {
+  scrolled: boolean;
+};
+
 // TODO (v2): page reload should scroll to selected anchor section;
-// TODO (v2): add light theme styling;
-const Header = ({ scrolled }) => {
-  const [dark, setDark] = useState(true);
+const Header: FC<Props> = ({ scrolled }) => {
+  const { darkMode } = useThemeContext();
   const [animate, setAnimate] = useState(false);
   const [sidebarShown, setSidebarShown] = useState(false);
 
-  const handleThemeClick = () => {
-    setDark(!dark);
-  };
-
-  const handleButtonClick = () => {
+  const handleButtonClick: Function = (evt: React.MouseEvent) => {
+    evt.preventDefault();
     if (sidebarShown === true) {
       disableScroll.off();
       setSidebarShown(false);
@@ -30,19 +31,12 @@ const Header = ({ scrolled }) => {
 
   return (
     <>
-      <Sidebar
-        theme={dark}
-        shown={sidebarShown}
-        handleSidebarClick={handleButtonClick}
-        handleThemeClick={handleThemeClick}
-      />
+      <Sidebar shown={sidebarShown} handleSidebarClick={handleButtonClick} />
       <Navbar
-        theme={dark}
         loaded={animate}
         scrolled={scrolled}
         shown={sidebarShown}
         handleButtonClick={handleButtonClick}
-        handleThemeClick={handleThemeClick}
       />
     </>
   );

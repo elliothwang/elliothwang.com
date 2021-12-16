@@ -1,4 +1,13 @@
-let timelines = [
+type Props = {
+  id: number;
+  title: string;
+  location: string;
+  date: string;
+  description: Array<string>;
+  icon: string;
+};
+
+let timelines: Array<Props> = [
   {
     id: 1,
     title: 'Full-Stack SWE Bootcamp',

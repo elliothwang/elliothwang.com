@@ -1,8 +1,15 @@
+import { FC } from 'react';
+import { useThemeContext } from '../ThemeContext';
 import ProjectCard from '../ProjectCard';
-import styles from '../../styles/Projects.module.scss';
 import projects from '../../public/elements/projects';
+import styles from '../../styles/Projects.module.scss';
 
-const Projects = ({ scrolled }) => {
+type Props = {
+  scrolled: boolean;
+};
+
+const Projects: FC<Props> = ({ scrolled }) => {
+  const { darkMode } = useThemeContext();
   return (
     <div className={styles.page}>
       <div className={styles.projects}>
@@ -29,9 +36,22 @@ const Projects = ({ scrolled }) => {
               : { transform: 'translateY(0%)' }
           }
         >
-          {projects?.map((el: object, i: number) => {
-            return <ProjectCard key={i} el={el} />;
-          })}
+          {projects?.map(
+            (
+              el: {
+                image: string;
+                alt: string;
+                title: string;
+                description: Array<string>;
+                technologies: Array<string>;
+                github: string;
+                demo: string;
+              },
+              i: number
+            ) => {
+              return <ProjectCard key={i} el={el} />;
+            }
+          )}
         </div>
       </div>
     </div>
