@@ -17,7 +17,6 @@ type Props = {
 };
 
 // TODO (v2): create project routes & refactor project card;
-// TODO (v2): import github & link svgs as components;
 const ProjectCard: FC<Props> = ({ el }) => {
   const { darkMode } = useThemeContext();
   return (

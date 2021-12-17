@@ -2,7 +2,6 @@ import { FC } from 'react';
 import { useThemeContext } from './ThemeContext';
 import styles from '../styles/ThemeToggle.module.scss';
 
-// TODO (v2): import moon & sun svg icons as components;
 const ThemeToggle: FC = () => {
   const { darkMode, setTheme } = useThemeContext();
 

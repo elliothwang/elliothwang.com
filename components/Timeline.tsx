@@ -23,7 +23,6 @@ const cardStyleLight: object = { background: '#f9f4f5', color: '#fff' };
 const arrowStyleDark: object = { borderRight: '1vmin solid #c8b8db' };
 const arrowStyleLight: object = { borderRight: '1vmin solid #f9f4f5' };
 
-// TODO (v2): import work & school svg icons as components;
 const Timeline: FC = () => {
   const { darkMode } = useThemeContext();
 

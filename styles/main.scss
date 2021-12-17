@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-// TODO (v2): style scrollbar;
+// TODO (v2): style scrollbar over;
 // ? overflow-y: scroll ===> scrollbar is styled but transforms/translates break;
 .body {
   height: 100vh;
@@ -15,7 +15,6 @@
   bottom: 0;
   left: 0;
   font-family: 'Lora', serif;
-  // overflow-y: auto;
   -webkit-tap-highlight-color: transparent;
 }
 

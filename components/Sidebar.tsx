@@ -12,8 +12,6 @@ type Props = {
 const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
   const { darkMode } = useThemeContext();
 
-  console.log(shown);
-
   return (
     <>
       <div
