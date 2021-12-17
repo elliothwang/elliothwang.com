@@ -43,7 +43,7 @@ $thumb-dimensions-above-768: calc(
   width: $thumb-dimensions-below-768;
   top: $toggle-padding-below-768;
   left: $toggle-padding-below-768;
-  background: $accent-1-dark;
+  background: $theme-button-dark;
   border-radius: 50%;
   transition: transform 0.25s ease-in-out;
   transform: translate3d(
@@ -71,7 +71,7 @@ $thumb-dimensions-above-768: calc(
   width: $thumb-dimensions-below-768;
   top: $toggle-padding-below-768;
   left: $toggle-padding-below-768;
-  background: $accent-1-light;
+  background: $theme-button-light;
   border-radius: 50%;
   transition: transform 0.25s ease-in-out;
   transform: translate3d(

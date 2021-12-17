@@ -8,10 +8,7 @@ const Loader: FC = () => {
   const { darkMode } = useThemeContext();
 
   return (
-    <div
-      className={styles.screen}
-      // style={darkMode ? { background: 'black' } : { background: 'gray' }}
-    >
+    <div className={styles.screen}>
       <div className={styles.logo}>
         <Image
           src={'/images/logo.png'}

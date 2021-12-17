@@ -1,4 +1,15 @@
-let projects: Array<object> = [
+type Props = {
+  id: number;
+  image: string;
+  alt: string;
+  title: string;
+  description: Array<string>;
+  technologies: Array<string>;
+  github: string;
+  demo: string;
+};
+
+const projects: Array<Props> = [
   {
     id: 1,
     image: '/images/rona-rates.png',

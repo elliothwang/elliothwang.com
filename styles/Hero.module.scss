@@ -1,6 +1,6 @@
 @import 'main';
 
-.hero {
+.heroDark {
   @include flex-ctr-start;
   flex-direction: column;
   height: 100vh;
@@ -10,53 +10,71 @@
   overflow: hidden;
 }
 
-.hero > h1,
-.hero > h3,
-.hero > h5,
-.hero > p {
-  margin: 0 10vw;
+.heroLight {
+  @extend .heroDark;
+  background: $background-light;
 }
 
-.hero > p {
-  margin: 5vh 10vw 0 10vw;
-}
-
-.greeting {
+.greetingDark {
   color: $title-color-dark;
   font-size: 5vmin;
   font-weight: 400;
-  margin: 0;
+  margin: 0 10vw;
   margin-bottom: 1vmin;
 
   @include transition(1s, null);
 }
 
-.title {
+.greetingLight {
+  @extend .greetingDark;
+  color: $accent-1-light;
+}
+
+.titleDark {
   color: $text-color-dark;
   font-size: 12.5vmin;
   font-weight: 600;
-  margin: 0;
+  margin: 0 10vw;
 
   @include transition(1.25s, 0.25s);
 }
 
-.subTitle {
+.titleLight {
+  @extend .titleDark;
+  color: $text-color-light;
+}
+
+.subtitleDark {
   color: $accent-1-dark;
   font-size: 10vmin;
   font-weight: 400;
-  margin: 0;
+  margin: 0 10vw;
 
   @include transition(1.25s, 0.5s);
 }
 
-.summary {
+.subtitleLight {
+  @extend .subtitleDark;
+  color: $accent-1-light;
+}
+
+.summaryDark {
   color: $text-color-dark;
   font-size: 2.5vmin;
-  margin: 10vmin;
+  margin: 10vh 10vw;
 
   @include transition(1.25s, 0.75s);
 }
 
-.highlight {
+.summaryLight {
+  @extend .summaryDark;
+  color: $text-color-light;
+}
+
+.highlightDark {
   color: $title-color-dark;
+}
+
+.highlightLight {
+  color: $accent-3-light;
 }

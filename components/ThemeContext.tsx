@@ -1,26 +1,15 @@
 import { useState, createContext, useContext, FC } from 'react';
 
-type IThemeContext = {
+interface ThemeContext {
   darkMode: boolean;
   setTheme?: () => void;
-};
-
-export const themes = {
-  light: {
-    foreground: '#000000',
-    background: '#eeeeee',
-  },
-  dark: {
-    foreground: '#ffffff',
-    background: '#222222',
-  },
-};
+}
 
 const defaultState = {
   darkMode: true,
 };
 
-const ThemeContext = createContext<IThemeContext>(defaultState);
+const ThemeContext = createContext<ThemeContext>(defaultState);
 
 const ThemeProvider: FC = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);

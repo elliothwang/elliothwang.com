@@ -11,12 +11,9 @@ const Hero: FC = () => {
   }, []);
 
   return (
-    <div
-      className={styles.hero}
-      // style={darkMode ? { background: 'black' } : { background: 'white' }}
-    >
+    <div className={darkMode ? styles.heroDark : styles.heroLight}>
       <h5
-        className={styles.greeting}
+        className={darkMode ? styles.greetingDark : styles.greetingLight}
         style={
           animate
             ? { transform: 'translate(0%)' }
@@ -26,7 +23,7 @@ const Hero: FC = () => {
         Hi, there! I&apos;m
       </h5>
       <h1
-        className={styles.title}
+        className={darkMode ? styles.titleDark : styles.titleLight}
         style={
           animate
             ? { transform: 'translate(0%)' }
@@ -36,7 +33,7 @@ const Hero: FC = () => {
         Elliot Hwang.
       </h1>
       <h3
-        className={styles.subTitle}
+        className={darkMode ? styles.subtitleDark : styles.subtitleLight}
         style={
           animate
             ? { transform: 'translate(0%)' }
@@ -46,7 +43,7 @@ const Hero: FC = () => {
         Web Developer.
       </h3>
       <p
-        className={styles.summary}
+        className={darkMode ? styles.summaryDark : styles.summaryLight}
         style={
           animate
             ? { transform: 'translate(0%)' }
@@ -56,11 +53,15 @@ const Hero: FC = () => {
         I am a front end developer with a desire to help others through my work.{' '}
         <br />
         My goal is to contribute to code that will{' '}
-        <span className={styles.highlight}>
+        <span
+          className={darkMode ? styles.highlightDark : styles.highlightLight}
+        >
           provide solutions and assistance for others
         </span>
         . <br /> Ultimately, I would like to make a{' '}
-        <span className={styles.highlight}>
+        <span
+          className={darkMode ? styles.highlightDark : styles.highlightLight}
+        >
           positive impact on other people
         </span>
         .

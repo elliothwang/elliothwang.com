@@ -7,7 +7,7 @@ type Props = {
   icon: string;
 };
 
-let timelines: Array<Props> = [
+const timelines: Array<Props> = [
   {
     id: 1,
     title: 'Full-Stack SWE Bootcamp',

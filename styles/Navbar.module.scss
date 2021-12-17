@@ -7,7 +7,7 @@
   top: 0;
   height: 10vh;
   width: 100vw;
-  max-width: 99%;
+  max-width: 100%;
   background: $background-dark;
   z-index: 2;
   overflow-x: hidden;
@@ -28,15 +28,20 @@
 }
 
 .logo {
+  @include flex-ctr-ctr;
+  height: 5vh;
+  width: 5vw;
   position: absolute;
-  top: 2.5vh;
+  top: 2.75vh;
   left: 5vw;
   z-index: 3;
 
   @include transition(0.75s, null);
 
   @include above-768-px {
-    top: 2.25vh;
+    height: 6.5vh;
+    width: 6.5vw;
+    top: 1.75vh;
   }
 }
 
