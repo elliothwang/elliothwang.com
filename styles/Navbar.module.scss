@@ -43,6 +43,12 @@
     width: 6.5vw;
     top: 1.75vh;
   }
+
+  @include below-1000-px-height {
+    height: 5vh;
+    width: 5vw;
+    top: 2.75vh;
+  }
 }
 
 .active {

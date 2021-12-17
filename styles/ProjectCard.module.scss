@@ -1,6 +1,6 @@
 @import 'main';
 
-.card {
+.cardDark {
   @include flex-col-ctr-ctr;
   position: relative;
   margin-bottom: 2.5vh;
@@ -19,7 +19,11 @@
   }
 }
 
-.image {
+.cardLight {
+  @extend .cardDark;
+}
+
+.imageDark {
   @include flex-ctr-ctr;
   position: relative;
   height: 30vh;
@@ -47,7 +51,12 @@
   }
 }
 
-.image > * {
+.imageLight {
+  @extend .imageDark;
+}
+
+.imageDark > *,
+.imageLight > * {
   filter: brightness(100%);
 }
 
@@ -57,6 +66,7 @@
   height: 30vh;
   width: 60vw;
   bottom: 0;
+  margin-left: 2.5vmin;
 
   @include above-480-px {
     height: 30vh;
@@ -71,7 +81,7 @@
   }
 }
 
-.title {
+.titleDark {
   @include flex-ctr-ctr;
   height: 15vh;
   width: 45vw;
@@ -89,7 +99,11 @@
   }
 }
 
-.description {
+.titleLight {
+  @extend .titleDark;
+}
+
+.descriptionDark {
   @include flex-ctr-ctr;
   text-align: center;
   height: 12.5vh;
@@ -107,7 +121,11 @@
   }
 }
 
-.tech {
+.descriptionLight {
+  @extend .descriptionDark;
+}
+
+.techDark {
   @include flex-ctr-ctr;
   text-align: center;
   height: 7vh;
@@ -125,6 +143,10 @@
   }
 }
 
+.techLight {
+  @extend .techDark;
+}
+
 .links {
   display: flex;
   justify-content: space-between;
@@ -137,7 +159,7 @@
   }
 }
 
-.github {
+.githubDark {
   color: $title-color-dark;
   margin-left: 0.25vw;
 
@@ -150,7 +172,11 @@
   }
 }
 
-.demo {
+.githubLight {
+  @extend .githubDark;
+}
+
+.demoDark {
   color: $title-color-dark;
   margin-right: 0.25vw;
 
@@ -161,4 +187,8 @@
   @include above-768-px {
     color: $background-dark;
   }
+}
+
+.githubLight {
+  @extend .githubDark;
 }

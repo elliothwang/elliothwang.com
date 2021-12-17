@@ -82,6 +82,12 @@ $light-background: $background-light;
   }
 }
 
+@mixin below-1000-px-height {
+  @media (max-height: 1000px) {
+    @content;
+  }
+}
+
 @mixin flex-ctr-ctr {
   display: flex;
   justify-content: center;

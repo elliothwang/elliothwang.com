@@ -18,8 +18,10 @@ type Props = {
 
 const workIconStyle: object = { background: '#70587c' };
 const schoolIconStyle: object = { background: '#171738' };
-const cardStyle: object = { background: '#c8b8db', color: '#fff' };
-const arrowStyle: object = { borderRight: '1vmin solid #c8b8db' };
+const cardStyleDark: object = { background: '#c8b8db', color: '#fff' };
+const cardStyleLight: object = { background: '#f9f4f5', color: '#fff' };
+const arrowStyleDark: object = { borderRight: '1vmin solid #c8b8db' };
+const arrowStyleLight: object = { borderRight: '1vmin solid #f9f4f5' };
 
 // TODO (v2): import work & school svg icons as components;
 const Timeline: FC = () => {
@@ -32,8 +34,8 @@ const Timeline: FC = () => {
           return (
             <VerticalTimelineElement
               key={i}
-              contentStyle={cardStyle}
-              contentArrowStyle={arrowStyle}
+              contentStyle={darkMode ? cardStyleDark : cardStyleLight}
+              contentArrowStyle={darkMode ? arrowStyleDark : arrowStyleLight}
               date={el.date}
               dateClassName={styles.date}
               iconStyle={el.icon === 'work' ? workIconStyle : schoolIconStyle}

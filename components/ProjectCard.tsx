@@ -21,8 +21,8 @@ type Props = {
 const ProjectCard: FC<Props> = ({ el }) => {
   const { darkMode } = useThemeContext();
   return (
-    <div className={styles.card}>
-      <div className={styles.image}>
+    <div className={darkMode ? styles.cardDark : styles.cardLight}>
+      <div className={darkMode ? styles.imageDark : styles.imageLight}>
         <Image
           src={el.image}
           alt={el.alt}
@@ -33,15 +33,25 @@ const ProjectCard: FC<Props> = ({ el }) => {
         />
       </div>
       <div className={styles.content}>
-        <h2 className={styles.title}>{el.title}</h2>
-        <h3 className={styles.description}>{el.description}</h3>
-        <h5 className={styles.tech}>{el.technologies}</h5>
+        <h2 className={darkMode ? styles.titleDark : styles.titleLight}>
+          {el.title}
+        </h2>
+        <h3
+          className={
+            darkMode ? styles.descriptionDark : styles.descriptionLight
+          }
+        >
+          {el.description}
+        </h3>
+        <h5 className={darkMode ? styles.techDark : styles.techLight}>
+          {el.technologies}
+        </h5>
         <div className={styles.links}>
           <div>
             <Link href={el.github}>
               <a target="_blank">
                 <svg
-                  className={styles.github}
+                  className={darkMode ? styles.githubDark : styles.githubLight}
                   xmlns="http://www.w3.org/2000/svg"
                   width="3vmin"
                   height="3vmin"
@@ -57,7 +67,7 @@ const ProjectCard: FC<Props> = ({ el }) => {
             <Link href={el.demo}>
               <a target="_blank">
                 <svg
-                  className={styles.demo}
+                  className={darkMode ? styles.demoDark : styles.demoLight}
                   xmlns="http://www.w3.org/2000/svg"
                   width="3vmin"
                   height="3vmin"
