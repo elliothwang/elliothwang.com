@@ -11,10 +11,10 @@ type Props = {
 const Projects: FC<Props> = ({ scrolled }) => {
   const { darkMode } = useThemeContext();
   return (
-    <div className={styles.projects}>
-      <div className={styles.border}></div>
+    <div className={darkMode ? styles.projectsDark : styles.projectsLight}>
+      <div className={darkMode ? styles.borderDark : styles.borderLight}></div>
       <h1
-        className={styles.title}
+        className={darkMode ? styles.titleDark : styles.titleLight}
         style={
           window.screen.width >= 1024
             ? scrolled

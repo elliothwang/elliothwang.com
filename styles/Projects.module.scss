@@ -1,6 +1,6 @@
 @import 'main';
 
-.projects {
+.projectsDark {
   @include flex-col-ctr-ctr;
   align-items: flex-start;
   position: relative;
@@ -19,7 +19,12 @@
   }
 }
 
-.border {
+.projectsLight {
+  @extend .projectsDark;
+  background: $background-light;
+}
+
+.borderDark {
   @include corner-borders-80-dark;
   height: 270vh;
   margin-left: 9.35vw;
@@ -33,7 +38,12 @@
   }
 }
 
-.title {
+.borderLight {
+  @extend .borderDark;
+  @include corner-borders-80-light;
+}
+
+.titleDark {
   @include flex-ctr-ctr;
   height: 15vh;
   width: 60vw;
@@ -54,6 +64,11 @@
   @include above-1024-px {
     @include transition(0.75s, null);
   }
+}
+
+.titleLight {
+  @extend .titleDark;
+  color: $title-color-light;
 }
 
 .cards {
