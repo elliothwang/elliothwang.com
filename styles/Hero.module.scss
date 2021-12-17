@@ -28,6 +28,8 @@
 .greetingLight {
   @extend .greetingDark;
   color: $accent-1-light;
+
+  @include transition(0s, 0s);
 }
 
 .titleDark {
@@ -42,6 +44,8 @@
 .titleLight {
   @extend .titleDark;
   color: $text-color-light;
+
+  @include transition(0s, 0s);
 }
 
 .subtitleDark {
@@ -56,6 +60,8 @@
 .subtitleLight {
   @extend .subtitleDark;
   color: $accent-1-light;
+
+  @include transition(0s, 0s);
 }
 
 .summaryDark {
@@ -69,6 +75,8 @@
 .summaryLight {
   @extend .summaryDark;
   color: $text-color-light;
+
+  @include transition(0s, 0s);
 }
 
 .highlightDark {

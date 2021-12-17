@@ -10,9 +10,11 @@ type Props = {
 const About: FC<Props> = ({ scrolled }) => {
   const { darkMode } = useThemeContext();
   return (
-    <div className={styles.page}>
-      <div className={styles.container}>
-        <div className={styles.border}></div>
+    <div className={darkMode ? styles.pageDark : styles.pageLight}>
+      <div className={darkMode ? styles.containerDark : styles.containerLight}>
+        <div
+          className={darkMode ? styles.borderDark : styles.borderLight}
+        ></div>
         <div
           className={styles.about}
           style={
@@ -24,7 +26,7 @@ const About: FC<Props> = ({ scrolled }) => {
           }
         >
           <h1
-            className={styles.title}
+            className={darkMode ? styles.titleDark : styles.titleLight}
             style={
               window.screen.width >= 1024
                 ? scrolled
@@ -36,15 +38,21 @@ const About: FC<Props> = ({ scrolled }) => {
             Who am I?
           </h1>
           <div className={styles.content}>
-            <p className={styles.p}>
+            <p className={darkMode ? styles.pDark : styles.pLight}>
               Hi, there! My name is{' '}
-              <span className={styles.highlight}>Elliot Hwang</span>. As a
-              previous pre-medical student, my passion for helping others has
-              shifted from working in medicine to contributing to code and
+              <span
+                className={
+                  darkMode ? styles.highlightDark : styles.highlightLight
+                }
+              >
+                Elliot Hwang
+              </span>
+              . As a previous pre-medical student, my passion for helping others
+              has shifted from working in medicine to contributing to code and
               technology that helps others.
             </p>
             <p
-              className={styles.p}
+              className={darkMode ? styles.pDark : styles.pLight}
               style={
                 window.screen.width >= 1024
                   ? scrolled

@@ -4,7 +4,7 @@
   @include flex-col-ctr-ctr;
 }
 
-.title {
+.titleDark {
   @include flex-ctr-ctr;
   height: 5vh;
   width: 60vw;
@@ -21,7 +21,13 @@
   }
 }
 
-.ul {
+.titleLight {
+  @extend .titleDark;
+  color: $title-color-light;
+}
+
+.ulDark,
+.ulLight {
   display: inline-block;
   height: 20vh;
   width: 40vw;
@@ -43,8 +49,14 @@
   }
 }
 
-.ul > * {
+.ulDark > * {
   color: $text-color-dark;
+  font-size: 2vmin;
+  margin: 0 1vmin;
+}
+
+.ulLight > * {
+  color: $text-color-light;
   font-size: 2vmin;
   margin: 0 1vmin;
 }

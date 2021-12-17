@@ -1,12 +1,17 @@
 @import 'main';
 
-.page {
+.pageDark {
   @include flex-ctr-ctr;
   height: 100vh;
   background: $background-dark;
 }
 
-.container {
+.pageLight {
+  @extend .pageDark;
+  background: $background-light;
+}
+
+.containerDark {
   @include flex-col-ctr-ctr;
   position: relative;
   height: 75vh;
@@ -21,9 +26,21 @@
   }
 }
 
-.border {
-  @include corner-borders-80;
+.containerLight {
+  @extend .containerDark;
+  background: $background-light;
+}
+
+.borderDark {
+  @include corner-borders-80-dark;
   height: 74vh;
+  background: $background-dark;
+}
+
+.borderLight {
+  @extend .borderDark;
+  @include corner-borders-80-light;
+  background: $background-light;
 }
 
 .about {
@@ -40,7 +57,7 @@
   }
 }
 
-.title {
+.titleDark {
   @include flex-ctr-ctr;
   height: 10vh;
   width: 80vw;
@@ -55,6 +72,11 @@
 
     @include transition(0.75s, null);
   }
+}
+
+.titleLight {
+  @extend .titleDark;
+  color: $title-color-light;
 }
 
 .content {
@@ -73,7 +95,7 @@
   }
 }
 
-.p {
+.pDark {
   margin: 0.5vh 2.5vw;
   font-size: 2vmin;
   color: $text-color-dark;
@@ -85,8 +107,17 @@
   }
 }
 
-.highlight {
+.pLight {
+  @extend .pDark;
+  color: $text-color-light;
+}
+
+.highlightDark {
   color: $title-color-dark;
+}
+
+.highlightLight {
+  color: $accent-3-light;
 }
 
 .skills {

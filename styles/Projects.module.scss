@@ -1,11 +1,5 @@
 @import 'main';
 
-.page {
-  @include flex-ctr-ctr;
-  height: auto;
-  background: $background-dark;
-}
-
 .projects {
   @include flex-col-ctr-ctr;
   align-items: flex-start;
@@ -26,7 +20,7 @@
 }
 
 .border {
-  @include corner-borders-80;
+  @include corner-borders-80-dark;
   height: 270vh;
   margin-left: 9.35vw;
 

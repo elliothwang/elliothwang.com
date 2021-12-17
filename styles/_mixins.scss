@@ -5,8 +5,10 @@ $large-width: 1024px;
 $extra-large-width: 1200px;
 $corner-width: 0.2vw;
 $corner-size: 10vmin;
-$color-border: $accent-1-dark;
-$color-background: $background-dark;
+$dark-border: $accent-1-dark;
+$dark-background: $background-dark;
+$light-border: $accent-1-light;
+$light-background: $background-light;
 
 @mixin below-480-px {
   @media (max-width: #{$small-width - 1px}) {
@@ -105,45 +107,13 @@ $color-background: $background-dark;
   align-items: flex-start;
 }
 
-@mixin corner-borders-60() {
+@mixin corner-borders-80-dark() {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  border: $corner-width solid $color-border;
-  background: $color-background;
-  width: 60vw;
-
-  &::before {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: -$corner-width;
-    bottom: -$corner-width;
-    left: $corner-size;
-    right: $corner-size;
-    background: $color-background;
-  }
-
-  &::after {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    top: $corner-size;
-    bottom: $corner-size;
-    left: -$corner-width;
-    right: -$corner-width;
-    background: $color-background;
-  }
-}
-
-@mixin corner-borders-80() {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  border: $corner-width solid $color-border;
-  background: $color-background;
+  border: $corner-width solid $dark-border;
+  background: $dark-background;
   width: 80vw;
 
   &::before {
@@ -154,7 +124,7 @@ $color-background: $background-dark;
     bottom: -$corner-width;
     left: $corner-size;
     right: $corner-size;
-    background: $color-background;
+    background: $dark-background;
   }
 
   &::after {
@@ -165,7 +135,39 @@ $color-background: $background-dark;
     bottom: $corner-size;
     left: -$corner-width;
     right: -$corner-width;
-    background: $color-background;
+    background: $dark-background;
+  }
+}
+
+@mixin corner-borders-80-light() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: $corner-width solid $light-border;
+  background: $light-background;
+  width: 80vw;
+
+  &::before {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: -$corner-width;
+    bottom: -$corner-width;
+    left: $corner-size;
+    right: $corner-size;
+    background: $light-background;
+  }
+
+  &::after {
+    content: '';
+    z-index: 0;
+    position: absolute;
+    top: $corner-size;
+    bottom: $corner-size;
+    left: -$corner-width;
+    right: -$corner-width;
+    background: $light-background;
   }
 }
 
