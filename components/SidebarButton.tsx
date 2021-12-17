@@ -4,7 +4,7 @@ import styles from '../styles/SidebarButton.module.scss';
 type Props = {
   loaded: boolean;
   shown: boolean;
-  handleButtonClick: Function;
+  handleButtonClick: () => void;
 };
 
 const SidebarButton: FC<Props> = ({ loaded, shown, handleButtonClick }) => {
@@ -17,7 +17,7 @@ const SidebarButton: FC<Props> = ({ loaded, shown, handleButtonClick }) => {
             ? { transform: 'translateY(0%)' }
             : { transform: 'translateY(-300%)' }
         }
-        onClick={() => handleButtonClick}
+        onClick={handleButtonClick}
       >
         <div className={shown ? styles.topBarActive : styles.bar}></div>
         <div className={shown ? styles.midBarActive : styles.bar}></div>

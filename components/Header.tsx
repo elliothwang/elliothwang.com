@@ -14,8 +14,7 @@ const Header: FC<Props> = ({ scrolled }) => {
   const [animate, setAnimate] = useState(false);
   const [sidebarShown, setSidebarShown] = useState(false);
 
-  const handleButtonClick: Function = (evt: React.MouseEvent) => {
-    evt.preventDefault();
+  const handleButtonClick = () => {
     if (sidebarShown === true) {
       disableScroll.off();
       setSidebarShown(false);

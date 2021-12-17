@@ -10,7 +10,7 @@ type Props = {
   loaded: boolean;
   scrolled: boolean;
   shown: boolean;
-  handleButtonClick: Function;
+  handleButtonClick: () => void;
 };
 
 const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {

@@ -6,11 +6,13 @@ import styles from '../styles/Sidebar.module.scss';
 
 type Props = {
   shown: boolean;
-  handleSidebarClick: Function;
+  handleSidebarClick: () => void;
 };
 
 const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
   const { darkMode } = useThemeContext();
+
+  console.log(shown);
 
   return (
     <>
@@ -33,7 +35,7 @@ const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
                       ? { transform: 'translate(0%)' }
                       : { transform: 'translate(200%)' }
                   }
-                  onClick={() => handleSidebarClick}
+                  onClick={handleSidebarClick}
                 >
                   About
                 </a>
@@ -48,7 +50,7 @@ const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
                       ? { transform: 'translate(0%)' }
                       : { transform: 'translate(200%)' }
                   }
-                  onClick={() => handleSidebarClick}
+                  onClick={handleSidebarClick}
                 >
                   Projects
                 </a>
@@ -63,7 +65,7 @@ const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
                       ? { transform: 'translate(0%)' }
                       : { transform: 'translate(200%)' }
                   }
-                  onClick={() => handleSidebarClick}
+                  onClick={handleSidebarClick}
                 >
                   Experience
                 </a>
@@ -80,7 +82,7 @@ const Sidebar: FC<Props> = ({ shown, handleSidebarClick }) => {
                 href="mailto:officialelliothwang@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => handleSidebarClick}
+                onClick={handleSidebarClick}
               >
                 Contact
               </a>
