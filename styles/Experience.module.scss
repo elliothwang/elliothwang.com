@@ -1,6 +1,6 @@
 @import 'main';
 
-.page {
+.pageDark {
   @include flex-ctr-ctr;
   height: 155vh;
   background: $background-dark;
@@ -10,7 +10,12 @@
   }
 }
 
-.exp {
+.pageLight {
+  @extend .pageDark;
+  background: $background-light;
+}
+
+.expDark {
   @include flex-col-ctr-ctr;
   position: relative;
   height: 130vh;
@@ -25,7 +30,12 @@
   }
 }
 
-.border {
+.expLight {
+  @extend .expDark;
+  background: $background-light;
+}
+
+.borderDark {
   @include corner-borders-80-dark;
   height: 129vh;
 
@@ -34,7 +44,12 @@
   }
 }
 
-.title {
+.borderLight {
+  @extend .borderDark;
+  @include corner-borders-80-light;
+}
+
+.titleDark {
   @include flex-ctr-ctr;
   height: 15vh;
   width: 80vw;
@@ -55,6 +70,11 @@
 
     @include transition(0.75s, 0.25s);
   }
+}
+
+.titleLight {
+  @extend .titleDark;
+  color: $title-color-light;
 }
 
 .timeline {
