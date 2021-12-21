@@ -42,8 +42,8 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
                   <Image
                     src={'/images/logo.png'}
                     alt="logo"
-                    height="100"
-                    width="100"
+                    height="75"
+                    width="75"
                     objectFit="cover"
                     objectPosition="center"
                   />
