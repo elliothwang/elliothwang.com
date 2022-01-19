@@ -10,10 +10,24 @@ type Props = {
 };
 
 const projects: Array<Props> = [
+  // {
+  //   id: 1,
+  //   image: '/images/home-unite-us.png',
+  //   alt: 'Home Unite Us home page',
+  //   title: 'Home Unite Us',
+  //   description: [
+  //     '',
+  //   ],
+  //   technologies: [
+  //     'JavaScript, TypeScript, Python, Shell, Dockerfile, HTML, React, NoSQL, Flask,  Auth0 / OIDC / OAuth2, MongoDB',
+  //   ],
+  //   github: '',
+  //   demo: '',
+  // },
   {
-    id: 1,
+    id: 2,
     image: '/images/rona-rates.png',
-    alt: 'Picture of Rona Rates home page',
+    alt: 'Rona Rates home page',
     title: 'Rona Rates',
     description: [
       'Viewers can find up-to-date US, state, and county COVID-19 info and stats from the NovelCOVID API.',
@@ -25,9 +39,9 @@ const projects: Array<Props> = [
     demo: 'https://rona-rates.netlify.app/',
   },
   {
-    id: 2,
+    id: 3,
     image: '/images/mini-midi.png',
-    alt: 'Picture of mini midi home page',
+    alt: 'mini midi home page',
     title: 'mini midi',
     description: [
       'Viewers can play a midi online with their mouse or keyboard and record songs.',
@@ -39,9 +53,9 @@ const projects: Array<Props> = [
     demo: 'https://mini-midi.herokuapp.com/',
   },
   {
-    id: 3,
+    id: 4,
     image: '/images/weird-radio.png',
-    alt: 'Picture of Weird Radio home page',
+    alt: 'Weird Radio home page',
     title: 'Weird Radio',
     description: [
       'Currently in progress! An internet radio station promoting experimental music. Working in a team of two engineers and two designers.',
@@ -53,9 +67,9 @@ const projects: Array<Props> = [
     demo: 'https://weirdradio.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     image: '/images/elliothwang.com.png',
-    alt: 'Picture of elliothwang.com home page',
+    alt: 'elliothwang.com home page',
     title: 'elliothwang.com',
     description: [
       'The first iteration of my developer portfolio. Designed and built by Elliot Hwang.',
