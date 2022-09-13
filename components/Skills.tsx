@@ -14,14 +14,14 @@ const Skills: FC = () => {
         <li>JavaScript (ES6+)</li>
         <li>HTML5 &#38; CSS3</li>
         <li>TypeScript</li>
-        <li>MERN Stack</li>
+        <li>React.js</li>
         <li>Redux</li>
+        <li>React Query</li>
         <li>Next.js</li>
-        <li>Gatsby</li>
-        <li>GraphQL</li>
         <li>Sass</li>
         <li>Material UI</li>
         <li>TailwindCSS</li>
+        <li>Chakra UI</li>
       </ul>
     </div>
   );

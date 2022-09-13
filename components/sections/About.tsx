@@ -39,15 +39,7 @@ const About: FC<Props> = ({ scrolled }) => {
           </h1>
           <div className={styles.content}>
             <p className={darkMode ? styles.pDark : styles.pLight}>
-              Hi, there! My name is{' '}
-              <span
-                className={
-                  darkMode ? styles.highlightDark : styles.highlightLight
-                }
-              >
-                Elliot Hwang
-              </span>
-              . As a previous pre-medical student, my passion for helping others
+              As a previous pre-medical student, my passion for helping others
               has shifted from working in medicine to contributing to code and
               technology that helps others.
             </p>
@@ -61,11 +53,8 @@ const About: FC<Props> = ({ scrolled }) => {
                   : { transform: 'translateY(0%)' }
               }
             >
-              Although I have just begun my journey as a developer, I am always
-              eager to challenge myself to learn and try new things. Most of my
-              projects are inspired by my passions for health and music.
-              {/* Speaking of which, I am also a{' '}
-              <span className={styles.highlight}>singer/songwriter</span>. */}
+              I am always eager to challenge myself to learn about and implement
+              new, cutting-edge technology.
             </p>
           </div>
         </div>

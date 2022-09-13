@@ -50,21 +50,13 @@ const Hero: FC = () => {
             : { transform: 'translate(-200%)' }
         }
       >
-        I am a front end developer with a desire to help others through my work.{' '}
-        <br />
-        My goal is to contribute to code that will{' '}
+        I specialize in
         <span
           className={darkMode ? styles.highlightDark : styles.highlightLight}
         >
-          provide solutions and assistance for others
+          &nbsp;beautiful, pixel-perfect&nbsp;
         </span>
-        . <br /> Ultimately, I would like to make a{' '}
-        <span
-          className={darkMode ? styles.highlightDark : styles.highlightLight}
-        >
-          positive impact on other people
-        </span>
-        .
+        experiences that have positive impact on other people.
       </p>
     </div>
   );
