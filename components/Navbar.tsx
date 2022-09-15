@@ -107,7 +107,7 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
                 Experience
               </Link>
             </li>
-            <li>
+            {/* <li>
               <a
                 className={styles.contact}
                 style={
@@ -133,7 +133,7 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
               >
                 <ThemeToggle />
               </div>
-            </li>
+            </li> */}
             <li>
               <div className={styles.sidebarButton}>
                 <SidebarButton

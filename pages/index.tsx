@@ -20,7 +20,7 @@ const Index: FC = () => {
         : setHeaderScrolled(false);
       window.scrollY >= 200 && setAboutScrolled(true);
       window.scrollY >= 1200 && setProjectsScrolled(true);
-      window.scrollY >= 3100 && setExperienceScrolled(true);
+      window.scrollY >= 2900 && setExperienceScrolled(true);
     }
 
     window.addEventListener('scroll', onScroll);
