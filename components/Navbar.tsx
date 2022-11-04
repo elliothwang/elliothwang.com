@@ -72,25 +72,6 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
             <li>
               <Link
                 activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-160}
-                duration={750}
-                isDynamic={true}
-                className={styles.projects}
-                style={
-                  loaded
-                    ? { transform: 'translateY(0%)' }
-                    : { transform: 'translateY(-300%)' }
-                }
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="active"
                 to="experience"
                 spy={true}
                 smooth={true}
@@ -105,6 +86,25 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
                 }
               >
                 Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-160}
+                duration={750}
+                isDynamic={true}
+                className={styles.projects}
+                style={
+                  loaded
+                    ? { transform: 'translateY(0%)' }
+                    : { transform: 'translateY(-300%)' }
+                }
+              >
+                Projects
               </Link>
             </li>
             {/* <li>
