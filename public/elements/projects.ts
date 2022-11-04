@@ -10,22 +10,8 @@ type Props = {
 };
 
 const projects: Array<Props> = [
-  // {
-  //   id: 1,
-  //   image: '/images/home-unite-us.png',
-  //   alt: 'Home Unite Us home page',
-  //   title: 'Home Unite Us',
-  //   description: [
-  //     '',
-  //   ],
-  //   technologies: [
-  //     'JavaScript, TypeScript, Python, Shell, Dockerfile, HTML, React, NoSQL, Flask,  Auth0 / OIDC / OAuth2, MongoDB',
-  //   ],
-  //   github: '',
-  //   demo: '',
-  // },
   {
-    id: 2,
+    id: 1,
     image: '/images/rona-rates.png',
     alt: 'Rona Rates home page',
     title: 'Rona Rates',
@@ -39,7 +25,7 @@ const projects: Array<Props> = [
     demo: 'https://rona-rates.netlify.app/',
   },
   {
-    id: 3,
+    id: 2,
     image: '/images/mini-midi.png',
     alt: 'mini midi home page',
     title: 'mini midi',
@@ -53,7 +39,7 @@ const projects: Array<Props> = [
     demo: 'https://mini-midi.herokuapp.com/',
   },
   {
-    id: 4,
+    id: 3,
     image: '/images/weird-radio.png',
     alt: 'Weird Radio home page',
     title: 'Weird Radio',
@@ -67,7 +53,7 @@ const projects: Array<Props> = [
     demo: 'https://weirdradio.netlify.app/',
   },
   {
-    id: 5,
+    id: 4,
     image: '/images/elliothwang.com.png',
     alt: 'elliothwang.com home page',
     title: 'elliothwang.com',

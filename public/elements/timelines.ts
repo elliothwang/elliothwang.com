@@ -10,31 +10,44 @@ type Props = {
 const timelines: Array<Props> = [
   {
     id: 1,
-    title: 'Software Engineering Internship',
-    location: 'Behaivior',
-    date: 'Jan 2022 - May 2022',
+    title: 'Software Engineer',
+    location: 'KTExpress',
+    date: '2019 - Current',
     description: [
-      'Collaborated with a team of 4 to 6 developers and interns in the development of user-facing analytics dashboards.',
-      'Assisted in the migration from Redux to React Query and the implementation of Chakra UI.',
-      'Attended meetings with the development team and leadership to discuss product strategy and direction.',
+      'Collaborated with product management and design teams to translate wireframes into working prototypes and features to refine user interface behaviors.',
+      'Monitored and improved API performance by utilizing synchronous micro services and partial resources, increasing overall application efficiency.',
+      'Built extensive test coverage for all new features to ensure performance and superior visual quality.',
+      'Most recently, involved in the process of migration from Vanilla JavaScript to TypeScript and React.',
     ],
     icon: 'work',
   },
   {
     id: 2,
+    title: 'Contract Software Engineer',
+    location: 'Behaivior',
+    date: '2021 - 2022',
+    description: [
+      'Member of a team of developers responsible for development, design, implementation and migration for application, database, interfaces and etc.',
+      'Day to day responsibilities included but not limited to administration, support and proactive analysis, and timely communication with relevant technical and non-technical teams, management, and third- party vendors.',
+      'Specific project handled include but not limited to migration from Redux to React Query and implementation of Chakra UI.',
+    ],
+    icon: 'work',
+  },
+  {
+    id: 3,
     title: 'Full-Stack SWE Bootcamp',
     location: 'General Assembly',
-    date: 'Feb 2021 - May 2021',
+    date: '2020 - 2021',
     description: [
       'A 12-week full-stack program that consists of 4 major projects implementing languages, frameworks, and technologies including: HTML, CSS, Sass, Javascript, jQuery, PostgreSQL, MongoDB, Django, NodeJS, ReactJS, Git, Github.',
     ],
     icon: 'school',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Laboratory Research Assistant',
     location: 'California State University, Northridge',
-    date: 'Aug 2019 - Mar 2020',
+    date: '2018 - 2019',
     description: [
       'Collaborated within a team of 4 to collect and analyze biomechanics research data.',
       'Ensured adequate documentation of protocol and maintained data in a well-organized repository.',
@@ -43,10 +56,10 @@ const timelines: Array<Props> = [
     icon: 'work',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Administrative Assistant',
     location: 'All Nations Church',
-    date: 'Mar 2018 - Jan 2020',
+    date: '2017 - 2019',
     description: [
       'Supervised operations of Sunday services by managing program schedule, delegating tasks to student volunteers, and providing appropriate follow-up with leaders.',
       'Implemented, maintained, and updated CRM software.',
@@ -55,13 +68,11 @@ const timelines: Array<Props> = [
     icon: 'work',
   },
   {
-    id: 4,
-    title: 'B.S. Kinesiology',
+    id: 6,
+    title: 'Bachelor of Science',
     location: 'California State University, Northridge',
-    date: 'Mar 2018 - May 2020',
-    description: [
-      'After transferring from community college, completed 2 years to earn a Bachelor of Science in Kinesiology.',
-    ],
+    date: '2019',
+    description: [],
     icon: 'school',
   },
 ];

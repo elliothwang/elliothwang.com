@@ -10,8 +10,8 @@ import styles from '../styles/index.module.scss';
 const Index: FC = () => {
   const [headerScrolled, setHeaderScrolled] = useState(false);
   const [aboutScrolled, setAboutScrolled] = useState(false);
-  const [projectsScrolled, setProjectsScrolled] = useState(false);
   const [experienceScrolled, setExperienceScrolled] = useState(false);
+  const [projectsScrolled, setProjectsScrolled] = useState(false);
 
   useEffect(function Mount() {
     function onScroll() {
@@ -19,8 +19,8 @@ const Index: FC = () => {
         ? setHeaderScrolled(true)
         : setHeaderScrolled(false);
       window.scrollY >= 200 && setAboutScrolled(true);
-      window.scrollY >= 1200 && setProjectsScrolled(true);
-      window.scrollY >= 2900 && setExperienceScrolled(true);
+      window.scrollY >= 1100 && setExperienceScrolled(true);
+      window.scrollY >= 5000 && setProjectsScrolled(true);
     }
 
     window.addEventListener('scroll', onScroll);
@@ -43,11 +43,11 @@ const Index: FC = () => {
           <section id="about">
             <About scrolled={aboutScrolled} />
           </section>
-          <section id="projects">
-            <Projects scrolled={projectsScrolled} />
-          </section>
           <section id="experience">
             <Experience scrolled={experienceScrolled} />
+          </section>
+          <section id="projects">
+            <Projects scrolled={projectsScrolled} />
           </section>
         </main>
       </Layout>
