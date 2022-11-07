@@ -134,7 +134,7 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
                 <ThemeToggle />
               </div>
             </li> */}
-            <li>
+            {/* <li>
               <div className={styles.sidebarButton}>
                 <SidebarButton
                   loaded={loaded}
@@ -142,7 +142,7 @@ const Navbar: FC<Props> = ({ loaded, scrolled, shown, handleButtonClick }) => {
                   handleButtonClick={handleButtonClick}
                 />
               </div>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>
