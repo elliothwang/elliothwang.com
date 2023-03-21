@@ -8,6 +8,8 @@ type Props = {
   scrolled: boolean;
 };
 
+// ! TODO: Make new Project cards & Fix Projects scroll
+
 const Projects: FC<Props> = ({ scrolled }) => {
   const { darkMode } = useThemeContext();
   return (
